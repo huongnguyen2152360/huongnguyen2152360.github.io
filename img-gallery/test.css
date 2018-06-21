@@ -23,6 +23,7 @@ nav a {
     padding: 10px 30px;
     font-size: 15px;
 }
+
 .menu-item {
     display: none;
     position: absolute;
@@ -38,15 +39,18 @@ nav a {
     width: 90px;
     line-height: 40px;
 } 
+
 .menulist::after {
     font-family: FontAwesome;
     content: "\f107";
     font-weight: bold;
 }
+
 .menulist:hover {
     font-weight: bold;
     color:#1d232c;
 }
+
 .menulist:hover .menu-item {
     display: block;
 }
@@ -69,7 +73,7 @@ nav a {
     text-decoration: none;
 }
 .wrappic {
-    background: url('books-coffee-table-reading-glasses.jpg') no-repeat;
+    background: url('/Img/books-coffee-table-reading-glasses.jpg') no-repeat;
     position: relative;
     width: 60%;
     height: 350px;
