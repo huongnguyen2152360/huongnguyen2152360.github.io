@@ -14,33 +14,59 @@ nav a {
     color: #c4c9d1;
     text-decoration: none;
 }
-.menu {
+
+.menulist {
     padding-bottom: 30px;
     position: relative;
     display: inline-block;
+    list-style-type: none;
+    padding: 10px 30px;
+    font-size: 15px;
 }
-.dropdown-menu {
+.menu-item {
     display: none;
     position: absolute;
     z-index: 1;
     border: none;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     background-color: #060708;
-    width: 50px;
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 15px 30px 10px 0;
+    list-style-type: none;
+    opacity: 0.9;
+    width: 90px;
+    line-height: 40px;
 } 
-.menu:hover .dropdown-menu {
+.menulist::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    font-weight: bold;
+}
+.menulist:hover {
+    font-weight: bold;
+    color:#1d232c;
+}
+.menulist:hover .menu-item {
     display: block;
 }
-.dropdown-item {
-    color: #8d9790;
+
+.menu-item-list {
+    border-bottom: 1px solid black;
 }
-.dropdown-item:hover {
-    font-size: 18px;
+
+.menu-item-list a {
+    color: #8d9790;
+    text-decoration: none;
+    font-weight: normal;
+}
+.menu-item-list a:hover {
     background:none;
     color: #cbd0cd;
-    transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
+    transition: .1s ease-in-out;
+    -moz-transition: .1s ease-in-out;
+    -webkit-transition: .1s ease-in-out;
+    text-decoration: none;
 }
 .wrappic {
     background: url('books-coffee-table-reading-glasses.jpg') no-repeat;
@@ -85,7 +111,7 @@ nav a {
     text-align: center;
 }
 .row {
-    margin: 40px 0;
+    margin: 60px 0;
 }
 #card {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
@@ -93,6 +119,13 @@ nav a {
 #card img {
     width: 300px;
     height: 200px;
+}
+#card img:hover {
+    width: 320px;
+    height: 220px;
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
 }
 #card .text {
     margin-top: 20px;
