@@ -1,0 +1,47 @@
+.container {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.header h3 {
+    text-transform: uppercase;
+    color: black;
+    padding: auto;
+    letter-spacing: 1px;
+}
+.row {
+    padding: auto;
+    margin: 30px auto;
+}
+.products img {
+    max-width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    padding: auto;
+    position: relative;
+}
+.products img:hover {
+    padding-left: 20px;
+    transition: .5s all ease;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+}
+.products a {
+    color: black;
+}
+.textOnImg {
+    position: absolute;
+    bottom: 115px;
+    z-index: 1;
+    background-color:rgb(216,68,34);
+    opacity: 0.9;
+    border-radius: 5px;
+    color: white;
+    padding: 3px;
+    font-size: 10px;
+}
+.products h5 {
+    color: red;
+}
+.products h5 b::after {
+    content: "đ"
+}

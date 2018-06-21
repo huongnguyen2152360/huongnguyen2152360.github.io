@@ -1,0 +1,32 @@
+.container {
+    margin-top: 30px;
+    font-size: 12px;
+}
+.header h3 {
+    text-transform: uppercase;
+    color: black;
+    padding: auto;
+    letter-spacing: 1px;
+}
+.product img {
+    max-width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    padding: auto;
+}
+.product h5 {
+    color: red;
+    padding-bottom: 15px;
+}
+.product h5 b::after {
+    content: "đ"
+}
+.product p {
+    text-align: justify;
+    line-height: 18px;
+    padding: auto;
+    letter-spacing: 1px;
+}
+.product a {
+    color: black;
+}
