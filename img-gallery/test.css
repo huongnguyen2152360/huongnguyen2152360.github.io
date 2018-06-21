@@ -1,0 +1,32 @@
+.container {
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 10px;
+}
+nav {
+    background-color: #060708;
+}
+nav a {
+    color: #c4c9d1;
+    text-decoration: none;
+}
+.menu {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.wrappic {
+    background-image: url(books-coffee-table-reading-glasses.jpg) no-repeat;
+    text-align: center;
+    position: relative;
+}
+.welcome {
+    background-color: #c4c9d1;
+    position: absolute;
+    z-index: 1;
+}
+.welcome h3 {
+    color: #060708;
+}
