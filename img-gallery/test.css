@@ -73,7 +73,7 @@ nav a {
     text-decoration: none;
 }
 .wrappic {
-    background: url('/Img/books-coffee-table-reading-glasses.jpg') no-repeat;
+    background: url('Img/books-coffee-table-reading-glasses.jpg') no-repeat;
     position: relative;
     width: 60%;
     height: 350px;
