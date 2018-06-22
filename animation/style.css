@@ -1,0 +1,60 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.header h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    animation: changeColor 10s ease forwards;
+}
+@keyframes changeColor {
+    0% {color: #8f9bfc;}
+    25% {color: #3c51fa;}
+    50% {color: #051bca;}
+    75% {color: #010736;}
+    100% {color: #000;}
+}
+.line-break {
+    border-bottom: 2px solid black;
+    width: 100px;
+    margin: 0 auto;
+}
+.header:hover .line-break {
+    width: 150px;
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+.row1 , .row2 {
+    display: inline-block;
+    padding: 30px;
+    margin-top: 40px;
+}
+.row1 img, .row2 img {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2)
+}
+.row1:hover {
+    transform: translate(0,-5px);
+    transition: .5s linear;
+    -moz-transition: .5s linear;
+    -webkit-transition: .5s linear;
+}
+.row2:hover {
+    transform: scale(1.1);
+    transition: .5s linear;
+    -moz-transition: .5s linear;
+    -webkit-transition: .5s linear;
+}
+.footer {
+    margin-top: 30px;
+    padding-left: 130vh;
+    animation: fadeInOut 5s ease-in-out forwards;
+}
+@keyframes fadeInOut {
+    0% {opacity: 0.2};
+    50% {opacity: 0.6};
+    100% {opacity: 1};
+}
