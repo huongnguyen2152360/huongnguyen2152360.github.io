@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+}
+.container {
+    margin: 50px 300px;
+}
+.header, .line-break , .title {
+    text-align: center;
+}
+p {
+    text-align: justify;
+    margin: 30px auto;
+}
+#para {
+    line-height: 40px;
+}
+#day {
+    text-align: right;
+    font-style: italic;
+}
+#sig1, #sig2 {
+    display: inline-block;
+    font-weight: bold;
+}
+#sig1 {
+    padding-left: 50px;
+}
+#sig2 {
+    float: right;
+    padding-right: 50px;
+}
