@@ -1,0 +1,155 @@
+body {
+    font-family: 'Questrial';
+    font-size: 16px;
+}
+.navbar {
+    background-color: #060708;
+    width: 100%;
+    height: 100px;
+}
+.logo a {
+    font-family: 'Alex Brush';
+    text-decoration: none;
+    color: #d54d7b;
+    font-size: 40px;
+    font-style: italic;
+    text-shadow: 0 0px 1px #c4c9d1;
+}
+.logo span {
+    font-size: 12px;
+    text-shadow: none;
+}
+.line-break {
+    border-bottom: 1px solid #c4c9d1;
+    margin-top: 30px;
+}
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 0;
+}
+.menu-lv1, .menu-lv2 {
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.menu-lv1 {
+    margin-top: 30px;
+    height: 40px;
+}
+.menu-lv1-item {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.menu-lv1-item::after {
+    font-family: FontAwesome;
+    content: "\f107";
+    font-weight: bold;
+}
+.menu-lv1-item:hover {
+    font-weight: bold;
+    /* transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out; */
+}
+.menu-lv2 {
+    background-color:#060708; 
+    position: absolute;
+    display: none;
+    transform: translate(-25px,2px);
+    opacity: 0.9;
+    padding: 20px 0;
+    z-index: 1;
+    height: 190px;
+}
+.menu-lv2-item:not(:last-child) {
+    border-bottom: 1px solid black;
+    padding-bottom: 6px;
+}
+.menu-lv2-item a {
+    text-decoration: none;
+    color: #8d9790;
+    font-size: 16px;
+    line-height: 20px; 
+}
+.menu-lv1-item:hover .menu-lv2 {
+    display: block;
+    transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+}
+.menu-lv2-item a:hover {
+    font-weight: bold;
+    color: #c4c9d1;
+}
+.banner {
+    background: url('img/books-coffee-table-reading-glasses.jpg') no-repeat;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    opacity: 0.9;
+    margin-left: 20%;
+    margin-top: 40px;
+}
+.welcome {
+    background-color: white;
+    width: 40%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 100px;
+    position: absolute;
+    opacity: 0.9;
+    padding: 30px 30px 10px 30px;
+}
+.welcome h3 {
+    text-transform: uppercase;
+}
+.welcome p {
+    padding-top: 15px;
+}
+.line {
+    border-bottom: 1.2px solid black;
+    width: 120px;
+    margin: 5px auto;
+}
+.welcome h3:hover .line {
+    width: 180px;
+    transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+}
+.gallery {
+    width: 100%;
+    margin: 80px;
+}
+#card {
+    height: 300px;
+    margin-top: 50px;
+}
+#card img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#card img:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+}
+.text {
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+}
+input {
+    width: 300px;
+    border: none;
+    text-align: center;
+}
+
