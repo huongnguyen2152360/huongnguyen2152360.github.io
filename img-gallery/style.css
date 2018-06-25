@@ -58,7 +58,7 @@ body {
     background-color:#060708; 
     position: absolute;
     display: none;
-    transform: translate(-25px,2px);
+    transform: translate(-25px,0px);
     opacity: 0.9;
     padding: 20px 0;
     z-index: 1;
