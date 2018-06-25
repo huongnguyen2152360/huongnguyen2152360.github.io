@@ -14,8 +14,8 @@
     0% {color: #8f9bfc;}
     25% {color: #3c51fa;}
     50% {color: #051bca;}
-    75% {color: #010736;}
-    100% {color: #000;}
+    75% {color: pink;}
+    100% {color: black;}
 }
 .line-break {
     border-bottom: 2px solid black;
@@ -50,11 +50,15 @@
 }
 .footer {
     margin-top: 30px;
-    padding-left: 130vh;
-    animation: fadeInOut 5s ease-in-out forwards;
+    animation: fadeInOut 5s ease-in-out infinite;
+    width: 100%;
+    color: black;
+    margin-left: 40%;
 }
 @keyframes fadeInOut {
-    0% {opacity: 0.2};
-    50% {opacity: 0.6};
-    100% {opacity: 1};
+    0% {opacity: 0.3;}
+    25% {opacity: 1;}
+    50% {margin-left: 10%;}
+    75% {opacity: 0; margin-left: -50%;}
+    100% {opacity: 0; margin-left: -100%;}
 }
