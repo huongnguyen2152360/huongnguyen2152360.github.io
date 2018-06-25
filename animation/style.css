@@ -1,8 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
 .container {
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    max-width: 1200px;
 }
 .header h2 {
     text-transform: uppercase;
@@ -29,12 +39,14 @@
     -webkit-transition: .5s ease-in-out;
 }
 .row1 , .row2 {
-    display: inline-block;
-    padding: 30px;
-    margin-top: 40px;
+    width: 33%;
+    float: left;
+    margin-top: 60px;
+    padding: 0 30px;
 }
 .row1 img, .row2 img {
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+    width: 100%;
 }
 .row1:hover {
     transform: translate(0,-5px);
@@ -50,15 +62,14 @@
 }
 .footer {
     margin-top: 30px;
-    animation: fadeInOut 5s ease-in-out infinite;
     width: 100%;
+    animation: fadeInOut 5s ease-in-out infinite;
     color: black;
-    margin-left: 40%;
+    width: 100%;
+    text-align:right;
 }
 @keyframes fadeInOut {
-    0% {opacity: 0.3;}
-    25% {opacity: 1;}
-    50% {margin-left: 10%;}
-    75% {opacity: 0; margin-left: -50%;}
-    100% {opacity: 0; margin-left: -100%;}
+    0% {opacity: 1; transform: translate(0px);}
+    50% {opacity: 0; transform: translate(-160px);}
+    100% {opacity: 0; transform: translate(0px);}
 }
