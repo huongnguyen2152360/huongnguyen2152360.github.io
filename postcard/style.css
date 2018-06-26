@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    text-align: center;
+    line-height: 15px;
+    background: radial-gradient(
+        rgba(89, 156, 209, 0.99),
+        rgba(62, 98, 124, 0.99)
+      );
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    color: #5d2301;
+    width: 100%;
+}
+.postcard {
+    width: 60%;
+    margin: auto;
+}
+.postcard img {
+    width: 100%;
+    position: relative;
+}
+.textleft {
+    width: 30%;
+    float: left;
+    position: absolute;
+    top: 5%;
+    left: 22%;
+}
+#line1 {
+    font-family: 'Annie Use Your Telescope';
+    font-size: 30px;
+}
+#line2 {
+    text-transform: uppercase;
+    font-family: 'Aref Ruqaa';
+    font-size: 25px;
+}
+#line4 {
+    font-family: 'Cinzel Decorative';
+    font-size: 30px;
+}
+#line3 {
+    text-transform: uppercase;
+    font-family: 'Cherry Swash';
+    font-size: 35px;
+}
+#line5 {
+    font-family: 'Annie Use Your Telescope';
+    font-size: 30px;
+}
+#line6 {
+    font-family: 'Aref Ruqaa';
+    font-size: 30px;
+}
+.blackline {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 70px;
+    margin: 0 auto;
+    height: 5px;
+}
+.textleft:hover .blackline {
+    width: 100px;
+    transition: .5s ease-in-out;
+}
+#line7 {
+    font-family: 'Alex Brush';
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    line-height: 20px;
+}
+.line1st, .line2nd, .line3rd {
+    position: absolute;
+    float: right;
+    border-bottom: 1px solid black;
+    width: 200px;
+}
+.line1st {
+    top: 28%;
+    right: 25%;
+}
+#to {
+    font-family: 'Cinzel Decorative';
+    font-size: 15px;
+    position: absolute;
+    float:right;
+    top: 23%;
+    right: 32%;
+}
+#to span {
+    font-family: 'Great Vibes';
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+}
+.line2nd {
+    top: 35%;
+    right: 25%;
+}
+#address {
+    font-family: 'Cinzel Decorative';
+    font-size: 15px;
+    position: absolute;
+    float:right;
+    top: 30%;
+    right: 21%;
+}
+#address span {
+    font-family: 'Great Vibes';
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 1.5px;
+}
+.line3rd {
+    top: 42%;
+    right: 25%;
+}
+#mess {
+    font-family: 'Indie Flower';
+    font-size: 20px;
+    position: absolute;
+    float:right;
+    top: 37%;
+    right: 23%;
+}
+.heart {
+    position: absolute;
+    width:2%;
+    float: right;
+    top: 38%;
+    right: 20.5%;
+}
+.heart img {
+    width: 100%;
+    animation: heartOnOff 2s ease-in-out infinite;
+}
+@keyframes heartOnOff {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.3);}
+    100% {transform: scale(1);}
+}
+#lastmess {
+    font-family: 'Annie Use Your Telescope';
+    font-size: 20px;
+    position: absolute;
+    float: right;
+    top: 43%;
+    right: 23%;
+}
+#lastline {
+    font-family: 'Cinzel Decorative';
+    font-size: 10px;
+    position: absolute;
+    float: right;
+    top: 50%;
+    right: 23%;
+}
+.bell {
+    width: 20%;
+    position: absolute;
+    float: right;
+    top: 13%;
+    right: 16%;
+}
+.bell img {
+    width: 100%;
+}
+.leaf {
+    width: 10%;
+    position: absolute;
+    float: right;
+    top: 3%;
+    right: 26%;
+    opacity: 0.9;
+}
+.clear {
+    clear: both;
+}
+.leaf img {
+    width: 100%;
+}
+.flake1,
+.flake2,
+.flake3,
+.flake4 {
+  background: url(http://i64.tinypic.com/24zd9jo.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fall1 30s infinite linear;
+  background-size: 250px;
+  filter: blur(1px);
+}
+
+.flake2 {
+  animation: fall2 30s infinite linear;
+  background-size: 300px;
+  filter: blur(1.6px);
+}
+
+.flake3 {
+  background-size: 450px;
+  animation: fall3 30s infinite linear;
+  filter: blur(1.9px);
+}
+
+.flake4 {
+  background-size: 400px;
+  animation: fall4 30s infinite linear;
+  filter: blur(1.75px);
+}
+@keyframes fall1 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 100px 1300px;
+  }
+}
+
+@keyframes fall2 {
+  0% {
+    background-position: 0px -400px;
+  }
+  100% {
+    background-position: -180px 1200px;
+  }
+}
+
+@keyframes fall3 {
+  0% {
+    background-position: 0px 200px;
+  }
+  100% {
+    background-position: 400px 2000px;
+  }
+}
+
+@keyframes fall4 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -900px 2000px;
+  }
+}
