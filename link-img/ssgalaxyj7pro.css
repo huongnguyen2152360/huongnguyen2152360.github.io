@@ -1,9 +1,13 @@
-body {
+* {
+    box-sizing: border-box;
+}
+html, body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
 }
 .container {
+    width: 100%;
     margin-top: 30px;
-    font-size: 12px;
 }
 .header h3 {
     text-transform: uppercase;
@@ -11,11 +15,16 @@ body {
     padding: auto;
     letter-spacing: 1px;
 }
-.product img {
-    max-width: 500px;
-    height: 400px;
-    margin: 20px auto;
-    padding: auto;
+.row {
+    width: 33%;
+    float: left;
+    padding: 0 auto;
+}
+.row img {
+    width: 100%;
+}
+.clear {
+    clear: both;
 }
 .product h5 {
     color: red;
