@@ -31,9 +31,6 @@ html, body {
 }
 .container {
     box-sizing: border-box;
-    width: 100%;
-    height: calc(100% - 100px);
-    padding: 0;
     max-width: 1200px;
 }
 .menu-lv1, .menu-lv2 {
@@ -130,12 +127,13 @@ html, body {
 }
 .gallery {
     width: 100%;
-    padding: 30px;
+    margin: 0 auto;
 }
 .row {
     width: 33%;
     float: left;
-    padding: 30px;
+    padding: 35px;
+    margin: 0 auto;
 }
 .row img {
     width: 100%;
@@ -149,6 +147,9 @@ html, body {
     transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
+}
+.clear {
+    clear: both;
 }
 .text {
     width: 100%;
