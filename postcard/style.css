@@ -28,34 +28,37 @@ html, body {
     width: 30%;
     float: left;
     position: absolute;
-    top: 5%;
+    top: 12%;
     left: 22%;
+}
+.textright {
+    width: 35%;
 }
 #line1 {
     font-family: 'Annie Use Your Telescope';
-    font-size: 30px;
+    font-size: 35px;
 }
 #line2 {
     text-transform: uppercase;
     font-family: 'Aref Ruqaa';
-    font-size: 25px;
+    font-size: 30px;
 }
 #line4 {
     font-family: 'Cinzel Decorative';
-    font-size: 30px;
+    font-size: 35px;
 }
 #line3 {
     text-transform: uppercase;
     font-family: 'Cherry Swash';
-    font-size: 35px;
+    font-size: 40px;
 }
 #line5 {
     font-family: 'Annie Use Your Telescope';
-    font-size: 30px;
+    font-size: 35px;
 }
 #line6 {
     font-family: 'Aref Ruqaa';
-    font-size: 30px;
+    font-size: 35px;
 }
 .blackline {
     border-bottom: 1px solid black;
@@ -78,7 +81,7 @@ html, body {
     position: absolute;
     float: right;
     border-bottom: 1px solid black;
-    width: 200px;
+    width: 300px;
 }
 .line1st {
     top: 28%;
@@ -86,54 +89,54 @@ html, body {
 }
 #to {
     font-family: 'Cinzel Decorative';
-    font-size: 15px;
+    font-size: 20px;
     position: absolute;
     float:right;
     top: 23%;
-    right: 32%;
+    right: 34%;
 }
 #to span {
     font-family: 'Great Vibes';
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 10px;
     letter-spacing: 1.5px;
 }
 .line2nd {
-    top: 35%;
+    top: 38%;
     right: 25%;
 }
 #address {
     font-family: 'Cinzel Decorative';
-    font-size: 15px;
+    font-size: 20px;
     position: absolute;
     float:right;
-    top: 30%;
-    right: 21%;
+    top: 32%;
+    right: 23%;
 }
 #address span {
     font-family: 'Great Vibes';
-    font-size: 20px;
+    font-size: 25px;
     margin-left: 10px;
     letter-spacing: 1.5px;
 }
 .line3rd {
-    top: 42%;
+    top: 47%;
     right: 25%;
 }
 #mess {
     font-family: 'Indie Flower';
-    font-size: 20px;
+    font-size: 25px;
     position: absolute;
     float:right;
-    top: 37%;
+    top: 41%;
     right: 23%;
 }
 .heart {
     position: absolute;
     width:2%;
     float: right;
-    top: 38%;
-    right: 20.5%;
+    top: 32%;
+    right: 21%;
 }
 .heart img {
     width: 100%;
@@ -146,25 +149,25 @@ html, body {
 }
 #lastmess {
     font-family: 'Annie Use Your Telescope';
-    font-size: 20px;
-    position: absolute;
-    float: right;
-    top: 43%;
-    right: 23%;
-}
-#lastline {
-    font-family: 'Cinzel Decorative';
-    font-size: 10px;
+    font-size: 25px;
     position: absolute;
     float: right;
     top: 50%;
-    right: 23%;
+    right: 24%;
+}
+#lastline {
+    font-family: 'Cinzel Decorative';
+    font-size: 15px;
+    position: absolute;
+    float: right;
+    top: 60%;
+    right: 22%;
 }
 .bell {
     width: 20%;
     position: absolute;
     float: right;
-    top: 13%;
+    top: 10%;
     right: 16%;
 }
 .bell img {
@@ -175,7 +178,7 @@ html, body {
     position: absolute;
     float: right;
     top: 3%;
-    right: 26%;
+    right: 31%;
     opacity: 0.9;
 }
 .clear {
