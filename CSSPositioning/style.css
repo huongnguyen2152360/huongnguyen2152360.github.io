@@ -33,7 +33,7 @@ html, body {
     padding-top: 10px;
     color: white;
     box-shadow: 0 6px 15px 0 rgba(0,0,0,0.2);
-    height: 400px;
+    height: 380px;
 }
 .menu-lv1, .menu-lv2, .menu-lv3 {
     list-style-type: none;
@@ -112,10 +112,12 @@ html, body {
 .row {
     width: 33%;
     float: left;
+    margin: 20px 0;
 }
 .row img {
     width: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin: 20px;
 }
 .row img:hover {
     transform: translate(0,-5px);
@@ -126,7 +128,9 @@ html, body {
     padding: 20px 0;
 }
 .text input {
-    width: 100%;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 17px;
 }
 .backtotop {
     width: 100%;
@@ -135,5 +139,6 @@ html, body {
     width: 4%;
     opacity: 0.8;
     position: fixed;
-    bottom: 20%;
+    bottom: 6%;
+    right: 5%;
 }
