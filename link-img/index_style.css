@@ -1,46 +1,50 @@
-body {
+* {
+    box-sizing: border-box;
+}
+html, body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
 }
 .container {
-    margin-top: 30px;
-    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+.clear {
+    clear: both;
 }
 .header h3 {
     text-transform: uppercase;
     color: black;
     padding: auto;
     letter-spacing: 1px;
+    text-align: left;
+}
+.products {
+    width: 100%;
+    margin: 50px auto;
 }
 .row {
-    padding: auto;
+    width: 33%;
+    float: left;
     margin: 30px auto;
 }
-.products img {
-    max-width: 300px;
-    height: 200px;
-    margin: 20px auto;
-    padding: auto;
-    position: relative;
+.row img {
+    width: 100%;
 }
-.products img:hover {
+.row img:hover {
     transform: translate(0,-5px);
     transition: .5s all ease;
     -webkit-transition: .5s all ease;
     -moz-transition: .5s all ease;
 }
-.products a {
+.row a {
     color: black;
+    text-align: left;
 }
-.textOnImg {
-    position: absolute;
-    bottom: 115px;
-    z-index: 1;
-    background-color:rgb(216,68,34);
-    opacity: 0.9;
-    border-radius: 5px;
-    color: white;
-    padding: 3px;
-    font-size: 10px;
+.row h6 {
+    font-size: 15px;
+    margin-top: 20px;
 }
 .products h5 {
     color: red;
