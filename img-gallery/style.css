@@ -97,7 +97,7 @@ html, body {
     margin-top: 40px;
 }
 .bannerpic img {
-    width: 100%;
+    width: 65%;
     margin: 0 auto;
     position: relative;
 }
@@ -108,7 +108,7 @@ html, body {
     opacity: 0.9;
     padding: 30px;
     z-index: 1;
-    bottom: 25%;
+    bottom: 30%;
     left: 30%;
 }
 .welcome h3 {
