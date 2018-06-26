@@ -1,6 +1,11 @@
-body {
+* {
+    box-sizing: border-box;
+}
+html, body {
     font-family: 'Questrial';
     font-size: 16px;
+    width: 100%;
+    text-align: center;
 }
 .navbar {
     background-color: #060708;
@@ -22,12 +27,14 @@ body {
 .line-break {
     border-bottom: 1px solid #c4c9d1;
     margin-top: 30px;
+    width: 100%;
 }
 .container {
     box-sizing: border-box;
     width: 100%;
     height: calc(100% - 100px);
     padding: 0;
+    max-width: 1200px;
 }
 .menu-lv1, .menu-lv2 {
     width: 100%;
@@ -85,23 +92,24 @@ body {
     color: #c4c9d1;
 }
 .banner {
-    background: url('Img/bannerpic.png') no-repeat;
-    position: relative;
     width: 100%;
-    height: 400px;
     opacity: 0.9;
-    margin-left: 20%;
     margin-top: 40px;
+}
+.bannerpic img {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 .welcome {
     background-color: white;
     width: 40%;
-    text-align: center;
-    margin-left: 10%;
-    margin-top: 100px;
     position: absolute;
     opacity: 0.9;
-    padding: 30px 30px 10px 30px;
+    padding: 30px;
+    z-index: 1;
+    bottom: 25%;
+    left: 30%;
 }
 .welcome h3 {
     text-transform: uppercase;
@@ -122,30 +130,33 @@ body {
 }
 .gallery {
     width: 100%;
-    margin: 60px;
+    padding: 30px;
 }
-#card {
-    height: 300px;
-    margin-top: 50px;
+.row {
+    width: 33%;
+    float: left;
+    padding: 30px;
 }
-#card img {
-    width: 300px;
-    height: 200px;
+.row img {
+    width: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-#card img:hover {
-    transform: scale(1.1);
+.hidden {
+    overflow: hidden;
+}
+.row img:hover {
+    transform: scale(1.2);
     transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
     -webkit-transition: .5s ease-in-out;
 }
 .text {
-    width: 300px;
+    width: 100%;
     text-align: center;
     margin-top: 20px;
 }
 input {
-    width: 300px;
+    width: 90%;
     border: none;
     text-align: center;
 }
