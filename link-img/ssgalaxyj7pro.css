@@ -3,22 +3,25 @@
 }
 html, body {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 1.5vw;
 }
 .container {
     width: 100%;
     margin-top: 30px;
 }
-.header h3 {
+.header h2 {
     text-transform: uppercase;
     color: black;
-    padding: auto;
     letter-spacing: 1px;
+}
+.header {
+    margin: 50px auto;
 }
 .row {
     width: 33%;
+    max-width: 500px;
     float: left;
-    padding: 0 auto;
+    padding: 20px auto;
 }
 .row img {
     width: 100%;
@@ -26,9 +29,14 @@ html, body {
 .clear {
     clear: both;
 }
+.product h4 {
+    padding: 20px 0;
+    margin: 30px auto;
+}
 .product h5 {
     color: red;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 .product h5 b::after {
     content: "đ"
