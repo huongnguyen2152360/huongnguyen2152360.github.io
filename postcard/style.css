@@ -70,12 +70,20 @@ html, body {
 .textleft:hover .blackline {
     width: 100px;
     transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -webkit-animation: .5s ease-in-out;
 }
 #line7 {
     font-family: 'Alex Brush';
     font-size: 30px;
     letter-spacing: 1.5px;
     line-height: 20px;
+    animation: fadeInOut .5s ease-in-out infinite;
+}
+@keyframes fadeInOut {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
 }
 .line1st, .line2nd, .line3rd {
     position: absolute;
@@ -172,6 +180,12 @@ html, body {
 }
 .bell img {
     width: 100%;
+    animation: ringing 1s ease-in-out infinite;
+}
+@keyframes ringing {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(5deg);}
+    100% {transform: translate(0);}
 }
 .leaf {
     width: 10%;
