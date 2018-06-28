@@ -215,11 +215,12 @@ html, body {
     margin: 0;
     padding: 0;
     float: left;
+    max-height: 150px;
 }
 .col0 img {
-    width: 150px;
-    height: 150px;
-    padding: 10px;
+    max-width: 100%;
+    padding: 20px 0 20px;
+    max-height: 150px;
 }
 .contactus-info {
     width: 70%;
