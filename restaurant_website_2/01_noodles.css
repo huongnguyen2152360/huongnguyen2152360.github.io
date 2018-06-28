@@ -28,9 +28,7 @@ html, body {
     display: inline-block;
     padding: 0 15px;
 }
-.menu-lv1-item::after {
-    font-family: FontAwesome;
-    content: "\f107";
+.menu-lv1-item i {
     font-weight: bold;
     font-size: 1.2vw;
     padding: 0 5px;
