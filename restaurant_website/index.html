@@ -33,15 +33,15 @@
                 <ul class="menu-lv2">
                     <li class="menu-lv2-item"><a href="#noodles-menu">Noodles Menu</a></li>
                     <li class="menu-lv2-item"><a href="#rice-menu">Rice Menu</a></li>
-                    <li class="menu-lv2-item"><a href="#roll-menu">Roll Menu</a></li>
+                    <li class="menu-lv2-item"><a href="#roll-menu">Rolls Menu</a></li>
                     <li class="menu-lv2-item"><a href="#soup-menu">Soup Menu</a></li>
                 </ul>
             </li>
             <li class="menu-lv1-item">
-                <a href="#">Reservation</a>
+                <a href="#reservation">Reservation</a>
             </li>
             <li class="menu-lv1-item">
-                <a href="#">Contact</a>
+                <a href="#contactus">Contact</a>
             </li>
         </ul>
     </div>
@@ -59,19 +59,19 @@
     <div class="menu" id="menu">
         <h1>Our main menu</h1>
         <div class="line-break"></div>
-        <div class="menu-box">
-            <div class="noodles-title" id="noodles-menu">
+        <div class="menu-box" id="noodles-menu">
+            <div class="noodles-title">
                 <h3>Noodles Menu</h3>
             </div>
             <div class="row">
                 <div class="noodles-img">
-                    <img src="IMG/noodles_02.jpg" alt="noodles2" title="noodles2">
+                    <a href="01_noodles_01.html"><img src="IMG/noodles_02.jpg" alt="noodles2" title="noodles2"></a>
                 </div>
                 <div class="noodles-img">
-                    <img src="IMG/noodles_01.jpg" alt="noodles1" title="noodles1">
+                    <a href="01_noodles_02.html"><img src="IMG/noodles_01.jpg" alt="noodles1" title="noodles1"></a>
                 </div>
                 <div class="noodles-img">
-                    <img src="IMG/noodles_03.jpg" alt="noodles3" title="noodles3">
+                    <a href="01_noodles_03.html"><img src="IMG/noodles_03.jpg" alt="noodles3" title="noodles3"></a>
                 </div>
             </div>
         </div>
@@ -81,29 +81,29 @@
                 </div>
                 <div class="row">
                     <div class="rice-img">
-                        <img src="IMG/rice_03.jpg" alt="rice3" title="rice3">
+                        <a href="02_rice_01.html"><img src="IMG/rice_03.jpg" alt="rice3" title="rice3"></a>
                     </div>
                     <div class="rice-img">
-                        <img src="IMG/rice_01.jpg" alt="rice1" title="rice1">
+                        <a href="02_rice_02.html"><img src="IMG/rice_01.jpg" alt="rice1" title="rice1"></a>
                     </div>
                     <div class="rice-img">
-                        <img src="IMG/rice_02.jpg" alt="rice2" title="rice2">
+                        <a href="02_rice_03.html"><img src="IMG/rice_02.jpg" alt="rice2" title="rice2"></a>
                     </div>
                 </div>
             </div>
             <div class="menu-box">
                     <div class="roll-title" id="roll-menu">
-                        <h3>Roll Menu</h3>
+                        <h3>Rolls Menu</h3>
                     </div>
                     <div class="row">
                         <div class="roll-img">
-                            <img src="IMG/roll_01.jpg" alt="roll1" title="roll1">
+                            <a href="03_rolls_01.html"><img src="IMG/roll_01.jpg" alt="roll1" title="roll1"></a>
                         </div>
                         <div class="roll-img">
-                            <img src="IMG/roll_02.jpg" alt="roll2" title="roll2">
+                            <a href="03_rolls_02.html"><img src="IMG/roll_02.jpg" alt="roll2" title="roll2"></a>
                         </div>
                         <div class="roll-img">
-                            <img src="IMG/roll_03.jpg" alt="roll3" title="roll3">
+                            <a href="03_rolls_03.html"><img src="IMG/roll_03.jpg" alt="roll3" title="roll3"></a>
                         </div>
                     </div>
                 </div>
@@ -113,27 +113,57 @@
                         </div>
                         <div class="row">
                             <div class="soup-img">
-                                <img src="IMG/soup_02.jpg" alt="soup2" title="soup2">
+                                <a href="04_soup_01.html"><img src="IMG/soup_02.jpg" alt="soup2" title="soup2"></a>
                             </div>
                             <div class="soup-img">
-                                <img src="IMG/soup_01.jpg" alt="soup1" title="soup1">
+                                <a href="04_soup_02.html"><img src="IMG/soup_01.jpg" alt="soup1" title="soup1"></a>
                             </div>
                             <div class="soup-img">
-                                <img src="IMG/soup_03.jpg" alt="soup3" title="soup3">
+                                <a href="04_soup_03.html"><img src="IMG/soup_03.jpg" alt="soup3" title="soup3"></a>
                             </div>
                         </div>
                     </div>
                     <div class="clear"></div>
     </div>
-    <div class="reservation">
+    <div class="reservation" id="reservation">
         <div class="reservation-title">
             <h3>Make a Reservation</h3>
         </div>
+        <div class="reservation-call">
         <div class="reservation-phone">
             <img src="IMG/phone_icon.png" alt="phoneicon" title="phoneicon">
         </div>
         <div class="reservation-number">
-            <h4>Call us: 1800-9999</h4>
+            <h4><span id="call">Call us:</span><span id="number">1800-9999</span></h4>
         </div>
+    </div>
+    </div>
+    <div class="contactus" id="contactus">
+            <div class="col0">
+                <img src="IMG/noodles_icon.png" alt="noodlesicon" title="noodlesicon">
+            </div>
+        <div class="contactus-info">
+            <div class="col1">
+            <h5>Address</h5>
+            <p>123 Hue Street</p>
+            <p>Hanoi, Vietnam</p>
+        </div>
+        <div class="col2">
+                <h5>Opening Hours</h5>
+                <p>Mon - Fri: 9am - 10pm</p>
+                <p>Sat - Sun: 9am - 12am</p>
+            </div>
+            <div class="col3">
+                <h5>Contact</h5>
+                <p>1800-9999</p>
+                <p>vietnamese.restaurant@gmail.com</p>
+            </div>
+            <div class="col4">
+                <i class="fa fa-facebook-f" id="facebook"></i>
+                <i class="fa fa-twitter" id="twitter"></i>
+                <i class="fa fa-instagram" id="instagram"></i>
+            </div>
+            <div class="clear"></div>
+    </div>
     </div>
 </body>

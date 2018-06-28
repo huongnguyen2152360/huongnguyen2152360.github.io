@@ -9,44 +9,19 @@ html, body {
 }
 .navbar {
     width: 100%;
-    height: 50px;
     background-color: rgb(160, 4, 4);
     color: white;
-    position: relative;
     position: fixed;
     z-index: 1;
 }
 .clear {
     clear: both;
 }
-.logo {
-    width: 11%;
-    float: left;
-    top: 0;
-    left: 15%;
-    position: absolute;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    background-color: rgb(228, 218, 190);
-    z-index: 10;
-}
-.logo h4 {
-    width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(160, 4, 4);
-    text-transform: uppercase;
-    font-size: 1.3vw;
-    padding-top: 15px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-}
-.logo img {
-    width: 90%;
-    padding-top: 20px;
-}
 .menu-lv1 {
     width: 100%;
     list-style-type: none;
     margin: 0;
+    padding: 0;
     position: relative;
 }
 .menu-lv1-item {
@@ -93,88 +68,89 @@ html, body {
 .menu-lv2-item:hover {
     color: #D4AF37;
 }
-.aboutus {
-    width: 100%;
-    background: url(IMG/banner.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 30%;
-}
-.aboutus h1 {
-    color: white;
-    font-weight: bold;
-}
-.line-break {
-    border-bottom: 2.5px solid white;
-    width: 100px;
-    margin: 0 auto;
-}
-.aboutus:hover .line-break {
-    width: 130px;
-    transition: .3s ease-in-out;
-}
-.aboutus-p {
-    padding: 30px 100px 30px 100px;
-    background-color: white;
-    margin-top: 50px;
-}
-.p1-1st {
-    font-size: 2.2vw;
-    color: rgb(160, 4, 4);
-    font-weight: bold;
-    padding: 0;
-}
 .menu {
     width: 100%;
     background: url(IMG/banner3.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 30px;
+    padding: 70px 0;
 }
-.menu:hover .line-break {
-    width: 130px;
-    transition: .3s ease-in-out;
-}
-.menu h1 {
-    color: white;
-    font-weight: bold;
-    padding-top: 50px;
-}
-.noodles-title, .rice-title, .roll-title, .soup-title, .reservation-title {
+.menu-box {
     width: 100%;
-    color: white;
 }
-.noodles-title h3, .rice-title h3, .roll-title h3, .soup-title h3, .reservation-title h3{
-    padding: 0;
-    border: 1px solid white;
+.menu-box h3 {
     width: 17%;
+    border: 1px solid white;
+    color: white;
     margin: 50px auto;
+}
+.line-break {
+    border-bottom: 1.5px solid black;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.row:hover .line-break, .reservation:hover .line-break {
+    width: 130px;
+    transition: 0.5s ease-in-out;
 }
 .row {
     width: 100%;
-    padding: 30px 50px;
     background-color: white;
+    margin: 0;
 }
-.row img:hover {
-    transform: scale(1.05);
+.row {
+    width: 100%;
+    background-color: white;
+    margin-top: 70px;
+}
+.line-break2 {
+    border-bottom: 1.5px solid black;
+    width: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.row:hover .line-break2 {
+    width: 50px;
+    transition: 0.5s ease-in-out;
+}
+.row-img {
+    width: 20%;
+    float: left;
+    margin: 120px 50px 80px 50px;
+}
+.row-img img {
+    width: 100%;
+    box-shadow:  0 8px 16px rgba(0,0,0,0.2);
+}
+.row-img img:hover {
+    transform: scale(1.2);
     transition: .5s ease-in-out;
 }
-.noodles-img, .rice-img, .roll-img, .soup-img {
-    width: 33%;
-    float: left;
-    padding: 30px 60px;
+.row-info {
+    width: 65%;
+    float: right;
+    margin: 0 35px;
+    padding: 30px;
 }
-.noodles-img img, .rice-img img, .roll-img img, .soup-img img {
-    width: 100%;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+.noodles-info-title {
+    padding-bottom: 20px;
+}
+.row-info-des-para {
+    text-align: justify;
+    line-height: 30px;
+    font-style: italic;
+}
+.ingredients  {
+    border-bottom: 1px solid black;
+    font-size: 1.5vw;
+}
+.text {
+    padding-left: 10px;
 }
 .reservation {
     width: 100%;
-    background: url(IMG/banner2.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     padding-top: 30px;
-    padding-bottom: 50px;
 }
 .reservation-phone, .reservation-number {
     display: inline-block;
@@ -196,9 +172,6 @@ html, body {
     0% {transform: scale(1);}
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
-}
-.reservation-number #call {
-    border-bottom: 1px solid black;
 }
 .reservation-number #number {
     padding-left: 15px;
@@ -258,7 +231,3 @@ html, body {
     transform: translate(0,-5px);
     transition: .5s ease-in-out;
 }
-
-
-
-
