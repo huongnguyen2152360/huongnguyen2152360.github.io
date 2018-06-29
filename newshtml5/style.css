@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+.clear {
+    clear: both;
+}
+header {
+    width: 100%;
+}
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+    opacity: 0.9;
+}
+.authorname {
+    padding-top:5px;
+    width: 30%;
+    float: left;
+}
+.authorname h5 {
+    text-transform: uppercase;
+    color: rgb(160,4,4);
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.menu-lv1 {
+    width: 60%;
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-bottom: 0;
+}
+.menu-lv1-item {
+    float: right;
+    padding: 0 20px;
+    border-right: 0.5px solid gray;
+}
+.menu-lv2-item a {
+    text-decoration: none;
+    color: black;
+}
+.menu-lv2 {
+    display: none;
+}
+.menu-lv1-item:hover .menu-lv2 {
+    display: block;
+    position: absolute;
+}
+.menu-lv2-item {
+    list-style-type: none;
+}
+.menu-lv2-item:hover {
+    background-color: #a5b8be;
+}
+.banner {
+    margin: 0px auto 30px auto;
+}
+.content {
+    width: 100%;
+    padding-top: 30px;
+}
+.africa {
+    width: 100%;
+    border-top: 0.5px dashed rgba(179, 172, 172,0.3);
+}
+.africa #africa {
+    width: 7%;
+    margin: auto;
+    background-color: #4d656c;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.2vw;
+}
+.section1 {
+    width: 63%;
+    float: left;
+    margin: 30px 0 10px 20px;
+    border-right: 1px solid gray;
+}
+.aside1, .aside2 {
+    width: 30%;
+    float: left;
+    padding: 35px 0 20px 20px;
+    border-bottom: 1px dotted gray;
+    margin-left: 10px;
+}
+.aside2 {
+    margin-top: 10px;
+}
+.section-title {
+    width: 15%;
+    text-align: left;
+    padding-left: 40px;
+}
+.section-title p {
+    border: 1px solid #63808a;
+    background-color: #63808a;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+.article-title {
+    margin: 20px auto 0 auto;
+}
+.article-content {
+    padding: 15px 45px;
+    font-size: 1.2vw;
+}
+.aside1-text, .aside2-text {
+    width: 40%;
+    float: left;
+    font-size: 1vw;
+    text-align: left;
+    padding-top: 15px;
+}
+#aside1-text-title {
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.aside1-img, .aside2-img {
+    width: 55%;
+    float: left;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.aside1-img img, .aside2-img img {
+    width: 100%;
+}
+.southeast {
+    margin: 30px 0;
+    width: 100%;
+    border-top: 0.5px dashed rgba(179, 172, 172,0.3);
+}
+.southeast #southeast {
+    width: 13%;
+    margin: auto;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.2vw;
+}
+.aside3 {
+    width: 30%;
+    float: left;
+    padding: 35px 0 20px 20px;
+    border-bottom: 1px dotted gray;
+    margin-left: 10px;
+}
+.aside3-text {
+    font-size: 1vw;
+    text-align: left;
+    border-bottom: 1px dotted gray;
+}
+#aside3-text-title, #aside4-text-title, #aside5-text-title, #aside6-text-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1vw;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+footer {
+    width: 100%;
+    background-color: #525440;
+    color: #b8baa6;
+    font-size: 1.1vw;
+}
+.aboutus {
+    width: 32%;
+    float: left;
+    padding: 15px 20px 15px 80px;
+    margin: 20px 0;
+    border-right: 1px solid #64674f;
+}
+#aboutus-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.aboutus-logo, .aboutus-text {
+    display: inline-block;
+}
+.aboutus-logo-text img {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+}
+.aboutus-logo-text p{
+    text-align: justify;
+}
+.headlines {
+    width: 35%;
+    float: left;
+    border-right: 1px solid #64674f;
+    padding: 25px;
+    margin: 10px 0;
+}
+#headlines-title {
+    font-weight: bold;
+    padding: 0px 30px 0 30px;
+}
+.headlines p {
+    text-align: justify;
+    margin: 0;
+    padding: 10px 0 3px 0;
+    margin: 0 10px;
+}
+.headlines p:not(:last-child) {
+    border-bottom: 1px solid #64674f;
+}
+.aboutproject {
+    width: 30%;
+    float: left;
+    padding: 15px;
+    margin: 20px 0;
+}
+#aboutproject-title {
+    font-weight: bold;
+    padding: 0px 30px 0 30px;
+}
+.aboutproject p {
+    padding: 10px 0 3px 10px;
+    text-align: left;
+}
