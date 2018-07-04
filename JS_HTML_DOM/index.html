@@ -35,15 +35,21 @@
             }
 
             // Bài 2
+            var allP = document.querySelectorAll('p');
+            var currentFontSize = window.getComputedStyle(allP[paragraph],null)
+            function increaseFontSize(paragraph) {
+
+            }
+
             // var paras = document.getElementsByTagName("p");
             // var allP = document.querySelectorAll("p");
-            function  increaseFontSize(p) {
-                var selectP =  document.querySelectorAll(`p`);
-                var currentFontSize = window.getComputedStyle(selectP[p],null).getPropertyValue("font-size");
-                if (currentFontSize > "30px") {return;}
-                paras[p].style.fontSize += "1px";
+            // function  increaseFontSize(p) {
+            //     var selectP =  document.querySelectorAll(`p`);
+            //     var currentFontSize = window.getComputedStyle(selectP[p],null).getPropertyValue("font-size");
+            //     if (currentFontSize > "30px") {return;}
+            //     paras[p].style.fontSize += "1px";
                 
-            }
+            // }
             // Bài 3
             // Bài 4
             // Bài 5
