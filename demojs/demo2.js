@@ -11,18 +11,15 @@
 // console.log(bai1(5));
 // console.log(bai1(7));
 
-// var p = ["h","e","l","l","o"];
-// function bai2(p) {
-//     var result = p[p.length -1]
-//     for (var i = 2; i <= p.length; i++) {
-//     result = result + p[p.length - i];
-//     }
-//     return result;
-// }
-// // Test cases:
-// console.log(bai2(["w","o","r","l","d"]));
-// console.log(bai2(["l","e","v","e","l"]));
-// console.log(bai2(["h","e","l","l","o"]));
+function bai2(p) {
+        for (var i = p.length - 1; 0 <= i && i < p.length; i--) {
+            document.write(p[i]);
+        }
+    }
+    // Test cases:
+//console.log(bai2("world"));
+// console.log(bai2("level"));
+// console.log(bai2("hello"));
 
 // function duplicate(string) {
 //     for (var i = 0; i < 10; i++) {
@@ -54,16 +51,16 @@
 // console.log(bai5([1,2,3,4]));
 // console.log(bai5([5,5,99,121]));
 
-function bai6(sodu) {
-    var result = new Array();
-    for (var i = 0; i < sodu.length; i++) {
-        number = sodu[i]%2;
-        result.push(number);
-    }
-    return result;
-}
-// Test cases
-console.log(bai6([2,7,5]));
-console.log(bai6([13,27,65]));
-console.log(bai6([10,97,5]));
+// function bai6(sodu) {
+//     var result = new Array();
+//     for (var i = 0; i < sodu.length; i++) {
+//         number = sodu[i]%2;
+//         result.push(number);
+//     }
+//     return result;
+// }
+// // Test cases
+// console.log(bai6([2,7,5]));
+// console.log(bai6([13,27,65]));
+// console.log(bai6([10,97,5]));
 
