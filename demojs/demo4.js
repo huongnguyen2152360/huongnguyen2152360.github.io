@@ -103,17 +103,12 @@
 // // console.log(bai5([false, false, false, false, false, true]));
 // // console.log(bai5([false, false]));
 
+//Bài 6
 function bai6() {
-    for (var i = 1; i <= 100; i++) {
-        if (i%2 == 0) {
-            var string = i.toString();
-            document.write("<p>" + string.fontcolor("green") + "</p>");
-        }
-        else {
-            var string = i.toString();
-            document.write("<p>" + string.fontcolor("red") + "</p>");
+    for (var i = 0, j = 1; i <= 100, j <=100; i+=2, j+=2) {
+            document.write(`<p style="color:red">${i}</p>`);
+            document.write(`<p style="color:green">${j}</p>`);
         }
     }
-}
 // Test cases:
-// console.log(bai6());
+console.log(bai6());

@@ -1,11 +1,10 @@
-// function bai1(p) {
-//     if (typeof p[0] == "number" && typeof p[1] == "number") {
-//         return console.log(Math.max(...p));
-//     }
+// function bai1(a,b) {
+//     document.write(Math.max(a,b));
 // }
-// console.log(bai1([1,20]));
-// console.log(bai1(["a",20]));
-// console.log(bai1([0,-99]));
+// Test cases:
+// console.log(bai1(1,20));
+// console.log(bai1("a",20));
+// console.log(bai1(0,-99));
 
 // function bai2(n) {
 //     if (n > 0) {

@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="input">
-            <input type="text" id="inputmath"/>
+            <input value="" type="input" id="inputmath"/>
         </div>
         <div class="wrap clear">
             <div class="wrap-basic">
@@ -69,7 +69,7 @@
                         <button onclick="numb(this)" id="button-dot">.</button>
                     </div>
                     <div class="button-equal">
-                        <button onclick="numb(this)" id="button-equal">=</button>
+                        <button onclick="equalBtnn(this)" id="button-equal">=</button>
                     </div>
                     <div class="button-plus">
                         <button onclick="numb(this)" id="button-plus">+</button>
@@ -79,7 +79,7 @@
             <div class="wrap-advance">
             <div class="row-advance clear">
                 <div class="button-a2">
-                    <button id="button-a2">a<sup>2</sup></button>
+                    <button onclick = "squareBtnn()" id="button-a2">a<sup>2</sup></button>
                 </div>
                 <div class="button-ab">
                     <button id="button-ab">a
@@ -93,7 +93,7 @@
                     </button>
                 </div>
                 <div class="button-clear">
-                    <button id="button-clear"><i class="fas fa-backspace"></i></i>
+                    <button onclick="clearInputValue(this)" id="button-clear"><i class="fas fa-backspace"></i>
                     </button>
                 </div>
             </div>
@@ -144,19 +144,13 @@
                                 </button>
                             </div>
                             <div class="button-clearall">
-                                <button id="button-clearall">AC
+                                <button onclick="clearall(this)" id="button-clearall">AC
                                 </button>
                             </div>
                         </div>
         </div> <!-- End row-advance -->
     </div> <!-- End wrap -->
 </div>
-<script>
-    function numb(n) {
-        var x = n.innerText;
-        document.getElementById("inputmath").value = x;
-    }
-</script>
+<script src="javascript.js"></script>
 </body>
-
 </html>
