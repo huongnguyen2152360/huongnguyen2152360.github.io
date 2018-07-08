@@ -49,14 +49,13 @@ function bai5(x,y) {
     if (x==y) {return 3*(x+y);}
     else {return x+y;}
 }
+// console.log(bai5(2,2));
+// console.log(bai5(3,5));
 
 //6 - Viết một function đảo ngược số ví dụ 123 thành 321. Đầu vào đầu ra phải là số
 function bai6(n) {
     var n = n.toString();
-    for (var i = n.length-1; 0 <= i && i < n.length; i--) {
-        var result = document.write(n[i]);
-    }
-    return Number(result);
+    return Number(n.split("").reverse().join(""));
 }
 // console.log(bai6(123));
 // console.log(bai6(987325423));
