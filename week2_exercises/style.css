@@ -12,7 +12,6 @@ header {
     height: 800px;
     margin: 0 auto;
     background: url("banner3.jpeg") no-repeat;
-    position: relative;
 }
 .clear {
     content: "";
@@ -68,13 +67,17 @@ header {
     width: 100%;
     position: absolute;
     z-index: 1;
-    margin: 7% auto;
+    margin: 7% auto 0 auto;
+}
+.header-title:hover .line1st{
+    width: 20%;
+    transition: .3s ease-out;
 }
 .header-title-text {
     width: 40%;
     font-family: 'Amethysta';
     color: white;
-    margin: auto;
+    margin: 0 auto;
     font-size: 3.2vw;
 }
 .header-title h1 {
@@ -130,7 +133,7 @@ main {
     background-color: white;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0 0;
 }
 .main-text h2 {
     color: rgba(0,0,0,0.6);
@@ -138,6 +141,7 @@ main {
 .main-text h1 {
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 .line2nd {
     width: 5%;
@@ -147,13 +151,138 @@ main {
 }
 .main-text p {
     color: rgba(0,0,0,0.4);
-    padding: 0 25%;
+    padding: 20px 25% 15px 25%;
+}
+.main-img {
+    margin: 0 auto;
+    padding: 10px 25%;
+    width: 100%;
 }
 .main-img-item {
     width: 33%;
     float: left;
-    padding: 10px;
+    padding: 1%;
+    position: relative;
 }
 .main-img-item img {
     width: 100%;
+    height: 100%;
+}
+/* .main-overlayn-item {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    position: absolute;
+} */
+.overlayn {
+    display: none;
+}
+#needtohover:hover .overlayn {
+    transition: .5s ease;
+    display: block;
+    width: 94%;
+    height: 94%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    transform: translate(-5px,-10px);
+    box-shadow: 6px 6px rgba(107,229,212,0.7);
+    background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%, rgba(220, 132, 118, 0.75) 24%, rgba(224, 150, 121, 0.75) 42%, rgba(222, 151, 119, 0.75) 42%, rgba(221, 155, 120, 0.75) 45%, rgba(225, 167, 121, 0.75) 55%, rgba(222, 168, 121, 0.75) 57%, rgba(225, 171, 124, 0.75) 61%, rgba(224, 173, 120, 0.75) 62%, rgba(225, 180, 125, 0.75) 68%, rgba(226, 181, 122, 0.75) 70%, rgba(224, 189, 125, 0.75) 77%, rgba(227, 189, 124, 0.75) 79%, rgba(225, 195, 123, 0.75) 84%, rgba(228, 205, 125, 0.75) 100%);
+}
+.overlayn i, .overlayn p {
+    color: white;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+.overlayn i {
+    padding-top: 17%;
+}
+section {
+    width: 100%;
+    margin: 30px auto;
+    background-color: rgba(130,230,213,0.8);
+    color: white;
+}
+.block-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+.block-container-item {
+    width: 20%;
+    float: left;
+}
+.block-container-item {
+    border-left: 1px solid rgb(217,247,242);
+}
+.block-container-item:last-child {
+    border-right: 1px solid rgb(217,247,242);
+}
+.block-container-item h2 {
+    font-size: 2.8vw;
+    letter-spacing: 2px;
+    margin: 40px 0 10px 0;
+    font-family: 'Alfa Slab One';
+}
+.block-container-item p {
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    padding: 0 0 40px 0;
+}
+footer {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.footer-text h2 {
+    color: rgba(0,0,0,0.6);
+}
+.footer-text h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.rowtop {
+    width: 100%;
+    margin-top: 60px;
+}
+.row1 {
+    width: 95%;
+    margin: 0 auto;
+}
+.col {
+    width: 28%;
+    float: left;
+    margin: 0 30px;
+}
+.col-left {
+    width: 30%;
+    float: left;
+    font-size: 2vw;
+    padding-top: 20px;
+    color: rgba(130,230,213,0.8);
+}
+.col-right {
+    width: 70%;
+    float: left;
+}
+.col-right h3 {
+    text-transform: uppercase;
+    color: black;
+}
+.col-right p {
+    color: rgba(0,0,0,0.4);
+}
+.rowbot {
+    width: 100%;
+    margin-top: 20px;
+}
+.line3rd {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 95%;
+    margin: 20px auto;
 }
