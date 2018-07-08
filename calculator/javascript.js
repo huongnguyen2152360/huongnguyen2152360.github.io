@@ -18,7 +18,7 @@ function equalBtnn(m) {
         }
     }
     if (input.value[input.value.length -1] == "." || operators.indexOf(input.value[input.value.length -1]) > -1) {
-        
+    input.value = input.value.replace(/[.+-*/]/g,'');
     }
     input.value = eval(output);
 }
@@ -30,3 +30,7 @@ function clearall(a) {
 function clearInputValue(a){
     input.value = input.value.substr(0, input.value.length - 1);
 }
+function absolute(a) {
+    input.value = Math.abs(input.value);
+}
+
