@@ -3,6 +3,7 @@
 // var allButtonsText = allButtons.innerText;
 
 const input = document.getElementById("inputmath");
+const operators = ["+","-","x","÷"];
 
 function numb(n) {
     input.value += n.innerText;
@@ -15,6 +16,9 @@ function equalBtnn(m) {
         if (input.value[i] == "÷") {
             var output = input.value.replace(/÷/g, '/');
         }
+    }
+    if (input.value[input.value.length -1] == "." || operators.indexOf(input.value[input.value.length -1]) > -1) {
+        
     }
     input.value = eval(output);
 }
