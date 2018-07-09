@@ -12,6 +12,8 @@ header {
     height: 800px;
     margin: 0 auto;
     background: url("banner3.jpeg") no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .clear {
     content: "";
@@ -67,7 +69,8 @@ header {
     width: 100%;
     position: absolute;
     z-index: 1;
-    margin: 7% auto 0 auto;
+    margin: 0 auto;
+    top: 20%;
 }
 .header-title:hover .line1st{
     width: 20%;
@@ -104,11 +107,12 @@ header {
 }
 .list-intro {
     width: 100%;
-    margin: 50% auto;
+    margin: auto;
+    top: 89%;
     padding: 0;
-    position: absolute;
     z-index: 1;
     color: white;
+    position: absolute;
 }
 .list-intro-item {
     display: inline-block;
@@ -116,6 +120,10 @@ header {
     border-top: 1.5px solid white;
     border-radius: 1px;
     padding: 10px 80px 0 0;
+}
+.list-intro-item:hover {
+    border-top: 1.5px solid salmon;
+    transition: 2s ease-in-out;
 }
 .list-intro-item:not(:last-child) {
     margin: 20px 50px 0 0;
