@@ -114,16 +114,49 @@ header {
     color: white;
     position: absolute;
 }
+.line-break3 {
+    margin: auto;
+    bottom: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+}
+.line-break4 {
+    position: absolute;
+    width: 30px;
+    background-color: red;
+    height: 2px;
+}
+.line-break32 {
+    position: absolute;
+    bottom: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+.line-break33 {
+    position: absolute;
+    bottom: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+.line-break34 {
+    position: absolute;
+    bottom: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+.line-break3, .line-break32, .line-break33, .line-break34 {
+    display: inline-block;
+}
 .list-intro-item {
     display: inline-block;
     font-size: 1vw;
-    border-top: 1.5px solid white;
-    border-radius: 1px;
     padding: 10px 80px 0 0;
-}
-.list-intro-item:hover {
-    border-top: 1.5px solid salmon;
-    transition: 2s ease-in-out;
+    position: relative;
 }
 .list-intro-item:not(:last-child) {
     margin: 20px 50px 0 0;
@@ -171,34 +204,34 @@ main {
     float: left;
     padding: 1%;
     position: relative;
+    overflow: hidden;
 }
 .main-img-item img {
     width: 100%;
     height: 100%;
 }
-/* .main-overlayn-item {
-    width: 33%;
-    float: left;
-    padding: 10px;
-    position: absolute;
+/* .overlayn {
+    display: none;
 } */
 .overlayn {
     display: none;
-}
-#needtohover:hover .overlayn {
-    transition: .5s ease;
-    display: block;
     width: 94%;
-    height: 94%;
+    height: 90%;
     position: absolute;
     top: 0%;
     left: 0%;
     right: 0%;
-    bottom: 0%;
+    bottom: 1%;
     margin: auto;
-    transform: translate(-5px,-10px);
     box-shadow: 6px 6px rgba(107,229,212,0.7);
     background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%, rgba(220, 132, 118, 0.75) 24%, rgba(224, 150, 121, 0.75) 42%, rgba(222, 151, 119, 0.75) 42%, rgba(221, 155, 120, 0.75) 45%, rgba(225, 167, 121, 0.75) 55%, rgba(222, 168, 121, 0.75) 57%, rgba(225, 171, 124, 0.75) 61%, rgba(224, 173, 120, 0.75) 62%, rgba(225, 180, 125, 0.75) 68%, rgba(226, 181, 122, 0.75) 70%, rgba(224, 189, 125, 0.75) 77%, rgba(227, 189, 124, 0.75) 79%, rgba(225, 195, 123, 0.75) 84%, rgba(228, 205, 125, 0.75) 100%);
+}
+.main-img-item:hover .overlayn {
+    display: block;
+}
+.main-img-item:hover {
+    transform: translate(-5px,-5px);
+    transition: .5s ease;
 }
 .overlayn i, .overlayn p {
     color: white;
