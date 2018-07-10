@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 html, body {
     width: 100%;
@@ -70,7 +72,7 @@ header {
     position: absolute;
     z-index: 1;
     margin: 0 auto;
-    top: 20%;
+    top: 15%;
 }
 .header-title:hover .line1st{
     width: 20%;
@@ -108,8 +110,7 @@ header {
 .list-intro {
     width: 100%;
     margin: auto;
-    top: 92%;
-    left: 5%;
+    top: 88%;
     padding: 0;
     z-index: 1;
     color: white;
@@ -197,7 +198,7 @@ main {
 }
 .main-img {
     margin: 0 auto;
-    padding: 10px 25%;
+    padding: 10px 22%;
     width: 100%;
 }
 .main-img-item {
@@ -293,13 +294,16 @@ footer {
     margin-top: 60px;
 }
 .row1 {
-    width: 95%;
+    width: 58%;
     margin: 0 auto;
 }
 .col {
     width: 28%;
     float: left;
-    margin: 0 30px;
+    padding: 0;
+}
+#needmargin {
+    margin: 0 70px;
 }
 .col-left {
     width: 30%;
