@@ -108,7 +108,8 @@ header {
 .list-intro {
     width: 100%;
     margin: auto;
-    top: 89%;
+    top: 92%;
+    left: 5%;
     padding: 0;
     z-index: 1;
     color: white;
