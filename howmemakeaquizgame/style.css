@@ -1,25 +1,40 @@
 * {
     box-sizing: border-box;
     font-family: 'Annie Use Your Telescope';
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 html,body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: url('banner6.jpg') no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     text-align: center;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.container img {
+    width: 100%;
+    opacity: 0.95;
+    height: 100%;
+}
+header {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
 }
 .navbar {
     margin-top: 20px;
     text-align: left;
 }
 .navbar span {
-    padding-left: 25px;
-    font-size: 2vw;
+    padding-left: 15px;
 }
 .navbar button {
     background-color: transparent;
@@ -30,17 +45,65 @@ html,body {
     padding-left: 50px;
 }
 main {
-    margin-top: 90px;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0%;
 }
-.question, .answer {
+.content {
+    width: 80%;
+    margin: 0 auto;
+
+}
+.question {
     width: 40%;
     border: 1px solid white;
     border-radius: 20px;
-    margin: 20px auto;
-    text-align: left;
+    margin: 0 auto 30px auto;
 }
-.question p, .answer p {
+.answer {
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 0 auto 10px auto;
+}
+.answer-list {
+    margin-top: 10px;
+}
+.question p {
     padding-left: 20px;
     margin: 0;
+    text-align: left;
+    font-size: 85%;
 }
-
+.answer button {
+    font-size: 75%;
+    padding-left: 20px;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+.showFailResult {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    font-size: 2.5vw;
+}
+.tryAgain {
+    width: 100%;
+    position: absolute;
+    top: 130%;
+}
+.tryAgain button {
+    padding: 5px 15px;
+    /* opacity: 0;
+    visibility: hidden; */
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 85%;
+}

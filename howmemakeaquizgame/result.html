@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QUIZ game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="result.css" />
     <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -32,34 +32,13 @@
             </div>
         </header>
         <main>
-            <div class="content">
-                <div class="question">
-                    <p id="questionContainer">Question content ...</p>
-                </div>
-                <div class="answer-list">
-                    <div class="answer">
-                        <button onclick="ansBtn(this)" id="answer1">Answer 1</button>
-                    </div>
-                    <div class="answer">
-                        <button onclick="ansBtn(this)" id="answer2">Answer 2</button>
-                    </div>
-                    <div class="answer">
-                        <button onclick="ansBtn(this)" id="answer3">Answer 3</button>
-                    </div>
-                    <div class="answer">
-                        <button onclick="ansBtn(this)" id="answer4">Answer 4</button>
-                    </div>
-                </div>
+            <div class="showFailResult">
+                <p>You failed your fear ...</p>
+                <p>Your result is:
+                    <span id="showFailResult"></span>
+                </p>
             </div>
         </main>
-        <div class="showFailResult">
-            <p>You failed your fear ...</p>
-            <p>Your result is: <span id="showFailResult"></span></p>
-            <div class="tryAgain">
-                <button onclick="tryAgain()">Try again</button>
-            </div>
-        </div>
-
     </div>
     <script src="jvs.js"></script>
 </body>
