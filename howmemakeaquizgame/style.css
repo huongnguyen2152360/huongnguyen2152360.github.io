@@ -115,8 +115,8 @@ main {
     border: 1px solid white;
     font-size: 75%;
 }
-.tryAgain i {
-    font-size: 75%;
+.tryAgain button i {
+    font-size: 70%;
 }
 
 
