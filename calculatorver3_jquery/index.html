@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container">
+            <div class="input">
+                <input value="" type="input" id="inputmath"/>
+            </div>
+            <div class="wrap clear">
+                    <div class="row clear">
+                        <div class="button-clearall">
+                            <button onclick="clearAll(this)" id="button-clearall">AC</button>
+                        </div>
+                        <div class="button-a2">
+                                <button onclick = "squareBtnn(this)" id="button-a2">a<sup>2</sup></button>
+                            </div>
+                        <div class="button-percentage">
+                            <button onclick="percentageBtn(this)" id="button-percentage">%</button>
+                        </div>
+                        <div class="button-clear">
+                            <button onclick="clearBtn(this)" id="button-clear"><i class="fas fa-backspace"></i></button>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="button-7">
+                            <button onclick="numb(this)" id="button-7">7</button>
+                        </div>
+                        <div class="button-8">
+                            <button onclick="numb(this)" id="button-8">8</button>
+                        </div>
+                        <div class="button-9">
+                            <button onclick="numb(this)" id="button-9">9</button>
+                        </div>
+                        <div class="button-division">
+                            <button onclick="numb(this)" id="button-division">÷</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-4">
+                            <button onclick="numb(this)" id="button-4">4</button>
+                        </div>
+                        <div class="button-5">
+                            <button onclick="numb(this)" id="button-5">5</button>
+                        </div>
+                        <div class="button-6">
+                            <button onclick="numb(this)" id="button-6">6</button>
+                        </div>
+                        <div class="button-multiply">
+                            <button onclick="numb(this)" id="button-multiply">x</button>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="button-1">
+                            <button onclick="numb(this)" id="button-1">1</button>
+                        </div>
+                        <div class="button-2">
+                            <button onclick="numb(this)" id="button-2">2</button>
+                        </div>
+                        <div class="button-3">
+                            <button onclick="numb(this)" id="button-3">3</button>
+                        </div>
+                        <div class="button-minus">
+                            <button onclick="numb(this)" id="button-minus">-</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-0">
+                            <button onclick="numb(this)" id="button-0">0</button>
+                        </div>
+                        <div class="button-dot">
+                            <button onclick="numb(this)" id="button-dot">.</button>
+                        </div>
+                        <div class="button-equal">
+                            <button onclick="equalBtnn(this)" id="button-equal">=</button>
+                        </div>
+                        <div class="button-plus">
+                            <button onclick="numb(this)" id="button-plus">+</button>
+                        </div>
+                    </div> <!-- End of row -->
+                </div>
+                <div class="changeTheme">
+                    <button onclick="changeThemeBtn()" id="changeThemeBtn">Click meeeeee!</button>
+                </div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="jscript.js"></script>
+            </body>
+            </html>
