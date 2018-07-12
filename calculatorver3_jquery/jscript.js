@@ -31,4 +31,5 @@ function changeThemeBtn() {
     $('#changeThemeBtn').css('border','0.5px solid rgba(126,137,244,0.4)');
     $('#changeThemeBtn').css('box-shadow','0px 8px 16px rgba(204,209,251,0.9)');
     $('.container').css('box-shadow','0px 8px 16px rgba(204,209,251,0.9)');
+    $('.button-equal button').css('color','#1020b8');
 }
