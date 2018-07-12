@@ -56,10 +56,10 @@ main {
 
 }
 .question {
-    width: 40%;
+    width: 45%;
     border: 1px solid white;
     border-radius: 20px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 40px auto;
 }
 .answer {
     width: 40%;
@@ -71,10 +71,10 @@ main {
     margin-top: 10px;
 }
 .question p {
-    padding-left: 20px;
+    padding-left: 45px;
     margin: 0;
     text-align: left;
-    font-size: 85%;
+    font-size: 90%;
 }
 .answer button {
     font-size: 75%;
