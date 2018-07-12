@@ -20,7 +20,7 @@ html,body {
 }
 .container img {
     width: 100%;
-    opacity: 0.95;
+    opacity: 0.9;
     height: 100%;
 }
 header {
@@ -59,7 +59,7 @@ main {
     width: 40%;
     border: 1px solid white;
     border-radius: 20px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 50px auto;
 }
 .answer {
     width: 40%;
@@ -90,8 +90,19 @@ main {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 40%;
-    font-size: 2.5vw;
+    top: 35%;
+}
+.showFailResult p {
+    font-size: 3vw;
+}
+#failfear-line {
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#resultis-line {
+    padding-top: 25px;
 }
 .tryAgain {
     width: 100%;
@@ -100,10 +111,12 @@ main {
 }
 .tryAgain button {
     padding: 5px 15px;
-    /* opacity: 0;
-    visibility: hidden; */
     background-color: transparent;
     border: 1px solid white;
-    border-radius: 10px;
-    font-size: 85%;
+    font-size: 75%;
 }
+.tryAgain i {
+    font-size: 75%;
+}
+
+

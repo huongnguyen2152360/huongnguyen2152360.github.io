@@ -18,13 +18,17 @@
         <header>
             <div class="navbar">
                 <div class="sound-on">
-                    <button id="sound-on">
+                    <audio id="myAudio">
+                        <source src="thunderstorm.mp3" type="audio/mpeg">
+                        <source src="thunderstorm.ogg" type="audio/ogg">
+                    </audio>
+                    <button onclick="soundOnBtn()" id="sound-on">
                         <i class="fas fa-volume-up"></i>
                         <span>Volume on</span>
                     </button>
                 </div>
                 <div class="sound-off">
-                    <button id="sound-off">
+                    <button onclick="soundOffBtn()" id="sound-off">
                         <i class="fas fa-volume-off"></i>
                         <span>Volume off</span>
                     </button>
@@ -53,10 +57,15 @@
             </div>
         </main>
         <div class="showFailResult">
-            <p>You failed your fear ...</p>
-            <p>Your result is: <span id="showFailResult"></span></p>
+            <p id="failfear-line">You failed your fear!</p>
+            <p id="resultis-line">Your result is:
+                <span id="showFailResult"></span>
+            </p>
             <div class="tryAgain">
-                <button onclick="tryAgain()">Try again</button>
+                <button onclick="tryAgain()">
+                    <span>Try again </span>
+                    <i class="fas fa-redo-alt"></i>
+                </button>
             </div>
         </div>
 

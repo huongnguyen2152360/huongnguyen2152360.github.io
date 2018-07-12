@@ -58,6 +58,7 @@ var answerNo4 = document.getElementById("answer4");
 var showFailResult = document.getElementById("showFailResult");
 var a = document.querySelector(".showFailResult");
 var content = document.querySelector(".content");
+var mySound = document.getElementById("myAudio");
 
 questionContainer.innerText = items[0].question;
 answerNo1.innerText = items[0].answers.a;
@@ -79,15 +80,28 @@ function ansBtn(n) {
                 }
                 else {results = results}
             }
+        if (results < 5) {
             content.style.opacity = "0";
             content.style.visibility = "hidden";
             a.style.opacity = "1";
             a.style.visibility = "visible";
-            return showFailResult.innerText = results + "/5.";
+            return showFailResult.innerText = results + "/5.";}
+        if (results == 5) {
+            location.assign('congrats.html');
+        }
         }
         questionContainer.innerText = items[numberQuestion].question;
         answerNo1.innerText = items[numberQuestion].answers.a;
         answerNo2.innerText = items[numberQuestion].answers.b;
         answerNo3.innerText = items[numberQuestion].answers.c;
         answerNo4.innerText = items[numberQuestion].answers.d;
+}
+function tryAgain() {
+    location.assign(location.href);
+}
+function soundOnBtn() {
+    mySound.play();
+}
+function soundOffBtn() {
+    mySound.pause();
 }

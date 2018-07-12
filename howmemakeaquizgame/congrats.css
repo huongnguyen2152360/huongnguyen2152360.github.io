@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Annie Use Your Telescope';
+    font-size: 2.3vw;
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container img {
+    width: 100%;
+    opacity: 0.9;
+    height: 100%;
+}
+header {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+}
+.navbar {
+    margin-top: 20px;
+    text-align: left;
+}
+.navbar span {
+    padding-left: 15px;
+}
+.navbar button {
+    background-color: transparent;
+    border: none;
+}
+.sound-on, .sound-off {
+    display: inline-block;
+    padding-left: 50px;
+}
+main {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+}
+#congrats-line {
+    font-size: 4vw;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: fadeInText 2s linear;
+}
+@keyframes fadeInText {
+    0% {opacity: 0;}
+    50% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+#warning-line {
+    padding: 20px 0;
+    animation: fadeIn 5s linear;
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+#continue-line {
+    text-align: right;
+    padding-right: 30%;
+    font-size: 80%;
+    animation: fadeInIn 5s linear;
+}
+@keyframes fadeInIn {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+.showSuccessResult button {
+    margin-top: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.9);
+    padding: 5px 15px;
+    animation: fadeInInText 7s linear;
+}
+@keyframes fadeInInText {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    75% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
