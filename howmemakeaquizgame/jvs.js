@@ -97,7 +97,7 @@ function ansBtn(n) {
         answerNo4.innerText = items[numberQuestion].answers.d;
 }
 function tryAgain() {
-    location.assign(location.href);
+    location.reload();
 }
 function soundOnBtn() {
     mySound.play();
