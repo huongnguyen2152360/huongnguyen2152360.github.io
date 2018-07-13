@@ -60,12 +60,6 @@ html,body {
     top:0;
     left:0;
 }
-.card:hover .front {
-    transform: rotateY(0deg);
-}
-.card:hover .back{
-    transform: rotateY(180deg);
-}
 .card .front, .card .back {
     transition: all 0.5s;
     backface-visibility: hidden;
