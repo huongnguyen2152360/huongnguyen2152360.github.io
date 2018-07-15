@@ -29,12 +29,13 @@ html,body {
 }
 .navbar {
     width: 100%;
-    padding: 20px 0 20px 20px;
+    padding: 10px 0 10px 20px;
     background-color: rgba(0,0,0,0.7);
     position: absolute;
     top: 0;
     color: white;
     position: fixed;
+    z-index: 10;
 }
 .logo {
     width: 10%;
@@ -48,23 +49,49 @@ html,body {
 .menu {
     width: 80%;
     float: left;
-    padding-left: 30%;
+    text-align: right;
 }
 .menu-item {
     list-style-type: none;
     display: inline-block;
     padding: 0 15px;
 }
-.content {
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+}
+.content-event-desc, .content-event-schedule,
+.content-event-speakers, .content-event-signup {
     width: 100%;
 }
-.wrap {
-    max-width: 1140px;
-    margin: 0 auto;
+.content-event-desc-title, .content-event-schedule-title,
+.content-event-speakers-title, .content-event-signup-title {
+    width: 100%;
+    padding: 30px 0;
 }
-.event-desc, .event-schedule {
-    padding-top: 30px;
+.content-event-desc-title h1, .content-event-schedule-title h1,
+.content-event-speakers-title h1, .content-event-signup-title h1 {
+    margin: 0 auto;
+    width: 20%;
+    padding: 20px 10px;
+    border: 1px solid white;
+    color: white;
+}
+main {
+    background: url('banner5.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrap {
+    width: 100%;
+    margin: 0 auto;
     background-color: rgba(255,255,255);
+}
+.event-desc {
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 .event-desc h1 {
     padding-bottom: 30px;
@@ -74,10 +101,15 @@ html,body {
 #event-desc-1 {
     padding-top: 20px;
 }
-.event-desc-time, .event-desc-place {
+.event-desc-time {
     width: 55%;
     margin: 0 auto;
-    padding: 30px 10px;
+    padding: 30px 10px 15px 10px;
+}
+.event-desc-place {
+    width: 55%;
+    margin: 0 auto;
+    padding: 15px 10px 30px 10px;
 }
 .event-desc-time i, .event-desc-place i {
     float: left;
@@ -87,31 +119,114 @@ html,body {
 #event-desc-time-text, #event-desc-place-text {
     width: 80%;
     float: left;
-    text-align: left;
+    text-align: justify;
 }
-.event-schedule-display {
-    width: 55%;
+.event-schedule-title {
+    width: 100%;
+}
+.event-schedule {
+    width: 45%;
     margin: 0 auto;
+    padding: 30px 0 30px 50px;
 }
-.event-schedule-time {
-    width: 15%;
-    float: left;
-    position: relative;
+.schedl {
+    display: flex;
+    align-items: center;
+}
+.schedl-time {
+    padding: 10px 10px 10px 0;
+}
+.schedl-desc {
+    padding-left: 25px;
+}
+.schedl-desc p {
+    text-align: justify;
+}
+.speakers-img {
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.speakers-img img:hover {
+    transform: translateY(-5px);
+    transition: .5s ease;
+}
+.speakers-img img {
+    padding: 10px;
+}
+.speakers-info {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 30px 30px;
+}
+.speakers-info-details {
+    padding: 10px;
+}
+.speakers-info-details h2 {
+    padding-bottom: 10px;
+}
+.speakers-info-details p {
     font-size: 90%;
 }
-.event-schedule-time-1, .event-schedule-time-2, .event-schedule-time-3,
-.event-schedule-time-4 {
-    padding: 20px 10px;
+.signup-form {
+    width: 45%;
+    margin: 0 auto;
+    padding: 30px 0;
 }
-.event-schedule-time-1 {
-    background-color: rgb(192,26,26);
+footer {
+    width: 100%;
 }
-.event-schedule-time p {
-    text-align: center;
+.wrap-footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(0,128,73);
 }
-.event-schedule-text {
-    width: 70%;
-    float: left;
-    position: absolute;
-    padding-left: 20%;
+.footer-content {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.footer-content-left {
+    padding: 40px 60px 40px 20px;
+}
+.footer-content-right {
+    padding: 40px 0 40px 20px;
+}
+.footer-content-left p, .footer-content-right p {
+    text-align: justify;
+    color: rgba(255,255,255,0.8);
+    font-size: 90%;
+}
+.line-before {
+    background-color: rgba(255,255,255,0.8);
+    width: 1px;
+    height: 100px;
+    margin-left: 20px;
+}
+.line-before2 {
+    background-color: rgba(255,255,255,0.8);
+    width: 1px;
+    height: 100px;
+    margin-left: 60px;
+}
+.footer-logo {
+    padding-right: 55px;
+    padding-left: 10px;
+}
+.footer-logo img {
+    background-color: transparent;
+}
+.techmaster {
+    padding-bottom: 30px;
+}
+.techmaster p {
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
 }

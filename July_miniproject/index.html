@@ -13,79 +13,161 @@
 
 <body>
     <div class="container">
-        <div class="banner">
+        <div class="banner" id="trangchu">
             <img src="banner3.JPG">
             <div class="navbar clear">
                 <div class="logo">
                     <h1>logo</h1>
                 </div>
                 <ul class="menu">
-                    <li class="menu-item">Trang chủ</li>
-                    <li class="menu-item">Mô tả sự kiện</li>
-                    <li class="menu-item">Chương trình</li>
-                    <li class="menu-item">Diễn giả</li>
-                    <li class="menu-item">Đăng ký</li>
+                    <li class="menu-item">
+                        <a href="#trangchu">Trang chủ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#motasukien">Mô tả sự kiện</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#chuongtrinh">Chương trình</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#diengia">Diễn giả</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#dangky">Đăng ký</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="content">
-            <div class="wrap">
-                <!-- Include width for content-->
-                <div class="event-desc">
+        <main>
+            <div class="content-event-desc">
+                <div class="content-event-desc-title" id="motasukien">
                     <h1>Mô tả sự kiện</h1>
-                    <p id="event-desc-1">Demo về STEM, Robot (Lego), Arduino, Tech Robot STEM 2018</p>
-                    <div class="event-desc-time">
-                        <i class="fas fa-clock"></i>
-                        <p id="event-desc-time-text">Thứ 7, 28/7/2018 14:30 đến 17:30</p>
-                    </div>
-                    <div class="event-desc-place">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p id="event-desc-place-text">Bishub.vn, Số 142B Đê La Thành, P.Thổ Quan, Q.Đống Đa, Hà Nội ( 360 Xã Đàn rẽ vào 10m)</p>
+                </div>
+                <div class="wrap">
+                    <!-- Include width for content-->
+                    <div class="event-desc">
+                        <p id="event-desc-1">Demo về STEM, Robot (Lego), Arduino, Tech Robot STEM 2018</p>
+                        <div class="event-desc-time clear">
+                            <i class="fas fa-clock"></i>
+                            <p id="event-desc-time-text">Thứ 7, 28/7/2018 14:30 đến 17:30</p>
+                        </div>
+                        <div class="event-desc-place clear">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p id="event-desc-place-text">Bishub.vn, Số 142B Đê La Thành, P.Thổ Quan, Q.Đống Đa, Hà Nội ( 360 Xã Đàn rẽ vào 10m)</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content">
-            <div class="wrap">
-                <!-- Include width for content-->
-                <div class="event-schedule">
+            <div class="content-event-schedule">
+                <div class="content-event-schedule-title" id="chuongtrinh">
                     <h1>Chương trình</h1>
-                    <div class="event-schedule-display clear">
-                        <div class="event-schedule-time">
-                            <div class="event-schedule-time-1">
-                                <p>14:30</p><p id="break">-</p><p>14:45</p>
+                </div>
+                <div class="wrap">
+                    <div class="event-schedule">
+                        <div class="schedl">
+                            <div class="schedl-time" id="schedl-time1">
+                                <p>14:30</p>
+                                <p>-</p>
+                                <p>14:45</p>
                             </div>
-                            <div class="event-schedule-time-2">
-                                    <p>14:45</p><p id="break">-</p><p>15:15</p>
-                            </div>
-                            <div class="event-schedule-time-3">
-                                    <p>15:20</p><p id="break">-</p><p>15:50</p>
-                            </div>
-                            <div class="event-schedule-time-4">
-                                    <p>15:50</p><p id="break">-</p><p>16:20</p>
-                            </div>
-                        </div>
-                        <div class="event-schedule-text">
-                            <div class="event-schedule-text-1">
+                            <div class="schedl-desc">
                                 <p>Welcome guests</p>
                             </div>
-                            <div class="event-schedule-text-2">
-                                <p>Programming Arduino using Scratch -- presented by Mr. Dũng, trainer of Techmaster</p>
+                        </div>
+                        <div class="schedl">
+                            <div class="schedl-time">
+                                <p>14:45</p>
+                                <p>-</p>
+                                <p>15:15</p>
                             </div>
-                            <div class="event-schedule-text-3">
-                                <p>Lego FIRST competition -- presented by you</p>
+                            <div class="schedl-desc">
+                                <p>Programming Arduino using Scratch - presented by Mr. Dũng, trainer of Techmaster</p>
                             </div>
-                            <div class="event-schedule-text-4">
+                        </div>
+                        <div class="schedl">
+                            <div class="schedl-time">
+                                <p>15:20</p>
+                                <p>-</p>
+                                <p>15:50</p>
+                            </div>
+                            <div class="schedl-desc">
+                                <p>Lego FIRST competition - presented by you</p>
+                            </div>
+                        </div>
+                        <div class="schedl">
+                            <div class="schedl-time">
+                                <p>15:50</p>
+                                <p>-</p>
+                                <p>16:20</p>
+                            </div>
+                            <div class="schedl-desc">
                                 <p>How to do airplane - tank modeling - presented by Mr. Phuong, airplane modeler, Mr. Dũng
-                                    tank modeler
-                                </p>
+                                    tank modeler</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="content-event-speakers">
+                    <div class="content-event-speakers-title" id="diengia">
+                        <h1>Diễn giả</h1>
+                    </div>
+                    <div class="wrap">
+                        <div class="speakers-img">
+                            <img src="s1.jpg">
+                            <img src="s2.jpg">
+                            <img src="s3.jpg">
+                        </div>
+                        <div class="speakers-info">
+                            <div class="speakers-info-details">
+                                <h2>Name</h2>
+                                <p>This is some text about our speaker.</p>
+                            </div>
+                            <div class="speakers-info-details">
+                                <h2>Name</h2>
+                                <p>This is some text about our speaker.</p>
+                            </div>
+                            <div class="speakers-info-details">
+                                <h2>Name</h2>
+                                <p>This is some text about our speaker.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-event-signup">
+                    <div class="content-event-signup-title" id="dangky">
+                        <h1>Đăng ký</h1>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="signup-form">
+                        <p>Insert sign up form here</p>
+                    </div>
+                </div>
+        </main>
+<footer>
+    <div class="wrap-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo33.jpg">
+            </div>
+            <div class="line-before"></div>
+            <div class="footer-content-left">
+                <p>Some few text...</p>
+                <p>Some few text...</p>
+                <p>Some few text...</p>
+            </div>
+            <div class="line-before2"></div>
+            <div class="footer-content-right">
+                <p>Some few text</p>
+                <p>Some few text...</p>
+                <p>Some few text...</p>
             </div>
         </div>
-
+        <div class="techmaster">
+            <p>Techmaster &reg;</p>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
