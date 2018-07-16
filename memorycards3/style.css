@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+}
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.clear {
+    content: "";
+    display:table;
+    clear: both;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrap img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top:20%;
+    left:0;
+}
+.cards-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 90px;
+}
+.cards-container-row {
+    width: 100%;
+    margin: 0 auto;
+    height: 20%;
+}
+.card {
+    width: 12.5%;
+    float: left;
+    position: relative;
+    padding: 5px;
+
+}
+.front, .back {
+    width: 100%;
+}
+.front {
+    width: 100%;
+    transform: rotateY(180deg);
+    position: absolute;
+    padding: 5px;
+    top:0;
+    left:0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.card .front, .card .back {
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+.flip-front {
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+.flip-back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(255,255,255);
+}
+
+
