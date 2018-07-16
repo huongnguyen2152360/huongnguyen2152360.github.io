@@ -1,29 +1,29 @@
-const input = $("#inputmath");
-const changeTheme = $('#changeBtn');
 const operators = ["+", "-", "x", "÷"];
-
+let content ='';
+var m = $("#inputmath").val(); //vì replace áp dụng cho string thôi 
 function numb(n) {
-    input.value += n.innerText;
+    content += n.innerText;
+    $("#inputmath").val(content);
+    console.log(content);
 }
 function clearAll(n) {
-    input.value = "";
+    $("#inputmath").val() = "";
 }
 function clearBtn(n) {
-    input.value = input.value.substr(0, input.value.length - 1);
+    m = m.substr(0, m.length - 1);
 }
 function percentageBtn(n) {
-    input.value = input.value / 100;
+    $("#inputmath").val() = $("#inputmath").val() / 100;
 }
 function squareBtnn(n) {
-    input.value = (input.value) ** 2;
+    $("#inputmath").val() = ($("#inputmath").val()) ** 2;
 }
 function equalBtnn(n) {
-    var output = input.value.replace(/x/g, '*').replace(/÷/g, '/');
-    if (input.value[input.value.length - 1] == "." || operators.indexOf(input.value[input.value.length - 1]) > -1) {
-        input.value.replace(/[.+-*/]/g, '');
+    var output = m.replace(/x/g, '*').replace(/÷/g, '/');
+    if (m[m.length - 1] == "." || operators.indexOf(m[m.length - 1]) > -1) {
+    m.replace(/[.+-*/]/g, '');
     }
-    console.log(output);
-    input.value = eval(output);
+    $("#inputmath").val(eval(output));
 }
 function changeThemeBtn() {
     $('input').css('background','linear-gradient(to bottom right, #dcdffc 0%, #08105a 100%)');
