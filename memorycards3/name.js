@@ -37,6 +37,16 @@ function loadCard() {
           </div>`
     );
   }
+  var remainingTime = 60;
+  var run = setInterval(function() {
+    remainingTime--;
+    console.log(remainingTime);
+    if (remainingTime == 0) {
+      clearInterval(run);
+      console.log("You lost");
+    }
+    
+  }, 1000);
 }
 function shuffle(array) {
   return array.sort(() => {
@@ -44,6 +54,7 @@ function shuffle(array) {
   });
 }
 var current = null;
+var count = 0;
 function clickCard() {
   $(".card").click(function() {
     // console.log($(this));
@@ -53,33 +64,37 @@ function clickCard() {
     $(this)
       .find(".back")
       .addClass("flip-back");
-    $(this).css('pointer-events', 'none');
+    $(this).css("pointer-events", "none");
     if (!current) {
       //check if current = null // !null == true
       current = $(this);
     } else {
       if (current.attr("data-name") != $(this).attr("data-name")) {
         setTimeout(() => {
-          current.find('.front').toggleClass("flip-front");
-          current.find('.back').toggleClass("flip-back");
-          $(this).find('.front').toggleClass("flip-front");
-          $(this).find('.back').toggleClass("flip-back");
-          $('.card').css('pointer-events', 'auto');
-          document.getElementById('wrong-sound').play();
+          current.find(".front").toggleClass("flip-front");
+          current.find(".back").toggleClass("flip-back");
+          $(this)
+            .find(".front")
+            .toggleClass("flip-front");
+          $(this)
+            .find(".back")
+            .toggleClass("flip-back");
+          $(".card").css("pointer-events", "auto");
+          document.getElementById("wrong-sound").play();
           current = null;
         }, 400);
-        // console.log("Different!");
       } else {
         setTimeout(() => {
-          current.css('opacity','0');
-          $(this).css('opacity','0');
+          current.css("opacity", "0");
+          $(this).css("opacity", "0");
         }, 300);
-        document.getElementById('correct-sound').play();
-        // console.log("The same~");    
+        document.getElementById("correct-sound").play();
+        count++;
       }
     }
   });
 }
+
 $(function() {
   shuffle(imgs);
   loadCard();

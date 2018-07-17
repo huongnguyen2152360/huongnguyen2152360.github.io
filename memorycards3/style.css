@@ -87,7 +87,7 @@ html,body {
     -o-transform: rotateY(180deg);
 }
 .card:hover {
-    box-shadow: 0 8px 16px rgba(255,255,255);
+    box-shadow: 0 5px 25px rgba(255,255,255,0.7);
 }
 
 
