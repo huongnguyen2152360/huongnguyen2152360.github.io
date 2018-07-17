@@ -67,6 +67,10 @@ html,body {
 .card .front, .card .back {
     transition: all 0.5s;
     backface-visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 .flip-front {
     transform: rotateY(0deg);

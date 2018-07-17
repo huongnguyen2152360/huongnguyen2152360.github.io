@@ -1,35 +1,34 @@
 const operators = ["+", "-", "x", "÷"];
 let content ='';
-var m = $("#inputmath").val(); //vì replace áp dụng cho string thôi 
 function numb(n) {
-    content += n.innerText;
-    $("#inputmath").val(content);
-    console.log(content);
+    $("#inputmath")[0].value += n.innerText;
+    console.log($("#inputmath")[0].value);
 }
 function clearAll(n) {
-    $("#inputmath").val() = "";
+    $("#inputmath")[0].value = "";
 }
 function clearBtn(n) {
-    m = m.substr(0, m.length - 1);
+    $("#inputmath")[0].value = $("#inputmath")[0].value.substr(0, $("#inputmath")[0].value.length - 1);
 }
 function percentageBtn(n) {
-    $("#inputmath").val() = $("#inputmath").val() / 100;
+    $("#inputmath")[0].value = $("#inputmath")[0].value / 100;
 }
 function squareBtnn(n) {
-    $("#inputmath").val() = ($("#inputmath").val()) ** 2;
+    $("#inputmath")[0].value = ($("#inputmath")[0].value) ** 2;
 }
 function equalBtnn(n) {
-    var output = m.replace(/x/g, '*').replace(/÷/g, '/');
-    if (m[m.length - 1] == "." || operators.indexOf(m[m.length - 1]) > -1) {
-    m.replace(/[.+-*/]/g, '');
+    var output = $("#inputmath")[0].value.replace(/x/g, '*').replace(/÷/g, '/');
+    if ($("#inputmath")[0].value[$("#inputmath")[0].value.length - 1] == "." || operators.indexOf($("#inputmath")[0].value[$("#inputmath")[0].value.length - 1]) > -1) {
+    $("#inputmath")[0].value.replace(/[.+-*/]/g, '');
     }
-    $("#inputmath").val(eval(output));
+    $("#inputmath")[0].value = eval(output);
 }
-function changeThemeBtn() {
-    $('input').css('background','linear-gradient(to bottom right, #dcdffc 0%, #08105a 100%)');
-    $('.wrap').css('border','0.5px solid rgba(126,137,244,0.4)');
-    $('#changeThemeBtn').css('border','0.5px solid rgba(126,137,244,0.4)');
-    $('#changeThemeBtn').css('box-shadow','0px 8px 16px rgba(204,209,251,0.9)');
-    $('.container').css('box-shadow','0px 8px 16px rgba(204,209,251,0.9)');
-    $('.button-equal button').css('color','#1020b8');
-}
+
+$('#changeThemeBtn').click(function() {
+    $('input').toggleClass('changeInput');
+    $('.wrap').toggleClass('changeBorder');
+    $('#changeThemeBtn').toggleClass('changeBorder');
+    $('#changeThemeBtn').toggleClass('changeBoxShadow');
+    $('.container').toggleClass('changeBoxShadow');
+    $('.button-equal button').toggleClass('changeEqualBtn');
+})
