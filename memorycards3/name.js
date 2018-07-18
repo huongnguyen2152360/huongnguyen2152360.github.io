@@ -43,10 +43,6 @@ function loadCard() {
     $("progress")[0].value = remainingTime;
     if (remainingTime == 0) {
       clearInterval(run);
-      $(".progress-bar").addClass("vanish");
-      $(".content").addClass("vanish");
-      $(".lose-content").addClass("appear");
-      $(".playagainBtn").addClass("appear");
     }
   }, 1000);
 }
