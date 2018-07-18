@@ -6,6 +6,7 @@
     font-size: 3vw;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+    cursor: default;
 }
 
 html, body {
@@ -100,6 +101,7 @@ html, body {
 
 .back:hover img {
     box-shadow: 0 5px 25px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
 }
 
 .soundOnBtn {
@@ -145,6 +147,7 @@ html, body {
 .soundOnBtn:hover i, .soundOnBtn:hover p, .soundOffBtn:hover i, .soundOffBtn:hover p {
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0 2px 30px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .progress-bar {
@@ -258,6 +261,7 @@ progress::-webkit-progress-value {
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     box-shadow: 0 2px 30px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 .vanish {
     opacity: 0;

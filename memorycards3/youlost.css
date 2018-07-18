@@ -6,6 +6,7 @@
     font-size: 3vw;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+    cursor: default;
 }
 
 html, body {
@@ -98,4 +99,5 @@ html, body {
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     box-shadow: 0 2px 30px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
