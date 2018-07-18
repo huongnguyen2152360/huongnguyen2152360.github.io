@@ -173,7 +173,9 @@ html, body {
     color: white;
     font-size: 90%;
 }
-
+.menu-item:hover a {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
 .content-event-desc, .content-event-schedule, .content-event-speakers, .content-event-signup {
     width: 100%;
 }
@@ -345,14 +347,6 @@ main {
 .speakers-img img {
     padding: 30px;
 }
-
-/* .speakers-info {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 0 30px 30px 30px;
-} */
 
 .speakers-info-details {
     padding: 10px 30px;
