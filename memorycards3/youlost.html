@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Test your memory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="youlost.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
@@ -14,25 +14,18 @@
 </head>
 
 <body>
+    <audio id ="laughSound" src="sound/laughSoundcut.mp3" type="audio/mpeg"></audio>
     <div class="wrap">
         <img src="img/banner6.jpg">
-        <div class="soundOnBtn">
-            <i class="fas fa-microphone-alt"></i>
-            <p>Volume on</p>
-        </div>
-        <div class="soundOffBtn">
-            <i class="fas fa-microphone-slash"></i>
-            <p>Volume off</p>
-        </div>
         <div class="lose-content">
-                <p>You lost!</p>
-            </div>
-            <div class="playagainBtn">
-                <p>Play again?</p>
-            </div>
+            <p>You lost!</p>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="name.js"></script>
+        <div class="playagainBtn">
+            <p>Play again?</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="youlost.js"></script>
 </body>
 
 </html>

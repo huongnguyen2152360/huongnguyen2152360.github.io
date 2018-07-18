@@ -5,5 +5,5 @@ $('.soundOffBtn').click(function(){
     document.getElementById("game-sound").pause();
 })
 $('.startgameBtn').click(function(){
-    location.assign('index.html');
+    location.assign('gameplay.html');
 })

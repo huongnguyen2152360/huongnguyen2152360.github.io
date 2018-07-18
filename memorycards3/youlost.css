@@ -24,11 +24,12 @@ html, body {
     height: 100%;
     opacity: 0.9;
 }
+
 .lose-content {
     width: 100%;
     position: absolute;
     top: 30%;
-    display: none;
+    right: 10%;
 }
 .lose-content p {
     width: 100%;
@@ -79,7 +80,7 @@ html, body {
     width: 100%;
     position: absolute;
     top: 42%;
-    display: none;
+    right: 10%;
 }
 .playagainBtn p {
     font-size: 90%;

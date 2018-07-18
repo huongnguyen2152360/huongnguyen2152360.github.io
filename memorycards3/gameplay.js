@@ -43,6 +43,7 @@ function loadCard() {
     $("progress")[0].value = remainingTime;
     if (remainingTime == 0) {
       clearInterval(run);
+      location.assign('youlost.html');
     }
   }, 1000);
 }
@@ -112,6 +113,12 @@ function clickCard() {
 $(".playagainBtn").click(function() {
   location.reload();
 });
+$('.soundOnBtn').click(function(){
+  document.getElementById("game-sound").play();
+})
+$('.soundOffBtn').click(function(){
+  document.getElementById("game-sound").pause();
+})
 function hack() {
   $(".card")
     .find(".front")
