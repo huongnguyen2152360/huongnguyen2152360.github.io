@@ -22,7 +22,7 @@ html,body {
 .banner img {
     width: 100%;
 }
-.form-container {
+form {
     width: 30%;
     position: absolute;
     top: 5%;
