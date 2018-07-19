@@ -22,20 +22,26 @@ html,body {
 .banner img {
     width: 100%;
 }
-.form-container, .form-container2 {
-    width: 100%;
+.form-container {
+    width: 30%;
     position: absolute;
-    top: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    -webkit-transform: translate(-50%,-70%);
+    -moz-transform: translate(-50%,-70%);
+    -ms-transform: translate(-50%,-70%);
+    -o-transform: translate(-50%,-70%);
 }
 .form, .form2 {
-    width: 30%;
+    /* width: 30%; */
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.5);
 }
 .form-name, .form-name2 {
-    width: 30%;
+    /* width: 30%; */
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.5);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: left;
@@ -51,11 +57,11 @@ html,body {
     cursor: pointer;
 }
 .form-name p {
-    width: 18%;
+    /* width: 18%; */
     text-transform: uppercase;
     border-bottom: 1px solid rgb(107,144,114);
     font-weight: 100;
-    font-size: 90%;
+    font-size: 0.8rem;
     display: inline-block;
     margin-left: 9%;
 }
@@ -64,7 +70,7 @@ html,body {
     text-transform: uppercase;
     border-bottom: 1px solid rgb(107,144,114);
     font-weight: 100;
-    font-size: 90%;
+    font-size: 0.8rem;
     display: inline-block;
     margin-left: -12%;
 }
@@ -105,7 +111,7 @@ html,body {
     margin-top: 5px;
     border-radius: 20px;
     border: none;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.5);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
