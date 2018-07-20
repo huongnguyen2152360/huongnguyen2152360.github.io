@@ -15,7 +15,7 @@
         <div class="banner">
             <img src="banner2.jpeg">
         </div>
-        <form action="success.html" method="get" target="_blank">
+        <form action="success.html" method="get" target="_blank" id="signUpForm">
             <div class="form-name">
                 <p>sign up</p>
             </div>
@@ -24,13 +24,13 @@
                     <label for="username">
                         <p>Username</p>
                     </label>
-                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="text" id="username" name="username" placeholder="Username"><span class="err"></span>
                 </div>
                 <div class="dob">
                     <label for="dob">
                         <p>Date of birth</p>
                     </label>
-                    <input type="text" id="dob" name="dob" placeholder="Date of birth">
+                    <input type="text" id="dob" name="dob" placeholder="Date of birth"><span class="err"></span>
                 </div>
                 <div class="gender"><p id="gender">Gender</p>
                     <div class="gender-select">
@@ -46,7 +46,7 @@
                 </div>
                 <div class="address">
                     <label for="address">
-                        <p>Address</p>
+                        <p>Facebook address</p>
                     </label>
                     <input type="text" id="address" name="address" placeholder="Address">
                 </div>
@@ -60,13 +60,13 @@
                     <label for="email">
                         <p>email</p>
                     </label>
-                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email"><span class="err"></span>
                 </div>
                 <div class="password">
                     <label for="password">
                         <p>Password</p>
                     </label>
-                    <input type="password" id="password" name="password" placeholder="Password">
+                    <input type="password" id="password" name="password" placeholder="Password"><span class="err"></span>
                 </div>
                 <div class="submitBtn">
                     <input type="submit" value="sign up">
@@ -74,6 +74,8 @@
             </div>
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>

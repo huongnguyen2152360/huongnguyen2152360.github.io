@@ -74,6 +74,7 @@ form {
 .username input, .dob input, .password input, .address input, .pnumber input,
 .email input {
     width: 80%;
+    position:relative;
 }
 .username label p, .dob label p, .password label p, .address label p, .pnumber label p,
 .email label p {
@@ -159,4 +160,9 @@ input[type=submit] {
 input[type=submit]:hover {
     cursor: pointer;
     box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+.err {
+    font-size: 0.9vw;
+    position: absolute;
+    font-style: italic;
 }

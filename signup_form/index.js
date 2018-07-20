@@ -1,18 +1,21 @@
-var aString = $('.info p').html(location.href)[0].innerText;
-var quote = aString.substr(aString.search('html?')+5,aString.length);
-// username=asf&dob=aw&gender=male&address=awruy&pnumber=aery&email=ertu&password=ytq
-var deCode = decodeURIComponent(quote);
-console.log(deCode);
-var quote_split = deCode.split(/[=&]/);
-// console.log(quote_split);
-var labels = ['username','dob','gender','address','pnumber','email','password'];
-for (var i = 0; i < labels.length; i++) {
-    if (quote_split.indexOf(labels[i]) != -1) {
-        // console.log(quote_split.indexOf(labels[i]));
-        for (var j = 0; j < quote_split.length; j++) {
-            quote_split[j] = quote_split[j].replace(/\+/g,' ');
-            // console.log(quote_split[j]);
-            }
-        }
-        document.write('Your ' + labels[i] + ': ' + quote_split[quote_split.indexOf(labels[i])+1] + '</br>');
+$('#signUpForm').on('submit', function() {
+    var isValid = true;
+    if ($('#username').val().trim() == '') {
+        $('#username').next('span').text('Name is empty!');
+        isValid = false;
+    } else {$('#username').next('span').text('');}
+    if ($('#dob').val().trim() == '') {
+        $('#dob').next('span').text('Date is empty!');
+        isValid = false;
     }
+    else {$('#dob').next('span').text('');}
+    if ($('#email').val().match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/) == null) {
+        $('#email').next('span').text('Email is invalid!');
+        isValid = false;
+    }else {$('#email').next('span').text('');}
+    if ($('#password').val().trim() == '') {
+        $('#password').next('span').text('Password is empty!');
+        isValid = false;
+    }else {$('#password').next('span').text('');}
+    return isValid;
+})
