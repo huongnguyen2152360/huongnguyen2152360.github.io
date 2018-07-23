@@ -1,0 +1,85 @@
+html, body {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* CSS Header */
+
+.header__containall {
+    background: url('../img/banner3resize.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.header__navbar {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.navbar__content {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.navbar__logo {
+    max-width: 150px;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+.navbar__logo img {
+    width: 80%;
+}
+.navbar__menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: right;
+    align-items: center;
+    grid-gap: 35px;
+}
+
+.menu__item a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+
+.menu__item:hover a {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+/* .header__navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 30px;
+}
+
+.navbar__logo {
+    max-width: 150px;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+.navbar__logo img {
+    width: 80%;
+}
+
+.navbar__menu {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 35px;
+}
+
+.menu__item a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+}
+
+.menu__item:hover a {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+} */
+
+/* CSS Header */
