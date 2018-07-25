@@ -66,21 +66,26 @@ html, body {
     background-origin: padding-box;
     background-clip: border-box;
     height: 3px;
-    width: 18px;
+    width: 20px;
     margin-top: 3px;
     font-weight: 300;
 }
+
 .menu-title-icon-x {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
+    padding-right: 5px;
 }
 
+.menu-title-icon-x i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+}
 .menu-title-icon {
     float: right;
     padding-top: 2px;
 }
 
-.menu-lv1 {
+.menu-lv1, .menu-lv2 {
     display: none;
     background-color: rgb(248, 248, 248);
     margin: 15px 0;
@@ -106,7 +111,7 @@ html, body {
     font-weight: bold;
 }
 
-.menu-lv1-item-icon {
+.menu-lv1-item-icon, .menu-lv1-item-icon-minus {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
     font-weight: 1000;
@@ -121,12 +126,9 @@ html, body {
     -o-transform: translateY(-8px);
     padding: 1px;
 }
+
 .menu-lv1-item-icon-div:hover .menu-lv1-item-icon {
     color: #ee3333;
-}
-
-.menu-lv2 {
-    display: none;
 }
 
 .menu-lv2-item a {
