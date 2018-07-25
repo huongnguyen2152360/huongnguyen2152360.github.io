@@ -1,0 +1,140 @@
+html, body {
+    font-family: 'Poppins';
+}
+
+.clear {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrap-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Banner */
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/* Menu area (Mobile) */
+
+.mobile-menu {
+    background-color: rgb(38, 38, 38);
+}
+
+.wrap-menu-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.menu-title {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-title h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-weight: 350;
+    margin: 0;
+}
+
+.menu-title-icon-icon {
+    display: block;
+    background: #fff;
+    background-color: rgb(255, 255, 255);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    height: 3px;
+    width: 18px;
+    margin-top: 3px;
+    font-weight: 300;
+}
+.menu-title-icon-x {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.menu-title-icon {
+    float: right;
+    padding-top: 2px;
+}
+
+.menu-lv1 {
+    display: none;
+    background-color: rgb(248, 248, 248);
+    margin: 15px 0;
+}
+
+.menu-lv1-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 15px 5px 15px;
+    width: 100%;
+}
+
+.menu-lv1-item a {
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 1000;
+    letter-spacing: -0.5px;
+    float: left;
+}
+
+.menu-lv1-item {
+    font-weight: bold;
+}
+
+.menu-lv1-item-icon {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 1000;
+}
+
+.menu-lv1-item-icon-div {
+    float: right;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -o-transform: translateY(-8px);
+    padding: 1px;
+}
+.menu-lv1-item-icon-div:hover .menu-lv1-item-icon {
+    color: #ee3333;
+}
+
+.menu-lv2 {
+    display: none;
+}
+
+.menu-lv2-item a {
+    font-weight: normal;
+    text-transform: none;
+}
+
+.menu-lv1-item a:hover {
+    color: #ee3333;
+    text-decoration: none;
+}
