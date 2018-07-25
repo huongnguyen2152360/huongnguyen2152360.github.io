@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Table </title>
+    <title>Table with data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="wrap">
+    <div class="table-name">
+        <h1>Student List</h1>
+    </div>
+    <table id="myTable">
+        <thead>
+            <tr class="table-title">
+            <th>Avatar</th>
+            <th>First name<span onclick="sortTable()"><i class="fas fa-sort"></i></span></th>
+            <th>Last name<span onclick="sortTable()"><i class="fas fa-sort"></i></span></th>
+            <th>Gender<span onclick="sortTable()"><i class="fas fa-sort"></i></span></th>
+            <th>Email<span onclick="sortTable()"><i class="fas fa-sort"></i></span></th>
+            <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava01.jpg" alt="Ernest"></td>
+                <td>Ernest</td>
+                <td>Miralles</td>
+                <td>Male</td>
+                <td>ernest@gmail.com</td>
+                <td>01947-365604</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava02.jpg" alt="Ernest"></td>
+                <td>Cory</td>
+                <td>Holzer</td>
+                <td>Male</td>
+                <td>ywirrygeje-5442@yopmail.com</td>
+                <td>01808-114196</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava03.jpg" alt="Ernest"></td>
+                <td>Angela</td>
+                <td>Hodes</td>
+                <td>Female</td>
+                <td>angela@gmail.com</td>
+                <td>01339-931895</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava04.jpg" alt="Ernest"></td>
+                <td>Cherish</td>
+                <td>Mochizuki</td>
+                <td>Female</td>
+                <td>cherish@co.uk</td>
+                <td>07883-622743</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava05.jpg" alt="Ernest"></td>
+                <td>Milagros</td>
+                <td>Rapping</td>
+                <td>Male</td>
+                <td>hahiss@live.com</td>
+                <td>07753-290516</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava06.jpg" alt="Ernest"></td>
+                <td>Alma</td>
+                <td>Goldstein</td>
+                <td>Female</td>
+                <td>psharpe@hotmail.com</td>
+                <td>07406-009575</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava07.jpg" alt="Ernest"></td>
+                <td>Jean</td>
+                <td>Vasiliu</td>
+                <td>Female</td>
+                <td>dartlife@optonline.net</td>
+                <td>01373-732166</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava08.jpg" alt="Ernest"></td>
+                <td>Neil</td>
+                <td>Cartmill</td>
+                <td>Male</td>
+                <td>cgreuter@sbcglobal.net</td>
+                <td>07452-276766</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava09.jpg" alt="Ernest"></td>
+                <td>Emelia</td>
+                <td>Sheingold</td>
+                <td>Female</td>
+                <td>schumer@yahoo.ca</td>
+                <td>07575-440077</td>
+            </tr>
+            <tr>
+                <td class="contain-img"><img src="imgs/ava10.jpg" alt="Ernest"></td>
+                <td>Finnegan</td>
+                <td>Sheingold</td>
+                <td>Male</td>
+                <td>warrior@aol.com</td>
+                <td>02866-821360</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
+
 </html>
