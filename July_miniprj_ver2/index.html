@@ -8,54 +8,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <div class="header__containall">  
+        <div class="header__containall">
             <div class="header__navbar">
                 <div class="wrap navbar__content">
-                <div class="navbar__logo">
-                    <img src="img/logo4whitecut.png" alt="logo" title="logo">
+                    <div class="navbar__logo">
+                        <img src="img/logo4whitecut.png" alt="logo" title="logo">
+                    </div>
+                    <ul class="navbar__menu">
+                        <li class="menu__item">
+                            <a href="#trangchu">Trang chủ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#motasukien">Mô tả sự kiện</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#chuongtrinh">Chương trình</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#diengia">Diễn giả</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#dangky">Đăng ký</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="navbar__menu">
-                    <li class="menu__item">
-                        <a href="#trangchu">Trang chủ</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#motasukien">Mô tả sự kiện</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#chuongtrinh">Chương trình</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#diengia">Diễn giả</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#dangky">Đăng ký</a>
-                    </li>
-                </ul>
             </div>
-        </div>
             <div class="header__banner">
                 <div class="banner__content">
-                <div class="banner__text1">
-                    <h3>a stem event</h3>
-                </div>
-                <div class="banner__text2">
-                    <p>Saturday, July 28th, 2018, 14:30 - 17:30</p>
+                    <div class="banner__text1">
+                        <h3>a stem event</h3>
+                    </div>
+                    <div class="banner__text2">
+                        <p>Saturday, July 28th, 2018, 14:30 - 17:30</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </header>
-    <section>
-
-    </section>
+    <main>
+        <div class="motasukien">
+            <div class="wrap__motasukien">
+                <div class="motasukien-title">
+                    <h1>Mô tả sự kiện</h1>
+                </div>
+                <div class="motasukien-info">
+                    <div class="motasukien-mota" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <p>Demo về STEM, Robot (Lego), Arduino</p>
+                        <p>Tech Robot STEM 2018</p>
+                    </div>
+                    <div class="motasukien-timeplace" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <div class="motasukien-time">
+                            <span>
+                                <i class="fas fa-clock"></i>
+                            </span>
+                            <p>Thứ 7, 28/7/2018 14:30 đến 17:30</p>
+                        </div>
+                        <div class="motasukien-place">
+                            <span>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <p>Bishub.vn, Số 142B Đê La Thành, P.Thổ Quan, Q.Đống Đa, Hà Nội ( 360 Xã Đàn rẽ vào 10m)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of motasukien -->
+        <div class="chuongtrinh">
+            <div class="wrap__chuongtrinh">
+                <div class="chuongtrinh-title">
+                    <h1>Chương trình</h1>
+                </div>
+                <div class="chuongtrinh-info">
+                    <table>
+                        <tr>
+                            <th class="col-left" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">Thời gian</th>
+                            <th class="col-right" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">Sự kiện</th>
+                        </tr>
+                        <tr>
+                            <td class="col-left" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">14:30 - 14:45</td>
+                            <td class="col-right" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">Welcome guests</td>
+                        </tr>
+                        <tr>
+                            <td class="col-left" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">14:45 - 15:15</td>
+                            <td class="col-right" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">Programming Arduino using Scratch - presented by Mr. Dũng, trainer of Techmaster</td>
+                        </tr>
+                        <tr>
+                            <td class="col-left" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">15:20 - 15:50</td>
+                            <td class="col-right" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">Lego FIRST competition - presented by you</td>
+                        </tr>
+                        <tr>
+                            <td class="col-left" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-in-out">15:50 - 16:20</td>
+                            <td class="col-right" data-aos="slide-left" data-aos-duration="1000" data-aos-easing="ease-in-out">How to do airplane - tank modeling - presented by Mr. Phuong, airplane modeler, Mr. Dũng tank
+                                modeler
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- End of chuongtrinh -->
+        <div class="diengia">
+            <div class="wrap__diengia">
+                <div class="diengia-title">
+                    <h1>Diễn giả</h1>
+                </div>
+                <div class="diengia-info">
+                    <div class="diengia-info-details" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                        <img src="img/s1.jpg" alt="speaker">
+                        <h2>Name</h2>
+                        <p>World's top speaker</p>
+                    </div>
+                    <div class="diengia-info-details">
+                        <img src="img/s2.jpg" alt="speaker" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+                        <h2>Name</h2>
+                        <p>World's top speaker</p>
+                    </div>
+                    <div class="diengia-info-details">
+                        <img src="img/s3.jpg" alt="speaker" data-aos="slide-up" data-aos-duration="1000" data-aos-easing="ease-in-out" >
+                        <h2>Name</h2>
+                        <p>World's top speaker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of diengia -->
+        <div class="dangky">
+            <div class="wrap__dangky">
+                <div class="dangky-title">
+                    <h1>Đăng ký</h1>
+                </div>
+                <div class="dangky-info">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvyScLS2Vx6iqt_7yQsqcgcgNbtYqWrU9tYQfos65ZdbiAAQ/viewform"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-
+        <div class="wrap">
+            <p><span>&reg; </span>Techmaster</p>
+        </div>
     </footer>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

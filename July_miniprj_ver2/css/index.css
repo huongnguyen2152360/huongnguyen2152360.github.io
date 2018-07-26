@@ -1,12 +1,14 @@
 html, body {
     color: rgba(255, 255, 255, 0.8);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: default;
 }
 
 .wrap {
-    max-width: 1140px;
+    width: 85%;
     margin: 0 auto;
     padding: 0 30px;
+    text-align: center;
 }
 
 /* CSS Header */
@@ -20,6 +22,8 @@ html, body {
 .header__navbar {
     background-color: rgba(0, 0, 0, 0.8);
     height: 65px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar__content {
@@ -49,7 +53,7 @@ html, body {
 
 .menu__item a {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
@@ -65,21 +69,21 @@ html, body {
 }
 
 .banner__text1 {
-    font-size: 30px;
+    font-size: 45px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     animation: fadeIn 1s ease-in-out;
     -webkit-animation: fadeIn 1s ease-in-out;
     justify-self: center;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .banner__text1:hover {
-    background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
     color: white;
     cursor: pointer;
@@ -103,8 +107,7 @@ html, body {
 .banner__text2 {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    font-weight: 250;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
     animation: fadeFromLeft 3s ease-in-out;
@@ -134,4 +137,276 @@ html, body {
     }
 }
 
-/* CSS Header */
+/* CSS Main */
+
+.motasukien {
+    background: url('../img/bg01fixed.jpg') no-repeat;
+    background-size: cover;
+    color: black;
+    height: 800px;
+}
+
+.wrap__motasukien {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 200px 400px;
+    justify-items: center;
+}
+.motasukien-title {
+    display: grid;
+    align-content: center;
+    padding-top: 15%;
+}
+.motasukien h1 {
+    text-transform: uppercase;
+    /*border: 2px solid white;
+    */border-radius:5px;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(45,130,101);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 28px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.motasukien:hover h1 {
+    box-shadow: 0 0 30px white;
+    color: white;
+    cursor: pointer;
+}
+
+.motasukien-info {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 60px;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.motasukien-mota p {
+    padding: 10px 15px;
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+}
+.motasukien-timeplace {
+    padding: 50px 0 50px 0;
+    text-align: left;
+    font-size: 25px;
+}
+.motasukien-time, .motasukien-place {
+    padding: 15px 0 15px 20px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+}
+.motasukien-time span, .motasukien-place span {
+    text-align: center;
+}
+
+/* Chuong trinh */
+.chuongtrinh {
+    background: url('../img/bg02fixedfixed.jpg') no-repeat;
+    background-size: cover;
+    color: black;
+    height: 800px;
+}
+
+.wrap__chuongtrinh {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 200px 400px;
+    justify-items: center;
+}
+.chuongtrinh-title {
+    padding-top: 50px;
+    display: grid;
+    align-content: center;
+}
+.chuongtrinh h1 {
+    text-transform: uppercase;
+    /*border: 2px solid white;
+    */border-radius:5px;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(45,130,101);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 28px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.chuongtrinh:hover h1 {
+    box-shadow: 0 0 30px white;
+    color: white;
+    cursor: pointer;
+}
+.chuongtrinh-info {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+table {
+    width: 90%;
+    margin: 0 auto;
+}
+th, td {
+    padding: 10px;
+}
+th {
+    font-weight: bold;
+    font-size: 20px;
+}
+td {
+    font-size: 20px;
+}
+.col-left {
+    width: 20%;
+}
+
+/* Dien gia */
+.diengia {
+    background: url('../img/bg03fixed.jpg') no-repeat;
+    background-size: cover;
+    color: black;
+    height: 800px;
+}
+
+.wrap__diengia {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 200px 400px;
+    justify-items: center;
+}
+.diengia-title {
+    padding-top: 30px;
+    display: grid;
+    align-content: center;
+}
+.diengia h1 {
+    text-transform: uppercase;
+    /*border: 2px solid white;
+    */border-radius:5px;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(45,130,101);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 28px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.diengia:hover h1 {
+    box-shadow: 0 0 30px white;
+    color: white;
+    cursor: pointer;
+}
+.diengia-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 20px;
+}
+.diengia-info-details {
+    padding: 0 15px;
+}
+.diengia-info-details h2 {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.diengia-info-details p {
+    font-size: 20px;
+}
+.diengia-info-details img:hover {
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Dang ky */
+.dangky {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 800px;
+}
+
+.wrap__dangky {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 30px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 200px 400px;
+    justify-items: center;
+}
+.dangky-title {
+    padding-top: 30px;
+    display: grid;
+    align-content: center;
+}
+.dangky h1 {
+    text-transform: uppercase;
+    /*border: 2px solid white;
+    */border-radius:5px;
+    padding: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: rgb(45,130,101);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 28px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.dangky:hover h1 {
+    box-shadow: 0 0 30px white;
+    color: white;
+    cursor: pointer;
+}
+.dangky-info {
+    padding-top: 20px;
+    width: 100%;
+}
+.dangky-info iframe {
+    border: none;
+    height: 500px;
+    width: 70%;
+}
+footer {
+    background-color: rgb(45,130,101);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px 0;
+    letter-spacing: 1px;
+}
