@@ -14,7 +14,7 @@ html, body {
 /* CSS Header */
 
 .header__containall {
-    background: url('../img/banner3resizeresize.jpg') no-repeat;
+    background: url('../img/banner3resize_opacity1.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
 }
