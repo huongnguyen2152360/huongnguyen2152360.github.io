@@ -1,0 +1,590 @@
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1080px) {}
+
+@media only screen and (max-width: 1024px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 35px;
+    }
+    .banner-content__text p {
+        padding-top: 30px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 15px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 30px;
+    }
+    .prd-display-title p {
+        font-size: 18px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 18px;
+    }
+    .chongtran__content {
+        position: absolute;
+        top: 80px;
+        padding-left: 30px;
+    }
+    .chongtran__content p:first-child, .chongtran__content p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .chongtran__content p:last-child {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+/* Start from here */
+
+@media only screen and (max-width: 968px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 35px;
+    }
+    .banner-content__text p {
+        padding-top: 30px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 15px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 30px;
+    }
+    .prd-display-title p {
+        font-size: 18px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 18px;
+    }
+    .chongtran__content {
+        position: absolute;
+        top: 80px;
+        padding-left: 30px;
+    }
+    .chongtran__content p:first-child, .chongtran__content p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .chongtran__content p:last-child {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 834px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 30px;
+    }
+    .banner-content__text p {
+        padding-top: 25px;
+        width: 90%;
+        font-size: 12px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 15px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 30px;
+    }
+    .prd-display-title p {
+        font-size: 18px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 18px;
+    }
+    .chongtran__content {
+        position: absolute;
+        top: 80px;
+        padding-left: 30px;
+    }
+    .chongtran__content p:first-child, .chongtran__content p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .chongtran__content p:last-child {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 20px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 20px;
+    }
+    .banner-content__text p {
+        padding-top: 15px;
+        width: 85%;
+        font-size: 12px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 15px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 25px;
+    }
+    .prd-display-title p {
+        font-size: 15px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 15px;
+    }
+    .prod1 img:hover {
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        transition: .2s ease-in-out;
+        -webkit-transition: .2s ease-in-out;
+        -moz-transition: .2s ease-in-out;
+        -ms-transition: .2s ease-in-out;
+        -o-transition: .2s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 15px;
+    }
+    .banner-content__text p {
+        padding-top: 10px;
+        width: 85%;
+        font-size: 9px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 0px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 20px;
+    }
+    .prd-display-title p {
+        font-size: 12px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+        position: relative;
+    }
+    #logo {
+        width: 50%;
+    }
+    #symbols {
+        width: 50%;
+        justify-content: end;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 10%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 15px;
+    }
+    .banner-content__text p {
+        padding-top: 10px;
+        width: 85%;
+        font-size: 9px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 0px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 20px;
+    }
+    .prd-display-title p {
+        font-size: 12px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 5%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 15px;
+    }
+    .banner-content__text p {
+        padding-top: 10px;
+        width: 95%;
+        font-size: 9px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 0px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 20px;
+    }
+    .prd-display-title p {
+        font-size: 12px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .navigation__bar {
+        width: 100%;
+        z-index: 1;
+        background-color: transparent;
+        padding: 15px 0;
+    }
+    .mobile-menu {
+        top: 0;
+        z-index: 1;
+        width: 100%;
+    }
+    .banner-content {
+        top: 5%;
+        position: absolute;
+    }
+    .banner-content__text {
+        padding-left: 10px;
+    }
+    .banner-content h3 {
+        font-size: 15px;
+    }
+    .banner-content__text p {
+        padding-top: 10px;
+        width: 95%;
+        font-size: 9px;
+    }
+    .wrap-menu-content {
+        width: 90%;
+    }
+    .read-more {
+        padding-top: 0px;
+        width: 50%;
+    }
+    .read-more p {
+        margin-bottom: 0;
+        padding: 10px 5px;
+    }
+    #banners {
+        padding: 10px 0;
+    }
+    .prd-display-title p {
+        padding: 10px 0;
+    }
+    .prd-display-title h1 {
+        font-size: 20px;
+    }
+    .prd-display-title p {
+        font-size: 12px;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+    .prd-display-title {
+        width: 80%;
+    }
+    .overflow__div p {
+        font-size: 12px;
+    }
+}
