@@ -1,0 +1,209 @@
+/* COMMON USED CSS */
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.width-0 {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.position-ab {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+}
+
+.wrap-content {
+    max-width: 1140px;
+}
+
+.no-boxshadow {
+    box-shadow: none;
+}
+
+.active-item::after {
+    content: "";
+    position: absolute;
+    border: 1.5px solid #9B9B9B;
+    z-index: 1;
+    width: 50%;
+    height: 6px;
+    top: 0;
+    left: 50%;
+    border-bottom: transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.active-item::before {
+    content: "";
+    position: absolute;
+    border: 1.5px solid #9B9B9B;
+    z-index: 1;
+    width: 50%;
+    height: 6px;
+    bottom: 0;
+    left: 50%;
+    border-top: transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.banner-style {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* NAVBAR */
+
+.test {
+    border: 1px solid #9B9B9B !important;
+    background-color: transparent !important;
+    color: #ffffff !important;
+}
+
+.test:hover {
+    border-color: #F5A637 !important;
+    background-color: transparent !important;
+    color: #F5A637 !important;
+}
+
+.logo-width img {
+    width: 150px;
+}
+
+.navbar-hover ul li a:hover {
+    color: #F5A637 !important;
+}
+
+.navbar-hover ul li {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-width {
+    width: 80%;
+}
+
+/* TEXT ON BANNER */
+
+.banner-text {
+    width: 100%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    text-align: center;
+    transform: translate(0, -100%);
+    -webkit-transform: translate(0, -100%);
+    -moz-transform: translate(0, -100%);
+    -ms-transform: translate(0, -100%);
+    -o-transform: translate(0, -100%);
+}
+
+.banner-text h1 {
+    font-family: Helvetica;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 15px 0;
+}
+
+.banner-text h4 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.banner-text button {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* SECOND HOME */
+
+.second__home {
+    padding-top: 10%;
+    margin: 0 auto;
+}
+
+.welcome-title {
+    position: relative;
+    text-align: center;
+}
+
+.welcome-texture::after {
+    content: "";
+    position: absolute;
+    border: 3px solid #9B9B9B;
+    z-index: 1;
+    width: 10%;
+    height: 15px;
+    bottom: 120%;
+    left: 50%;
+    border-bottom: transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.welcome-texture::before {
+    content: "";
+    position: absolute;
+    border: 3px solid #9B9B9B;
+    z-index: 1;
+    width: 10%;
+    height: 15px;
+    top: 120%;
+    left: 50%;
+    border-top: transparent;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.welcome-title h1 {
+    color: #414040;
+    font-weight: bold;
+}
+
+.welcome-text {
+    padding-top: 70px;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.welcome-text p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.question-style {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
