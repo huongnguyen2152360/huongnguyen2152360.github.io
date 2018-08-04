@@ -202,8 +202,32 @@
     line-height: 30px;
 }
 
+#accordion {
+    padding-top: 50px;
+}
 .question-style {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+.question-style button {
+    padding: 0;
+    margin: 0;
+}
+.question-style button i {
+    font-size: 25px;
+    color: #414040;
+}
+.question-style p {
+    font-size: 18px;
+}
+.card-body {
+    font-size: 15px;
+    line-height: 20px;
+}
+.card-body span {
+    color: #F5A637;
+}
+.card-body span:hover {
+    text-decoration: underline;
 }
