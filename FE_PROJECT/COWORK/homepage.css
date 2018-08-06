@@ -805,3 +805,7 @@
     letter-spacing: 0.5px;
     text-align: left;
 }
+.news-date {
+font-style: italic;
+}
+
