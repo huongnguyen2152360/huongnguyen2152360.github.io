@@ -1,0 +1,18 @@
+/* BENEFITS TITLE */
+.benefits-title {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.benefits-title-texture {
+    border-left: 3px solid #9B9B9B;
+    padding-left: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
