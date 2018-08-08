@@ -12,8 +12,8 @@
 }
 
 .width-0 {
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .banner {
@@ -29,10 +29,14 @@
 .wrap-content {
     max-width: 1140px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .no-boxshadow {
     box-shadow: none;
+}
+.width-1{
+    width: 100%;
 }
 
 .active-item::after {
@@ -216,10 +220,6 @@
     line-height: 30px;
 }
 
-#accordion {
-    padding-top: 50px;
-}
-
 .question-style {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
@@ -249,7 +249,7 @@
 }
 
 .card-body span:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* BENEFITS */
@@ -535,6 +535,14 @@
     -o-animation-duration: 2s;
 }
 
+.moreoffers i {
+    padding-left: 10px;
+}
+
+.moreoffers:hover {
+    color: #F5A637;
+}
+
 /* GALLERY */
 
 .gallery {
@@ -602,7 +610,8 @@
 /* CUSTOMERS */
 
 .customers {
-    padding-top: 10%;
+    padding-top: 15%;
+    padding-bottom: 12%;
     margin: 0 auto;
 }
 
@@ -613,6 +622,7 @@
 
 .card {
     text-align: center;
+    border: 1px solid #D2D2D2;
 }
 
 .customers-texture::after {
@@ -742,8 +752,10 @@
 /* NEWS & EVENTS */
 
 .news {
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     margin: 0 auto;
+    background-color: rgba(242, 242, 242, 0.44);
 }
 
 .news-title {
@@ -797,7 +809,9 @@
 
 .card-title {
     position: relative;
+    padding-top: 25px;
 }
+
 .news-title-texture {
     border-left: 3px solid #F5A637;
     color: #414040;
@@ -805,7 +819,125 @@
     letter-spacing: 0.5px;
     text-align: left;
 }
-.news-date {
-font-style: italic;
+
+.news-content-title {
+    padding-top: 35px;
 }
 
+.news-date {
+    font-style: italic;
+}
+
+.seemorenews {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.seemorenewsbtn {
+    border: 1px solid #414040 !important;
+    background-color: transparent !important;
+    color: #414040 !important;
+    padding: 15px;
+}
+
+.seemorenewsbtn:hover {
+    border: 1px solid #F5A637 !important;
+    background-color: transparent !important;
+    color: #F5A637 !important;
+}
+
+.seemorenewsbtn i {
+    padding-left: 5px;
+}
+
+/* FOOTER */
+
+.cowork-info, .cowork-map {
+    background-color: #F5A637;
+}
+
+.cowork-info-title {
+    position: relative;
+}
+
+.cowork-info-title h4 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.cowork-info-texture::before {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #ffffff;
+    z-index: 1;
+    width: 20%;
+    height: 15px;
+    top: 110%;
+    left: 0;
+}
+
+.cowork-location {
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.cowork-location span, .cowork-contact span {
+    font-size: 20px;
+}
+
+.cowork-contact {
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.cowork-envelope {
+    text-align: center;
+    font-size: 40px;
+    color: #F5A637;
+}
+
+.signup-text h6 {
+    text-align: center;
+    color: #414040;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.form-inline {
+    justify-content: center;
+}
+
+.cowork-regis {
+    background-color: #F5A637 !important;
+    color: #fff !important;
+}
+
+.footer-dark {
+    background-color: #4A4A4A;
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-fb {
+    font-weight: 400;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 35px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.social-fb-label {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.copyright {
+    border-top: 0.2px solid rgba(155, 155, 155, 0.616);
+    color: #9B9B9B;
+    font-size: 15px;
+}
