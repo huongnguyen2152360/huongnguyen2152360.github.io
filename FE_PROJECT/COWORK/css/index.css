@@ -260,7 +260,7 @@
 }
 
 .benefits-banner {
-    background: url('img/benefits.jpg');
+    background: url('../img/benefits.jpg');
     color: #F5A637;
     height: 100vh;
     text-align: center;
@@ -428,17 +428,17 @@
 }
 
 .co-visitor-header {
-    background: url('img/co_visitor.jpg');
+    background: url('../img/co_visitor.jpg');
     text-align: center;
 }
 
 .co-member-header {
-    background: url('img/co_member.jpg');
+    background: url('../img/co_member.jpg');
     text-align: center;
 }
 
 .co-office-header {
-    background: url('img/co_office.jpg');
+    background: url('../img/co_office.jpg');
     text-align: center;
 }
 
