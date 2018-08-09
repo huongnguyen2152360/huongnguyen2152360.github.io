@@ -1,0 +1,23 @@
+/* BANNER */
+.news-bg {
+    background-color: #00000060;
+}
+
+/* CONTENT */
+#readmore {
+    padding-top: 15px;
+    text-align: right;
+}
+#readmore span {
+    color: #414040;
+}
+#readmore span:hover {
+    color: #F5A637;
+    font-style: italic;
+}
+.pagination {
+    padding: 30px 0;
+}
+.page-link:hover {
+    color: #F5A637;
+}
