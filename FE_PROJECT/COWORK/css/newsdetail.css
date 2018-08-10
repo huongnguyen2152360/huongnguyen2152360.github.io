@@ -1,0 +1,89 @@
+/* CONTENT */
+
+.detail-title-text {
+    color: #414040;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.detail-date {
+    border-right: 2px solid #9B9B9B;
+    font-size: 15px;
+    height: 100px;
+}
+
+.text-header {
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    border-bottom: 2px solid #9B9B9B;
+}
+
+.text-img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.text-img img {
+    width: 100%;
+}
+
+.text-content {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.para2-title {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.img-title {
+    font-style: italic;
+    font-size: 14px;
+}
+.para2 a {
+    color: #414040;
+    font-size: 18px;
+    font-weight: 400;
+}
+.para2 a:hover {
+    color: #F5A637;
+    font-style: italic;
+}
+.leave-reply {
+    color: #414040;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.notice {
+    font-style: italic;
+    font-size: 15px;
+}
+.comment-control, .email-input {
+    font-weight: 400;
+    color: #414040;
+}
+#exampleFormControlTextarea1, #exampleFormControlInput1 {
+    width: 95%;
+    margin: 0 auto;
+}
+.postcmt {
+    border: 2px solid rgb(117, 117, 117) !important;
+    background-color: transparent !important;
+    color: rgb(117, 117, 117) !important;
+}
+
+.postcmt:hover {
+    border: 2px solid #F5A637 !important;
+    background-color: transparent !important;
+    color: #F5A637 !important;
+}
+
+.cmt-control:focus {
+    color: #414040;
+    background-color: #fff;
+    border-color: #F5A637;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(245, 166, 55, 0.637);
+}

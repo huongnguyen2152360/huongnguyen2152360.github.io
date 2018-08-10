@@ -26,6 +26,9 @@
     width: 100%;
 }
 
+.banner-h {
+    height: 70vh;
+}
 .wrap-content {
     max-width: 1140px;
     padding: 0 15px;

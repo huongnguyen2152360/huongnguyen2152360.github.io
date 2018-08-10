@@ -25,7 +25,6 @@ $("#carouselExample").on("slide.bs.carousel", function(e) {
 
 //ON SCROLL
 $(document).scroll(function() {
-  // $('.fw').css({'background-color':'#000000c4','position':'fixed','z-index':'10'})
   $(".fw").addClass("full-width-navbar");
   if ($(document).scrollTop() == 0) {
     $(".fw").removeClass("full-width-navbar");
