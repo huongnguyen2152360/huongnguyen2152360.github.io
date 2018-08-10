@@ -1,0 +1,82 @@
+/* BANNER */
+.news-bg {
+    background-color: #0000006b;
+}
+
+/* CONTENT */
+.contact-content {
+    color: #414040;
+}
+.ourlocations, .writetous {
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.contact-info p i, .contact-locations p i {
+    color: #F5A637;
+}
+.contact-info p {
+    color: #414040;
+    font-weight: 400;
+}
+.contact-locations p {
+    font-size: 15px;
+}
+.card-block {
+    padding: 1.25rem;
+}
+
+.prefix {
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    font-size: 2rem;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -o-transition: color .2s;
+    -ms-transition: color .2s;
+    transition: color .2s;
+}
+.md-form .prefix {
+    position: absolute;
+    width: 3rem;
+    font-size: 1.5rem;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -o-transition: color .2s;
+    -ms-transition: color .2s;
+    transition: color .2s;
+}
+.md-form .prefix ~ label {
+    margin-left: 3.2rem;
+}
+.btn {
+    background-color: #F5A637;
+    letter-spacing: 0.5px;
+}
+.md-form input[type="date"]:focus:not([readonly]), .md-form input[type="datetime-local"]:focus:not([readonly]), .md-form input[type="email"]:focus:not([readonly]), .md-form input[type="number"]:focus:not([readonly]), .md-form input[type="password"]:focus:not([readonly]), .md-form input[type="search-md"]:focus:not([readonly]), .md-form input[type="search"]:focus:not([readonly]), .md-form input[type="tel"]:focus:not([readonly]), .md-form input[type="text"]:focus:not([readonly]), .md-form input[type="time"]:focus:not([readonly]), .md-form input[type="url"]:focus:not([readonly]), .md-form textarea.md-textarea:focus:not([readonly]) {
+    -webkit-box-shadow: 0 0.5px 0 0 #F5A637;
+    box-shadow: 0 0.5px 0 0 rgba(245, 166, 55, 0.87);
+    border-bottom: 1px solid #F5A637;
+}
+.md-form input[type="text"]:focus:not([readonly]) + label, .md-form textarea.md-textarea:focus:not([readonly]) + label {
+    color: #F5A637;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #F5A637;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(245, 166, 55, 0.87);
+}
+.md-form .write-symbol:focus{
+    color: #F5A637;
+}
+.md-form .prefix.active {
+    color: #F5A637;
+}
+.md-form .prefix ~ input, .md-form .prefix ~ textarea {
+    margin-left: 3rem;
+    width: -webkit-calc(100% - 3rem);
+    width: calc(100% - 3rem);
+}

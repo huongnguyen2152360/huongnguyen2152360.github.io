@@ -87,3 +87,20 @@
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(245, 166, 55, 0.637);
 }
+.latest-title {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #9B9B9B;
+}
+.articles-content p {
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid rgb(207, 205, 205);
+}
+
+.articles-link {
+    color: #414040;
+}
+.articles-link:hover {
+    color: #F5A637;
+}
