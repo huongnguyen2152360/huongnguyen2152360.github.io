@@ -283,6 +283,7 @@
 
 .question-style button i {
     font-size: 25px;
+    color: #414040;
 }
 
 .question-style p {
@@ -294,7 +295,7 @@
     line-height: 20px;
 }
 
-.card-body span {
+.card-body span, .card-body span a {
     color: #F5A637;
 }
 
@@ -441,11 +442,11 @@
 }
 
 .card-bg:hover, .card-bg2:hover {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    -o-transform: translateY(-10px);
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03) ;
+    -moz-transform: scale(1.03) ;
+    -ms-transform: scale(1.03) ;
+    -o-transform: scale(1.03) ;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -464,11 +465,22 @@
 
 .card-bg2:hover .co-visitor-price, .card-bg2:hover .co-member-price,.card-bg2:hover .co-office-price {
     color: #F5A637;
-    /* transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
     -webkit-transition: 0.2s ease-in-out;
     -moz-transition: 0.2s ease-in-out;
     -ms-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out; */
+    -o-transition: 0.2s ease-in-out;
+}
+
+.card-bg:hover .co-member-info, .card-bg2:hover .co-visitor-info, .card-bg2:hover .co-office-info  {
+    background: url('../img/co_visitor_blur.jpg') no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.card-bg:hover .booknow, .card-bg2:hover .booknow {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border: none !important;
 }
 
 .co-visitor-card, .co-member-card, .co-office-card {
@@ -554,6 +566,14 @@
     -o-border-radius: 5px;
 }
 
+.booknow a {
+    color: #ffffff;
+}
+
+.booknow:hover a {
+    color: #F5A637;
+}
+
 .booknow:hover {
     border-color: #9B9B9B !important;
     background-color: #4A4A4A !important;
@@ -564,6 +584,16 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
 }
 
 .co-member-info .booknow-btn {
@@ -589,8 +619,72 @@
     padding-left: 10px;
 }
 
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes hvr-icon-wobble-horizontal {
+    16.65% {
+      -webkit-transform: translateX(6px);
+      transform: translateX(6px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
 .moreoffers:hover {
     color: #F5A637;
+    font-style: italic;
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+.moreoffers:hover i {
+    animation: hvr-icon-wobble-horizontal 1s ease-in-out;
+    -webkit-animation: hvr-icon-wobble-horizontal 1s ease-in-out;
 }
 
 /* GALLERY */
@@ -776,8 +870,12 @@
     justify-content: right;
 }
 
+.card {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
 .card-avatar {
-    width: 100px;
+    width: 150px;
     margin: 0 auto;
 }
 
@@ -788,6 +886,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .card-body h5 {
