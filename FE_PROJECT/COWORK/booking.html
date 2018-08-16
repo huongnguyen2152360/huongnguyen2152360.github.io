@@ -61,7 +61,9 @@
                                     <a class="nav-link" href="contact.html">Contact</a>
                                 </li>
                                 <li class="nav-item">
-                                    <button type="button" class="btn btn-outline-warning waves-effect test">login</button>
+                                    <a href="booking.html">
+                                        <button type="button" class="btn btn-outline-warning waves-effect test" data-toggle="modal" data-target="#exampleModal">Free tour</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +94,7 @@
                     </div>
                     <div class="form-group chooseyourplan pt-4 pb-3 yourname">
                         <label for="formGroupExampleInput2" class="pb-3">Your name
-                            <span>*</span>
+                            <span class="markedsymbol">*</span>
                         </label>
                         <input type="text" class="form-control" id="validationServerUsername" placeholder="Your name" aria-describedby="inputGroupPrepend3">
                         <div class="invalid-feedback">
@@ -101,7 +103,7 @@
                     </div>
                     <div class="form-group chooseyourplan pt-4 pb-3 youremail">
                         <label for="formGroupExampleInput2" class="pb-3">Email
-                            <span>*</span>
+                            <span class="markedsymbol">*</span>
                         </label>
                         <input type="email" class="form-control" id="validationServerEmail" placeholder="Email" aria-describedby="inputGroupPrepend3">
                     </div>
@@ -120,6 +122,10 @@
                         <label for="formGroupExampleInput2" class="pb-3">Note (optional)
                         </label>
                         <textarea type="text" class="form-control" id="validationServerUsername" placeholder="Your note" aria-describedby="inputGroupPrepend3"></textarea>
+                    </div>
+                    <div class="form-group chooseyourplan pt-4 pb-4 orcontactus">
+                        <p>
+                            <i class="fal fa-phone fa-2x pr-2 phonering" style="color: #F5A637"></i>Or call us:<span class="pnumber pl-2">1900 1160 --- 0904 157 900 --- 0912 149 747</span></p>
                     </div>
                     <div class="form-group chooseyourplan pt-4 pb-5 text-center">
                         <button class="btn btn-primary chooseyourplan-btn m-0" type="submit">Book now</button>

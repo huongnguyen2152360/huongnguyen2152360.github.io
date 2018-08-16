@@ -1,0 +1,30 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .container-fluid h1, .container-fluid h2, .container-fluid p, .container-fluid p, .nav-link, .container-fluid button {
+        font-size: 50%;
+    }
+    .logo-width img {
+        width: 90px;
+    }
+    .fw {
+        background-color: #000000d0;
+    }
+    .navbar {
+        padding: 0 15px !important;
+    }
+    .bannertext {
+        top: 0;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
