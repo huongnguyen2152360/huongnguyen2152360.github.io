@@ -156,7 +156,7 @@
     padding: 15px 0;
 }
 
-.banner-text h4 {
+.banner-text h6 {
     font-size: 20px;
     padding-bottom: 30px;
     letter-spacing: 0.5px;
@@ -313,7 +313,6 @@
 .benefits-banner {
     background: url('../img/benefits.jpg');
     color: #F5A637;
-    height: 100vh;
     text-align: center;
 }
 

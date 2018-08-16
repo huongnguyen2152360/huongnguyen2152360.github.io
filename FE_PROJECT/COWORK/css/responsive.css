@@ -1,8 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575px) {
-    .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid p, .container-fluid p, .nav-link, .container-fluid button {
-        font-size: 50%;
+    .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6, .container-fluid p, .container-fluid span, .nav-link, .container-fluid button, .container-fluid i {
+        font-size: 8px !important;
     }
     /* Navbar */
     .logo-width img {
@@ -21,9 +21,9 @@
         overflow: hidden;
     }
     .banner-text {
-        top: 30%;
+        top: 35%;
     }
-    .banner-text h4 {
+    .banner-text h6 {
         padding-bottom: 10px;
     }
     .nav-link {
@@ -49,6 +49,185 @@
     }
     .welcome-text p {
         line-height: 10px;
+    }
+    .youtubee {
+        height: 150px;
+    }
+    /* BENEFITS */
+    .benefits-texture::after {
+        border: 1.5px solid #F5A637;
+        width: 10%;
+        height: 5px;
+        border-bottom: transparent;
+    }
+    .benefits-texture::before {
+        border: 1.5px solid #F5A637;
+        width: 10%;
+        height: 5px;
+        border-top: transparent;
+    }
+    .benefits-title {
+        padding: 25px 0;
+    }
+    .benefits-row1 i, .benefits-row2 i, .benefits-row3 i {
+        padding: 0;
+    }
+    .benefits-row1 p, .benefits-row2 p, .benefits-row3 p {
+        padding: 5px 0;
+        line-height: 12px;
+    }
+    /* PRICING */
+    .pricing-texture::after {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-bottom: transparent;
+    }
+    .pricing-texture::before {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-top: transparent;
+    }
+    .card-bg2 {
+        padding-top: 0;
+    }
+    .card-bg, .card-bg2 {
+        padding-bottom: 10px !important;
+    }
+    .co-visitor-card, .co-member-card, .co-office-card {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .co-visitor-header h2, .co-office-header h2, .co-member-header h2 {
+        padding: 25px;
+    }
+    .co-visitor-price, .co-office-price, .co-member-price {
+        padding: 5px 0;
+    }
+    .co-visitor-info, .co-member-info, .co-office-info {
+        padding: 5px 0;
+    }
+    .co-visitor-info p, .co-member-info p, .co-office-info p {
+        padding: 5px 0;
+    }
+    .booknow-btn {
+        padding-top: 0px;
+    }
+    /* GALLERY */
+    .gallery {
+        display: none;
+    }
+    /* CUSTOMERS */
+    .customers {
+        padding-top: 10%;
+    }
+    .customers-title h1 {
+        font-size: 50%;
+    }
+    .customers-texture::after {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-bottom: transparent;
+    }
+    .customers-texture::before {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-top: transparent;
+    }
+    .carousel {
+        padding-top: 25px;
+    }
+    .btn-floating {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+    .btn-floating i {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .carousel-multi-item .controls-top {
+        margin-bottom: 15px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .card-avatar {
+        width: 80px;
+    }
+    .card-body {
+        padding: 0.25rem;
+    }
+    .card, .card .card-body h3, .card .card-body h4, .card .card-text {
+        font-size: 50%;
+    }
+    .card-title, .card-body h4, .card-body p {
+        margin-bottom: 0;
+    }
+    .card-text {
+        line-height: 12px;
+        padding-top: 5px;
+    }
+    /* NEWS & EVENTS */
+    .news {
+        padding-top: 10%;
+    }
+    .news-title h1 {
+        font-size: 50%;
+    }
+    .news-texture::after {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-bottom: transparent;
+    }
+    .news-texture::before {
+        border: 1.5px solid #9B9B9B;
+        width: 7%;
+        height: 5px;
+        border-top: transparent;
+    }
+    .newscard {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .card-title {
+        padding-top: 10px;
+    }
+    .card-title h6, .card-body p {
+        font-size: 8px !important;
+    }
+    .divbehind {
+        padding-top: 15px;
+    }
+    .seemorenewsbtn p, .cowork-info-title h4, .cowork-location p, .cowork-location i {
+        font-size: 8px;
+    }
+    .seemorenews {
+        padding-top: 10px;
+    }
+    .mapmap, #gmap_canvas {
+        width: 100vw !important;
+        height: 200px !important;
+    }
+    .cowork-info-texture::before {
+        border-bottom: 1px solid #ffffff;
+        top: 0;
+        left: 0;
+    }
+    .cowork-location {
+        padding-top: 15px;
+    }
+    .cowork-map {
+        display: none;
+    }
+    .cowork-info {
+        margin-left: 0;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
