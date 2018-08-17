@@ -29,6 +29,7 @@
 .banner-h {
     height: 70vh;
 }
+
 .wrap-content {
     max-width: 1140px;
     padding: 0 15px;
@@ -178,7 +179,6 @@
     font-size: 20pt;
 }
 
-
 .btn {
     padding: 12px 15px;
 }
@@ -273,6 +273,19 @@
     font-size: 15px;
 }
 
+.meetourteam .card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+}
+
 .meetourteam, .hereincowork {
     text-align: center;
 }
@@ -327,6 +340,19 @@
     padding: 10px;
 }
 
+.social-fb2:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: 0.1s ease-in-out;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -ms-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+}
+
 .hereincowork {
     padding-bottom: 70px;
 }
@@ -362,6 +388,7 @@
     width: 35px;
     font-size: 15px;
     padding: 10px;
+    color: #ffffff;
 }
 
 .social-fb-label {

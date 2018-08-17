@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <!-- Material Design Bootstrap -->
-    <link href="https://namboss.blob.core.windows.net/huong/mdb.min.css" rel="stylesheet">
+    <link href="https://namboss.blob.core.windows.net/huong/mdb.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/responsive.css" />
@@ -68,7 +68,7 @@
                 </nav>
             </div>
             <!-- text on banner -->
-            <div class="banner-text wrap-content">
+            <div class="banner-text">
                 <h1 class="banner-style wow fadeIn" style="animation-duration: 3s;-webkit-animation-duration: 3s;-moz-animation-duration: 3s;-o-animation-duration: 3s">A community for startups</h1>
                 <h6 class="banner-style wow fadeIn" data-wow-delay="0.4s" style="animation-duration: 3s;-webkit-animation-duration: 3s;-moz-animation-duration: 3s;-o-animation-duration: 3s">be part of our largest starup community in the world</h6>
                 <a href="contact.html">
@@ -239,7 +239,7 @@
             <div class="pricing-content">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 card-bg2 pr-3 wow fadeInLeftBig">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 co-visitor-card">
+                        <div class="co-visitor-card">
                             <div class="co-visitor-header">
                                 <h2 class="banner-style">co visitor</h2>
                             </div>
@@ -266,7 +266,7 @@
                     </div>
                     <!-- end of col-4 co-visitor-card -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 card-bg p-0 wow fadeInUpBig">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 co-member-card">
+                        <div class="co-member-card">
                             <div class="co-member-header">
                                 <h2 class="banner-style co-member-text">co member</h2>
                             </div>
@@ -293,7 +293,7 @@
                     </div>
                     <!-- end of co-member-card -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 card-bg2 pl-3 wow fadeInRightBig">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 co-office-card">
+                        <div class="co-office-card">
                             <div class="co-office-header">
                                 <h2 class="banner-style">co office</h2>
                             </div>
@@ -697,10 +697,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 divbehind wow fadeInRightBig">
+                <div class="hidden-md-down col-lg-4 col-xl-4 divbehind wow fadeInRightBig">
                     <div class="newscard">
                         <a href="newsdetail.html">
-                            <img class="card-img-top" src="img/news3.png" alt="WHO LEADS VIET COWORKING SPACE MARKET?" title="WHO LEADS VIET COWORKING SPACE MARKET?">
+                            <img class="card-img-top" src="img/news3.png" alt="A PIECE OF CAKE NAMED COWORKING SPACE" title="A PIECE OF CAKE NAMED COWORKING SPACE">
                             <div class="card-title news-content-title">
                                 <h6 class="banner-style news-title-texture pl-3">a piece of cake named coworking space</h6>
                             </div>
@@ -725,8 +725,8 @@
     </div>
     <!-- End of news & events -->
     <footer class="footer-desktop">
-        <div class="row mr-0">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 cowork-map wow fadeInLeftBig">
+        <div class="row mr-0 neednomargin">
+            <div class="hidden-md-down col-lg-6 col-xl-6 cowork-map wow fadeInLeftBig">
                 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
                 <div class="mapmap" style='overflow:hidden;height:440px;width:700px;'>
                     <div id='gmap_canvas' style='height:440px;width:700px;'></div>
@@ -802,13 +802,13 @@
         </div>
         <!-- End of cowork-signup -->
         <div class="footer-dark pt-4 pb-4 width-1">
-            <div class="row wrap-content align-items-center pb-4">
+            <div class="row wrap-content align-items-center pb-4 footer-darkdark">
                 <div class="col">
                     <a href="#">
                         <i class="fab fa-facebook-f social-fb"></i>
                     </a>
                 </div>
-                <div class="col">
+                <div class="hidden-md-down col-lg col-xl">
                     <a href="#">
                         <h3 class="banner-style social-fb-label">Facebook</h3>
                     </a>
@@ -818,12 +818,12 @@
                         <i class="fab fa-twitter social-fb"></i>
                     </a>
                 </div>
-                <div class="col">
+                <div class="hidden-md-down col-lg col-xl">
                     <a href="#">
                         <h3 class="banner-style social-fb-label">twitter</h3>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="hidden-md-down col-lg-4 col-xl-4">
                     <a href="#">
                         <img src="img/logo.png" alt="COWORK" title="COWORK">
                     </a>
@@ -834,7 +834,7 @@
                         <i class="fab fa-instagram social-fb"></i>
                     </a>
                 </div>
-                <div class="col">
+                <div class="hidden-md-down col-lg col-xl">
                     <a href="#">
                         <h3 class="banner-style social-fb-label">Instagram</h3>
                     </a>
@@ -844,7 +844,7 @@
                         <i class="fab fa-youtube social-fb"></i>
                     </a>
                 </div>
-                <div class="col">
+                <div class="hidden-md-down col-lg col-xl">
                     <a href="#">
                         <h3 class="banner-style social-fb-label">Youtube</h3>
                     </a>

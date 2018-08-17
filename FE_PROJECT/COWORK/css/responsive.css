@@ -1,8 +1,8 @@
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575px) {
-    .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6, .container-fluid p, .container-fluid span, .nav-link, .container-fluid button, .container-fluid i {
-        font-size: 8px !important;
+    .container-fluid h1, .container-fluid h2, .container-fluid h3, .container-fluid h4, .container-fluid h5, .container-fluid h6, .container-fluid p, .container-fluid span, .nav-link, .container-fluid button, .container-fluid i, .benefits-content-text-view a{
+        font-size: 9px !important;
     }
     /* Navbar */
     .logo-width img {
@@ -14,6 +14,10 @@
     }
     .navbar {
         padding: 0 15px !important;
+    }
+    .navbar-width {
+        width: 80%;
+        margin: 0 auto;
     }
     /* Banner */
     .banner {
@@ -52,6 +56,17 @@
     }
     .youtubee {
         height: 150px;
+    }
+    /* WELCOME */
+    .question-style {
+        padding: 0 1.25rem;
+    }
+    .question-style .col-10 {
+        align-self: center;
+    }
+    #accordion .card-body p {
+        padding: 0 15px !important;
+        line-height: 12px;
     }
     /* BENEFITS */
     .benefits-texture::after {
@@ -204,8 +219,8 @@
     .divbehind {
         padding-top: 15px;
     }
-    .seemorenewsbtn p, .cowork-info-title h4, .cowork-location p, .cowork-location i {
-        font-size: 8px;
+    .seemorenewsbtn p, .cowork-info-title h4, .cowork-location p, .cowork-location i, .cowork-contact p, .cowork-contact i, .cowork-signup h6, #inlineFormInputName2::placeholder, input[type="email"], .orangee-btn, .copyright p {
+        font-size: 8px !important;
     }
     .seemorenews {
         padding-top: 10px;
@@ -226,8 +241,159 @@
         display: none;
     }
     .cowork-info {
-        margin-left: 0;
+        width: 100% !important;
+        padding: 15px !important;
+        margin: 0 !important;
     }
+    .cowork-contact {
+        padding: 10px 0;
+    }
+    .cowork-contact p, .cowork-location p {
+        padding-bottom: 0 !important;
+    }
+    .neednomargin {
+        margin: 0 !important;
+    }
+    .cowork-signup, .signup-text {
+        padding: 0 15px !important;
+    }
+    .cowork-signup form {
+        padding-bottom: 5px !important;
+    }
+    .border-orangee {
+        width: 30% !important;
+        text-align: left;
+        padding: 0 !important;
+        height: 1.2rem !important;
+    }
+    .orangee-btn {
+        padding: 5px !important;
+        margin: 0 5px !important;
+    }
+    .footer-dark .col, .footer-dark {
+        padding: 0 !important;
+    }
+    .social-fb {
+        border: none;
+    }
+    .footer-darkdark {
+        padding: 5px 0 !important;
+    }
+    .footer-dark i, .cowork-signup i {
+        font-size: 10px !important;
+    }
+    .footer-darkdark i {
+        color: #ffffff;
+    }
+    .copyright {
+        padding: 5px 0 !important;
+    }
+    /* Backtotop */
+    .second__home .btn {
+        padding: 8px 11px !important;
+    }
+    /* ABOUT US */
+    .banner-h {
+        height: 30vh;
+    }
+    .aboutus {
+        padding-top: 5%;
+    }
+    .aboutus-content-title {
+        padding: 20px 0;
+    }
+    .aboutus-content-texture::after {
+        border: 1.5px solid #9B9B9B;
+        width: 20%;
+        height: 5px;
+        border-bottom: transparent;
+    }
+    .aboutus-content-texture::before {
+        border: 1.5px solid #9B9B9B;
+        width: 20%;
+        height: 5px;
+        border-top: transparent;
+    }
+    .aboutus-info {
+        padding-bottom: 20px;
+    }
+    .aboutus-info p {
+        line-height: 10px;
+    }
+    .aboutus-vision {
+        padding: 10px 0 0 0 !important;
+    }
+    .vision-text {
+        padding: 10px 15px;
+    }
+    .aboutus-about {
+        padding-bottom: 10px;
+    }
+    .meetourteam {
+        padding: 20px 0 10px 0 !important;
+    }
+    .meetourteam-cards {
+        padding-top: 10px !important;
+    }
+    .meetourteam-cards .card {
+        width: 8rem !important;
+        margin-bottom: 10px !important;
+    }
+    .meetourteam-cards .card-avatar {
+        width: 50px;
+        margin-bottom: 5px !important;
+    }
+    .meetourteam-cards .card-body h5 {
+        padding-bottom: 0 !important;
+    }
+    .meetourteam-cards .card-body h6 {
+        font-size: 6px !important;
+        padding-bottom: 5px !important;
+    }
+    .social-fb2 {
+        color: #414040;
+        border: none;
+        background-color: #ffffff;
+        padding: 5px 0 !important;
+    }
+    .hereincowork {
+        padding-top: 25px !important;
+        padding-bottom: 10px !important;
+    }
+    .hereincowork-content {
+        padding-top: 10px !important;
+    }
+    .hereincowork-content p {
+        line-height: 10px;
+    }
+    /* BENEFITS */
+    .benefits-content .col-7 {
+        padding: 0 10px !important;
+    }
+    .benefits-content-title {
+        border-bottom: 1px solid rgba(155, 155, 155, 0.55);
+        padding: 0 5px !important;
+    }
+    .wrap-content1 {
+        max-width: 1140px !important;
+        padding: 0 15px !important;
+        margin: 0 auto !important;
+    }
+    .commonworkspace {
+        padding: 10px 0 0 0 !important;
+    }
+    .benefits-content-text, .benefits-content-text-view {
+        padding-top: 10px !important;
+        line-height: 10px;
+    }
+    .benefits-viewmore {
+        padding-top: 0px !important;
+    }
+   .need-reverse {
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -245,3 +411,9 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .hidden-md-down {
+        display: none !important;
+    }
+}
