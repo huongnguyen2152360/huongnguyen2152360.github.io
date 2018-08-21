@@ -1,8 +1,8 @@
 /* COMMON USED CSS */
-
 .body {
     font-family: Arial, Helvetica, sans-serif;
     color: #414040;
+    font-size: 16px;
 }
 
 .clear {
@@ -26,7 +26,7 @@
 }
 
 .banner-h {
-    height: 70vh;
+    height: 550px;
 }
 
 .wrap-content {
@@ -46,10 +46,10 @@
 .active-item::after {
     content: "";
     position: absolute;
-    border: 1.5px solid #9B9B9B;
+    border: 0.09375rem solid #9B9B9B;
     z-index: 1;
     width: 50%;
-    height: 6px;
+    height: 0.375rem;
     top: -2px;
     left: 50%;
     border-bottom: transparent;
@@ -63,10 +63,10 @@
 .active-item::before {
     content: "";
     position: absolute;
-    border: 1.5px solid #9B9B9B;
+    border: 0.09375rem solid #9B9B9B;
     z-index: 1;
     width: 50%;
-    height: 6px;
+    height: 0.375rem;
     bottom: -2px;
     left: 50%;
     border-top: transparent;
@@ -150,20 +150,20 @@
 
 .banner-text h1 {
     font-family: Helvetica;
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: 1.5px;
     padding: 15px 0;
 }
 
 .banner-text h6 {
-    font-size: 20px;
-    padding-bottom: 30px;
+    font-size: 1.25rem;
+    padding-bottom: 1.875rem;
     letter-spacing: 0.5px;
 }
 
 .banner-text button {
-    font-size: 18px;
+    font-size: 1.125rem;
     letter-spacing: 0.5px;
 }
 
@@ -191,7 +191,7 @@
 }
 
 .backtotop i {
-    font-size: 20pt;
+    font-size: 1.25rem;
 }
 
 .btn {
@@ -222,7 +222,7 @@
 .welcome-texture::after {
     content: "";
     position: absolute;
-    border: 4px solid #9B9B9B;
+    border: 0.25rem solid #9B9B9B;
     z-index: 1;
     width: 10%;
     height: 15px;
@@ -239,7 +239,7 @@
 .welcome-texture::before {
     content: "";
     position: absolute;
-    border: 4px solid #9B9B9B;
+    border: 0.25rem solid #9B9B9B;
     z-index: 1;
     width: 10%;
     height: 15px;
@@ -259,15 +259,15 @@
 }
 
 .welcome-text {
-    padding-top: 70px;
+    padding-top: 4.375rem;
     text-align: center;
     width: 70%;
     margin: 0 auto;
 }
 
 .welcome-text p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
 
 .question-style {
@@ -282,17 +282,17 @@
 }
 
 .question-style button i {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #414040;
 }
 
 .question-style p {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .card-body {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
 }
 
 .card-body span, .card-body span a {
@@ -317,7 +317,7 @@
 }
 
 .benefits-title {
-    padding: 80px 0;
+    padding: 5em 0;
 }
 
 .benefits-title h1 {
@@ -331,7 +331,7 @@
     position: absolute;
     border: 4px solid #F5A637;
     z-index: 1;
-    width: 10%;
+    width: 2.188em;
     height: 15px;
     bottom: 110%;
     left: 50%;
@@ -348,7 +348,7 @@
     position: absolute;
     border: 4px solid #F5A637;
     z-index: 1;
-    width: 10%;
+    width: 2.188em;
     height: 15px;
     top: 110%;
     left: 50%;
@@ -373,7 +373,7 @@
 .benefits-row1 p, .benefits-row2 p, .benefits-row3 p {
     padding: 10px 20px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
 }
 
@@ -513,14 +513,14 @@
     padding: 62.5px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    font-size: 35px;
+    font-size: 2.1875rem;
 }
 
 .co-visitor-price, .co-office-price {
     text-align: center;
     color: #414040;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem;
     padding: 15px 0;
 }
 
@@ -528,12 +528,12 @@
     text-align: center;
     color: #414040;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 2.1875rem;
     padding: 15px 0;
 }
 
 .co-visitor-price span, .co-member-price span, .co-office-price span {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: normal;
 }
 
@@ -600,13 +600,13 @@
 }
 
 .co-member-info .booknow-btn .booknow {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .moreoffers {
     color: #414040;
     text-align: right;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 28px 0;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
@@ -689,7 +689,7 @@
 
 /* GALLERY */
 
-.gallery {
+.galleryy {
     padding-top: 10%;
     margin: 0 auto;
 }
@@ -704,7 +704,7 @@
     position: absolute;
     border: 4px solid #9B9B9B;
     z-index: 1;
-    width: 10%;
+    width: 7%;
     height: 15px;
     bottom: 110%;
     left: 50%;
@@ -721,7 +721,7 @@
     position: absolute;
     border: 4px solid #9B9B9B;
     z-index: 1;
-    width: 10%;
+    width: 7%;
     height: 15px;
     top: 110%;
     left: 50%;
@@ -733,67 +733,53 @@
     -o-transform: translateX(-50%);
 }
 
-.gallery-content {
-    padding-top: 10%;
-    margin: 0 auto;
-}
-
 .gallery-title h1 {
     color: #414040;
     font-weight: bold;
 }
 
-.colleft img, .colright img {
-    width: 100%;
+.gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
 }
 
-.gallery-content img {
-    width: 100%;
+.gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
 }
 
-.h-300 {
-    height: 380px;
+.gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
-.h-150 {
-    height: 100px;
+@media (max-width: 450px) {
+    .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+    }
 }
 
-.modal-dialog {
-    max-width: 700px;
-    max-height: 500px;
-    margin: 0 auto;
+@media (max-width: 400px) {
+    .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
 }
 
-.carousel-control-prev, .carousel-control-next {
-    height: 380px;
-    opacity: 0;
+.gallery-indicator-btns {
+    padding: 6rem 0 3rem 0;
 }
 
-.carousel-indicators li {
-    width: 120px;
-}
-
-.h-50 {
-    height: 50px !important;
-}
-
-.h-215 {
-    height: 215px !important;
-}
-
-.gallery-content img:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -ms-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-}
 /* CUSTOMERS */
 
 .customers {
@@ -893,7 +879,35 @@
 }
 
 .orangee {
-    background-color: #F5A637 !important;
+    background-color: transparent !important;
+    z-index: 1 !important;
+    box-shadow: none !important;
+}
+
+.orangee i {
+    color: #414040 !important;
+    opacity: 0;
+}
+
+.carousel:hover .orangee i {
+    opacity: 1;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.btn-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.btn-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 /* NEWS & EVENTS */
@@ -950,7 +964,7 @@
 }
 
 .news-content {
-    padding-top: 10%;
+    padding-top: 5%;
     margin: 0 auto;
 }
 
@@ -1051,7 +1065,7 @@
 }
 
 .cowork-location span, .cowork-contact span {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .cowork-contact {
@@ -1061,7 +1075,7 @@
 
 .cowork-envelope {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: #F5A637;
 }
 
@@ -1087,7 +1101,6 @@
     text-align: center;
 }
 
-
 .social-fb {
     font-weight: 400;
     border: 1px solid #ffffff;
@@ -1097,13 +1110,13 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     width: 35px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 10px;
     color: #ffffff;
 }
 
 .social-fb-label {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -1111,7 +1124,7 @@
 .copyright {
     border-top: 0.2px solid rgba(155, 155, 155, 0.616);
     color: #9B9B9B;
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .border-orangee:focus {

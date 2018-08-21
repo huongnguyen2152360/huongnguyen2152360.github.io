@@ -1,9 +1,46 @@
 /* BANNER */
+
 .news-bg {
     background-color: #00000060;
 }
 
 /* CONTENT */
+
+.changePadding {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.news-columns {
+    margin: 1rem !important;
+    padding: 0 !important;
+    border: 0.125rem solid rgba(207, 207, 207, 0.685);
+    height: 500px;
+}
+
+.news-columns:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.news-content-title {
+    padding: 5px 15px;
+}
+
+.news-content-title1 {
+    padding: 10px 15px;
+}
+
 #readmore {
     padding-top: 20px;
     text-align: right;
@@ -12,13 +49,16 @@
 #readmore span {
     color: #414040;
 }
+
 #readmore span:hover {
     color: #F5A637;
     font-style: italic;
 }
+
 .pagination {
     padding: 30px 0;
 }
+
 .pagination .page-item .page-link:hover {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
@@ -28,9 +68,18 @@
     background-color: transparent;
     color: #F5A637;
 }
+
 .displaynone {
     display: none;
 }
+
 .banner-h {
     height: 70vh;
+}
+
+.modaunews {
+    font-style: italic;
+    padding-bottom: 4rem;
+    width: 100%;
+    margin: 0 auto;
 }

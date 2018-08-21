@@ -271,6 +271,7 @@
     padding: 20px 15px;
     color: #414040;
     font-size: 15px;
+    line-height: 1.5rem;
 }
 
 .meetourteam .card:hover {
@@ -359,7 +360,7 @@
 
 .hereincowork-content p {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 2rem;
     text-align: center;
     color: #414040;
 }

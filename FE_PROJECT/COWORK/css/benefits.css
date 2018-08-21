@@ -23,7 +23,7 @@
 }
 
 .benefits-content {
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 .benefits-content-title {
@@ -54,4 +54,15 @@
     color: #F5A637;
     cursor: pointer;
     font-style: italic;
+}
+.text-fill-blank {
+    padding-top: 3rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.modau {
+    font-style: italic;
+    padding-bottom: 4rem;
+    width: 60%;
+    margin: 0 auto;
 }

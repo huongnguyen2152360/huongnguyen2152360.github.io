@@ -7,7 +7,7 @@
 .price-title h2 {
     color: #414040;
     border-bottom: 3px solid #9B9B9B;
-    width: 17%;
+    width: 20%;
     font-weight: 400;
 }
 .co-visitor-header1 {
@@ -82,4 +82,60 @@
     padding: 5px 30px;
     line-height: 20px;
     font-size: 15px;
+}
+.pricing-callus {
+    padding-top: 4rem;
+    font-weight: 400;
+}
+@-webkit-keyframes hvr-bob {
+    0% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    100% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+}
+
+@keyframes hvr-bob {
+    0% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
+    100% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+}
+
+.pricing-callus:hover .phonering {
+    animation: hvr-bob .7s forwards infinite;
+    -webkit-animation: hvr-bob .7s forwards infinite;
 }

@@ -1,14 +1,13 @@
 new WOW().init();
 
 // NAVBAR
-$(".nav-item").mouseover(function() {
-  $(".nav-item").removeClass("active-item");
-  $(this).addClass("active-item");
-});
-$(".nav-item").mouseleave(function() {
-  $(".nav-item").removeClass("active-item");
-});
-
+// $(".nav-item").mouseover(function() {
+//   $(".nav-item").removeClass("active-item");
+//   $(this).addClass("active-item");
+// });
+// $(".nav-item").mouseleave(function() {
+//   $(".nav-item").removeClass("active-item");
+// });
 
 //ON SCROLL
 $(document).scroll(function() {
@@ -23,6 +22,25 @@ $(document).scroll(function() {
     $(".backtotop").css("visibility", "hidden");
     $(".backtotop").css("opacity", "0");
   }
+});
+
+// GALLERY
+$(function() {
+  var selectedClass = "";
+  $(".filter").click(function() {
+    selectedClass = $(this).attr("data-rel");
+    $("#gallery").fadeTo(100, 0.1);
+    $("#gallery div")
+      .not("." + selectedClass)
+      .fadeOut()
+      .removeClass("animation");
+    setTimeout(function() {
+      $("." + selectedClass)
+        .fadeIn()
+        .addClass("animation");
+      $("#gallery").fadeTo(300, 1);
+    }, 300);
+  });
 });
 
 // BACKTOTOP

@@ -81,3 +81,11 @@
     animation: hvr-bob .7s forwards infinite;
     -webkit-animation: hvr-bob .7s forwards infinite;
 }
+
+.form-control:focus {
+    color: #414040;
+    background-color: #fff;
+    border-color:#F5A637;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(245, 166, 55, 0.4);
+}
