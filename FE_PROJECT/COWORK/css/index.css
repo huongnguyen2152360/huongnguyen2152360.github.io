@@ -181,7 +181,7 @@
     visibility: hidden;
     opacity: 0;
     z-index: 5;
-    bottom: 20%;
+    bottom: 5%;
     right: 1%;
     transition: .1s ease-in-out;
     -webkit-transition: .1s ease-in-out;
@@ -301,6 +301,9 @@
 
 .card-body span:hover {
     cursor: pointer;
+}
+.news-content .card-body .card-text {
+    color: #414040;
 }
 
 /* BENEFITS */
@@ -1142,3 +1145,6 @@
     -o-transform: scale(1.05);
 }
 
+.overhidden--modify{
+    overflow: hidden;
+}

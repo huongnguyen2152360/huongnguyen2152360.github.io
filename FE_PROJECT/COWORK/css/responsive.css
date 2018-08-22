@@ -2698,10 +2698,8 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 10px) {
-    .carousel-item.active{
-        display: flex !important;
-    }
+@media (min-width: 1200px) {
+
 }
 
 @media (max-width: 992px) {
