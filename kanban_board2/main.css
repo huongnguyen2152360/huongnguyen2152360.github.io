@@ -1,0 +1,19 @@
+html {
+    font-size: 12px;
+}
+.banner-style {
+    text-transform: uppercase;
+    color: 	#ffffff;
+    font-weight: 500;
+    padding: 1rem 0;
+    letter-spacing: 0.1rem;
+}
+.container {
+    padding-top: 6rem;
+}
+.changeBg {
+    background-color: #79BFA1 !important;
+}
+.sorted-list {
+    cursor: pointer;
+}
