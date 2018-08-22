@@ -46,15 +46,15 @@
         padding: 0.4rem !important;
     }
     .welcome-texture::after {
-        border: 0.15rem solid #9B9B9B;
+        border: 0.1rem solid #9B9B9B;
         width: 15%;
-        height: 5px;
+        height: 6px;
         border-bottom: transparent;
     }
     .welcome-texture::before {
-        border: 0.15rem solid #9B9B9B;
+        border: 0.1rem solid #9B9B9B;
         width: 15%;
-        height: 5px;
+        height: 6px;
         border-top: transparent;
     }
     .welcome-text {
@@ -646,8 +646,8 @@
     }
 }
 
-
 /* _________________________________________________ */
+
 /* IPHONE X (portrait phones, less than 413px, height 812px) */
 
 @media (max-width: 413px) and (min-height: 812px) {
@@ -1312,11 +1312,8 @@
     }
 }
 
-
-
-
-
 /* _________________________________________________ */
+
 @media (min-width: 414px) and (max-width: 576px) and (max-height: 811px) {
     html {
         font-size: 18px;
@@ -1976,20 +1973,14 @@
     }
 }
 
-
-
-
 /* Small devices (landscape phones, 576px and up) */
 
-@media (min-width: 576px) and (max-width: 767px) {
-   
-}
-
-
-
+@media (min-width: 576px) and (max-width: 767px) {}
 
 /* ___________________________________________________ */
+
 /* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) and (max-width: 991px) {
     html {
         font-size: 18px;
@@ -2006,7 +1997,7 @@
         z-index: 3;
     }
     .navbar {
-        padding: 0 15px !important;
+        padding: 0 30px !important;
     }
     .navbar-width {
         width: 80%;
@@ -2022,7 +2013,7 @@
         overflow: unset;
     }
     .banner-h {
-        height: 175px;
+        height: 400px;
     }
     .banner-text {
         top: 32%;
@@ -2085,7 +2076,7 @@
         border-top: transparent;
     }
     .benefits-title {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
     #benefits-descript {
         padding-top: 0.5rem;
@@ -2100,10 +2091,6 @@
     .benefits-row1 p, .benefits-row2 p, .benefits-row3 p {
         padding: 0.1rem 0;
         line-height: 1rem;
-    }
-    .modau {
-        padding-bottom: 1rem !important;
-        width: 100%;
     }
     /* PRICING */
     .pricing-texture::after {
@@ -2270,15 +2257,15 @@
     }
     .cowork-info {
         width: 100% !important;
-        padding: 15px !important;
+        padding: 15px 30px !important;
         margin: 0 !important;
     }
     .cowork-contact {
-        padding: 10px 0;
+        padding: 1.5rem 0;
     }
     .cowork-contact p, .cowork-location p {
         padding-bottom: 0 !important;
-        line-height: 1rem;
+        line-height: 2rem;
     }
     .neednomargin {
         margin: 0 !important;
@@ -2287,7 +2274,10 @@
         padding: 0 15px !important;
     }
     .cowork-signup form {
-        padding-bottom: 0.9rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .cowork-envelope i {
+        font-size: 2rem !important;
     }
     .border-orangee {
         width: 30% !important;
@@ -2296,7 +2286,7 @@
         height: 1.2rem !important;
     }
     .orangee-btn {
-        padding: 5px !important;
+        padding: 0.5rem !important;
         margin: 0 5px !important;
     }
     .orangee i {
@@ -2315,7 +2305,7 @@
         border: none;
     }
     .footer-darkdark {
-        padding: 5px 0 !important;
+        padding: 1rem 0 !important;
     }
     .footer-dark i, .cowork-signup i {
         font-size: 0.9rem !important;
@@ -2327,11 +2317,11 @@
         color: #ffffff;
     }
     .copyright {
-        padding: 5px 0 !important;
+        padding: 2rem 0 !important;
     }
     /* Backtotop */
     .second__home .btn {
-        padding: 8px 11px !important;
+        padding: 0.9rem 1.2rem !important;
     }
     /* ABOUT US */
     .aboutus {
@@ -2345,21 +2335,24 @@
     }
     .aboutus-content-texture::after {
         border: 0.125rem solid #9B9B9B;
-        width: 20%;
-        height: 5px;
+        width: 15%;
+        height: 10px;
         border-bottom: transparent;
     }
     .aboutus-content-texture::before {
         border: 0.125rem solid #9B9B9B;
-        width: 20%;
-        height: 5px;
+        width: 15%;
+        height: 10px;
         border-top: transparent;
     }
     .aboutus-info {
-        padding-bottom: 20px;
+        padding-bottom: 2rem;
     }
-    .aboutus-info p, .vision-text, .hereincowork-content p {
+    .aboutus-info p, .vision-text {
         line-height: 1rem;
+    }
+    .hereincowork-content p {
+        line-height: 2rem;
     }
     .aboutus-vision {
         padding: 10px 0 0 0 !important;
@@ -2368,28 +2361,32 @@
         padding: 10px 15px;
     }
     .aboutus-about {
-        padding: 0.125rem 0;
+        padding: 0.5rem 0;
     }
     .meetourteam {
-        padding: 1.5rem 0 0.125rem 0 !important;
+        padding: 2rem 0 0.5rem 0 !important;
+    }
+    .meetourteam-title {
+        padding-bottom: 1rem;
     }
     .meetourteam-cards {
         padding-top: 1rem !important;
     }
     .meetourteam-cards .card {
-        width: 8rem !important;
-        margin-bottom: 10px !important;
+        width: 13rem !important;
+        margin-bottom: 1.5rem !important;
+        padding: 2rem 0 !important;
     }
     .meetourteam-cards .card-avatar {
         width: 50px;
         margin-bottom: 5px !important;
     }
     .meetourteam-cards .card-body h5 {
-        padding-bottom: 0 !important;
+        padding-bottom: 0.5rem !important;
     }
     .meetourteam-cards .card-body h6 {
-        font-size: 0.5rem !important;
-        padding-bottom: 5px !important;
+        font-size: 0.8rem !important;
+        padding-bottom: 0.5rem !important;
     }
     .social-fb2 {
         color: #414040;
@@ -2402,18 +2399,23 @@
         padding-bottom: 10px !important;
     }
     .hereincowork-content {
-        padding-top: 10px !important;
+        padding-top: 1.5rem !important;
     }
     /* BENEFITS */
     .benefits-content {
-        padding: 12% 0;
+        padding: 1.5rem 0;
     }
     .benefits-content .col-7 {
         padding: 0 10px !important;
     }
+    .modau {
+        padding-bottom: 3rem !important;
+        width: 70%;
+    }
     .benefits-img {
-        max-width: 220px;
+        max-width: 490px;
         margin: 0 auto;
+        padding-bottom: 0.5rem;
     }
     .benefits-content-title {
         border-bottom: 1px solid rgba(155, 155, 155, 0.55);
@@ -2421,7 +2423,7 @@
     }
     .wrap-content1 {
         max-width: 1140px !important;
-        padding: 0 15px !important;
+        padding: 0 30px !important;
         margin: 0 auto !important;
     }
     .commonworkspace {
@@ -2432,8 +2434,8 @@
         line-height: 1rem;
     }
     .benefits-viewmore {
-        padding-top: 0px !important;
-        padding-bottom: 1.5rem;
+        padding-bottom: 3rem;
+        font-style: italic;
     }
     .benefits-viewmore1 {
         padding-top: 0px !important;
@@ -2444,7 +2446,7 @@
         flex-direction: column-reverse;
     }
     .text-fill-blank {
-        padding-top: 0.5rem;
+        padding: 1.5rem 0;
     }
     .text-fill-blank p {
         text-align: center;
@@ -2474,7 +2476,7 @@
         padding: 1.5rem;
     }
     .co-visitor-price, .co-office-price, .co-member-price, .co-visitor-info1, .co-member-info1, .co-office-info1 {
-        padding: 0.2rem 0;
+        padding: 0.5rem 0;
     }
     .co-visitor-info1 p, .co-member-info1 p, .co-office-info1 p {
         line-height: 0.8rem;
@@ -2696,7 +2698,11 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 10px) {
+    .carousel-item.active{
+        display: flex !important;
+    }
+}
 
 @media (max-width: 992px) {
     .hidden-md-down {

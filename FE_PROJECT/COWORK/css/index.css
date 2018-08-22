@@ -181,7 +181,7 @@
     visibility: hidden;
     opacity: 0;
     z-index: 5;
-    bottom: 25%;
+    bottom: 20%;
     right: 1%;
     transition: .1s ease-in-out;
     -webkit-transition: .1s ease-in-out;
@@ -1141,3 +1141,4 @@
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
 }
+
