@@ -186,6 +186,8 @@
 .peach-gradient {
     background: -webkit-linear-gradient(50deg, #ffd86f, #fc6262) !important;
     background: -o-linear-gradient(50deg, #ffd86f, #fc6262) !important;
+    background: -moz-linear-gradient(50deg, #ffd86f, #fc6262) !important;
+    background: -ms-linear-gradient(50deg, #ffd86f, #fc6262) !important;
     background: linear-gradient(40deg, #ffd86f, #fc6262) !important;
 }
 

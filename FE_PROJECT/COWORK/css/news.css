@@ -62,8 +62,13 @@
 .pagination .page-item .page-link:hover {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
     transition: all .1s linear;
     -webkit-border-radius: .125rem;
+    -moz-border-radius: .125rem;
+    -ms-border-radius: .125rem;
+    -o-border-radius: .125rem;
     border-radius: .125rem;
     background-color: transparent;
     color: #F5A637;

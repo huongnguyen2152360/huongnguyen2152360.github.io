@@ -138,4 +138,7 @@
 .pricing-callus:hover .phonering {
     animation: hvr-bob .7s forwards infinite;
     -webkit-animation: hvr-bob .7s forwards infinite;
+    -moz-animation: hvr-bob .7s forwards infinite;
+    -ms-animation: hvr-bob .7s forwards infinite;
+    -o-animation: hvr-bob .7s forwards infinite;
 }
