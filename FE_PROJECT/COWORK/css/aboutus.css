@@ -16,6 +16,10 @@
     margin: 0 !important;
 }
 
+.aboutus-firsthome {
+    height: 70vh;
+}
+
 .banner {
     position: relative;
     height: 100vh;
@@ -85,6 +89,11 @@
 
 /* BANNER */
 
+.aboutus-banner {
+    background: url('../img/aboutus_banner.jpg') center;
+    height: 70vh;
+}
+
 .position-ab {
     position: absolute;
     top: 0;
@@ -138,7 +147,7 @@
 
 .aboutus-title {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -157,7 +166,6 @@
 /* CONTENT */
 
 .aboutus {
-    padding-top: 10%;
     overflow: hidden;
 }
 
@@ -200,10 +208,10 @@
 }
 
 .aboutus-content-title {
-    padding: 60px 0;
+    padding: 6rem 0 3rem 0;
 }
 
-.aboutus-content-title h1 {
+.aboutus-content-title h2 {
     font-weight: bold;
     letter-spacing: 1px;
     position: relative;
@@ -249,12 +257,11 @@
     text-align: center;
     width: 70%;
     margin: 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 3rem;
 }
 
-.aboutus-info p {
-    font-size: 20px;
-    line-height: 30px;
+.aboutus-info h6 {
+    line-height: 2rem;
 }
 
 .aboutus-vision {
@@ -272,8 +279,11 @@
     text-align: justify;
     padding: 20px 15px;
     color: #414040;
-    font-size: 15px;
     line-height: 1.5rem;
+}
+
+.meetourteam-title {
+    padding: 1rem 0;
 }
 
 .meetourteam .card:hover {
@@ -295,19 +305,29 @@
 
 .meetourteam-title h3, .hereincowork-title h3 {
     color: #414040;
-    font-size: 25px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    padding: 3rem 0;
 }
 
+.hereincowork-title {
+    padding: 1rem 0;
+}
 .card {
     text-align: center;
     border: 1px solid #D2D2D2;
+}
+.hereincowork-content p {
+    line-height: 1.5rem;
+}
+.snd, .thr, .fourth, .fifth {
+    padding-top: 2.5rem;
 }
 
 .card-avatar {
     width: 100px;
     margin: 0 auto;
+    padding: 1.5rem 0;
 }
 
 .card-avatar img {
@@ -321,11 +341,14 @@
 
 .card-body h5 {
     color: #414040;
+    letter-spacing: 0.02rem;
 }
 
-.card-body h6 {
+.card-body p {
     color: #4A4A4A;
-    font-size: 13px;
+    padding: 1rem 0;
+    font-style: italic;
+    font-weight: 300;
 }
 
 .social-fb2 {
@@ -356,10 +379,6 @@
     -o-transition: 0.1s ease-in-out;
 }
 
-.hereincowork {
-    padding-bottom: 70px;
-}
-
 .hereincowork-content p {
     font-size: 18px;
     line-height: 2rem;
@@ -370,6 +389,7 @@
 .last {
     font-weight: bold;
     letter-spacing: 0.5px;
+    padding: 2.5rem 0;
 }
 
 /* FOOTER */

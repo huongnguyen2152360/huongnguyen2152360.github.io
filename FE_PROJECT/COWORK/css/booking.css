@@ -1,3 +1,9 @@
+/* BANNER */
+.booking-banner {
+    background: url(../img/booking_banner3.jpg);
+    height: 70vh;
+}
+
 /* CONTENT */
 
 .booking-text h4 {

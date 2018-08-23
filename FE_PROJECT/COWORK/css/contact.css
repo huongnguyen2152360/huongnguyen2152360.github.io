@@ -2,13 +2,16 @@
 .news-bg {
     background-color: #0000006b;
 }
+.contact-banner {
+    background: url(../img/contact_banner2.jpg) no-repeat;
+    height: 70vh;
+}
 
 /* CONTENT */
 .contact-content {
     color: #414040;
 }
 .ourlocations, .writetous {
-    font-size: 25px;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
@@ -18,9 +21,6 @@
 .contact-info p {
     color: #414040;
     font-weight: 400;
-}
-.contact-locations p {
-    font-size: 15px;
 }
 .card-block {
     padding: 1.25rem;

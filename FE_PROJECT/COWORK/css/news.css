@@ -1,7 +1,12 @@
 /* BANNER */
 
 .news-bg {
-    background-color: #00000060;
+    background-color: #0000007e;
+}
+
+.news-banner {
+    background: url(../img/news_banner1.jpg) no-repeat;
+    height: 70vh;
 }
 
 /* CONTENT */

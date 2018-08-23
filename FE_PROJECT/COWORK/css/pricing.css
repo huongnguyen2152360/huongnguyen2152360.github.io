@@ -1,3 +1,10 @@
+/* BANNER */
+
+.pricing-banner {
+    background: url(../img/pricing_banner4.jpg) no-repeat;
+    height: 70vh;
+}
+
 /* PRICING CONTENT */
 
 .pricing-content {
@@ -10,19 +17,23 @@
     width: 20%;
     font-weight: 400;
 }
+
 .co-visitor-header1 {
     background: url('../img/covisitor1.png');
     text-align: center;
 }
+
 .co-visitor-header1 h2, .co-visitor-header2 h2 {
     padding: 50px;
     font-weight: 500;
     letter-spacing: 1.5px;
 }
+
 .co-visitor-header2 {
     background: url('../img/covisitor3.jpg');
     text-align: center;
 }
+
 .co-visitor-info1, .co-member-info1, .co-office-info1 {
     text-align: justify;
     padding: 25px 0;
@@ -30,46 +41,70 @@
     color: #414040;
 }
 
+.co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+    height: 370px;
+}
+
+.tobottom-padding1, .tobottom-padding2, .tobottom-padding3 {
+    padding-top: 1.8rem;
+}
+
 .co-visitor-info1 p, .co-member-info1 p, .co-office-info1 p {
     padding: 10px 30px;
     line-height: 20px;
-    font-size: 15px;
 }
+
 #sndline {
     font-weight: 500;
 }
+
 #lastline {
     padding: 0 30px;
 }
+
 .co-member-header1 {
     background: url('../img/comember1.jpg');
     text-align: center;
 }
+
 .co-member-header2 {
     background: url('../img/comember2.jpg');
     text-align: center;
 }
+
 .co-member-header1 h2, .co-member-header2 h2 {
     padding: 50px;
     font-weight: 500;
     letter-spacing: 1.5px;
 }
+
+.co-member-header2 h2 {
+    font-size: 1.85rem;
+}
+
 .co-office-header1 {
     background: url('../img/cooffice1.jpg');
     text-align: center;
 }
+
 .co-office-header2 {
     background: url('../img/cooffice2.jpg');
     text-align: center;
 }
+
 .co-office-header3 {
     background: url('../img/cooffice3.jpg');
     text-align: center;
 }
+
 .co-office-header1 h2, .co-office-header2 h2, .co-office-header3 h2 {
     padding: 50px;
     font-weight: 500;
     letter-spacing: 1.5px;
+}
+
+.co-office-header3 h2 {
+    font-size: 1.5rem;
 }
 .co-office-info11 {
     text-align: justify;
@@ -81,12 +116,13 @@
 .co-office-info11 p {
     padding: 5px 30px;
     line-height: 20px;
-    font-size: 15px;
 }
+
 .pricing-callus {
     padding-top: 4rem;
     font-weight: 400;
 }
+
 @-webkit-keyframes hvr-bob {
     0% {
         transform: scale(1.1);
@@ -94,21 +130,21 @@
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
     50% {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
     100% {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
 }
 
 @keyframes hvr-bob {
@@ -118,21 +154,21 @@
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
     50% {
         transform: scale(1);
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-}
+    }
     100% {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
         -moz-transform: scale(1.1);
         -ms-transform: scale(1.1);
         -o-transform: scale(1.1);
-}
+    }
 }
 
 .pricing-callus:hover .phonering {

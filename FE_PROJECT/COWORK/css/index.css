@@ -1,9 +1,12 @@
 /* COMMON USED CSS */
 
+html {
+    font-size: 16px;
+}
+
 .body {
     font-family: Arial, Helvetica, sans-serif;
     color: #414040;
-    font-size: 16px;
 }
 
 .clear {
@@ -17,9 +20,15 @@
     margin: 0 !important;
 }
 
+.aboutus-firsthome {
+    height: 70vh !important;
+}
+
 .banner {
-    position: relative;
     overflow: hidden;
+    background: url('../img/banner3dark.jpg') center;
+    height: 100vh;
+    width: 100%;
 }
 
 .banner img {
@@ -27,7 +36,7 @@
 }
 
 .banner-h {
-    height: 550px;
+    height: 70vh;
 }
 
 .wrap-content {
@@ -38,7 +47,7 @@
 
 .no-boxshadow {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
 }
 
 .width-1 {
@@ -48,7 +57,7 @@
 .active-item::after {
     content: "";
     position: absolute;
-    border: 0.09375rem solid #9B9B9B;
+    border: 0.1rem solid #ffffff;
     z-index: 1;
     width: 50%;
     height: 0.375rem;
@@ -65,7 +74,7 @@
 .active-item::before {
     content: "";
     position: absolute;
-    border: 0.09375rem solid #9B9B9B;
+    border: 0.1rem solid #ffffff;
     z-index: 1;
     width: 50%;
     height: 0.375rem;
@@ -86,6 +95,11 @@
 
 /* BANNER */
 
+.first__home {
+    position: relative;
+    height: 100vh;
+}
+
 .position-ab {
     position: absolute;
     top: 0;
@@ -100,6 +114,14 @@
 
 /* NAVBAR */
 
+/* .navbar .show {
+    background-color: #000000cc;
+    -webkit-background-color: #000000cc;
+    -moz-background-color: #000000cc;
+    -ms-background-color: #000000cc;
+    -o-background-color: #000000cc;
+} */
+
 .full-width-navbar {
     background-color: #000000cc;
     -webkit-background-color: #000000cc;
@@ -111,15 +133,9 @@
 }
 
 .test {
-    border: 1px solid #9B9B9B !important;
+    border: 1px solid #ffffff !important;
     background-color: transparent !important;
     color: #ffffff !important;
-}
-
-.test:hover {
-    border-color: #F5A637 !important;
-    background-color: transparent !important;
-    color: #F5A637 !important;
 }
 
 .logo-width img {
@@ -144,32 +160,43 @@
 .banner-text {
     width: 100%;
     position: absolute;
-    top: 65%;
-    left: 0;
+    top: 50%;
+    left: 50%;
     text-align: center;
-    transform: translate(0, -100%);
-    -webkit-transform: translate(0, -100%);
-    -moz-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
-    -o-transform: translate(0, -100%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .banner-text h1 {
     font-family: Helvetica;
-    font-size: 3rem;
     font-weight: bold;
     letter-spacing: 1.5px;
-    padding: 15px 0;
+    padding: 1rem 0;
+    font-size: 3rem;
 }
 
-.banner-text h6 {
-    font-size: 1.25rem;
-    padding-bottom: 1.875rem;
+.banner-text h5 {
+    padding-bottom: 2rem;
     letter-spacing: 0.5px;
 }
 
+.banner-text button h5 {
+    padding-bottom: 0;
+}
+
+.test:hover .learnmore-banner {
+    color: #F5A637 !important;
+}
+
+.test:hover {
+    border-color: #F5A637 !important;
+    background-color: transparent !important;
+}
+
 .banner-text button {
-    font-size: 1.125rem;
     letter-spacing: 0.5px;
 }
 
@@ -269,9 +296,8 @@
     margin: 0 auto;
 }
 
-.welcome-text p {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+.welcome-text h5 {
+    line-height: 2rem;
 }
 
 .question-style {
@@ -290,12 +316,7 @@
     color: #414040;
 }
 
-.question-style p {
-    font-size: 1.125rem;
-}
-
 .card-body {
-    font-size: 0.9375rem;
     line-height: 1.25rem;
 }
 
@@ -368,20 +389,24 @@
     -o-transform: translateX(-50%);
 }
 
-.benefits-row1, .benefits-row2, .benefits-row3 {
-    padding: 20px 0;
+.benefits-row1, .benefits-row2 {
+    padding: 1.2rem 0;
+    margin: 0 auto;
+}
+
+.benefits-row3 {
+    padding: 1.2rem 0 3rem 0;
     margin: 0 auto;
 }
 
 .benefits-row1 i, .benefits-row2 i, .benefits-row3 i {
     padding: 20px 0;
-    font-size: 45px;
+    font-size: 3rem;
 }
 
-.benefits-row1 p, .benefits-row2 p, .benefits-row3 p {
+.benefits-row1 h5, .benefits-row2 h5, .benefits-row3 h5 {
     padding: 10px 20px;
     color: #ffffff;
-    font-size: 1.25rem;
     line-height: 30px;
 }
 
@@ -486,6 +511,10 @@
     color: #ffffff;
 }
 
+.co-member-info {
+    height: 399px;
+}
+
 .card-bg:hover .booknow, .card-bg2:hover .booknow {
     background-color: rgba(0, 0, 0, 0.9) !important;
     border: none !important;
@@ -495,7 +524,7 @@
     border: 1px solid rgba(151, 151, 151, 0.19);
     padding: 0;
     -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .co-visitor-header {
@@ -523,14 +552,12 @@
     padding: 62.5px;
     font-weight: 500;
     letter-spacing: 1.5px;
-    font-size: 2.1875rem;
 }
 
 .co-visitor-price, .co-office-price {
     text-align: center;
     color: #414040;
     font-weight: 500;
-    font-size: 1.875rem;
     padding: 15px 0;
 }
 
@@ -538,12 +565,10 @@
     text-align: center;
     color: #414040;
     font-weight: 500;
-    font-size: 2.1875rem;
     padding: 15px 0;
 }
 
 .co-visitor-price span, .co-member-price span, .co-office-price span {
-    font-size: 0.75rem;
     font-weight: normal;
 }
 
@@ -609,14 +634,9 @@
     padding-bottom: 8px;
 }
 
-.co-member-info .booknow-btn .booknow {
-    font-size: 1.125rem;
-}
-
 .moreoffers {
     color: #414040;
     text-align: right;
-    font-size: 1.25rem;
     padding: 28px 0;
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
@@ -636,42 +656,42 @@
         -moz-transform: translateX(6px);
         -ms-transform: translateX(6px);
         -o-transform: translateX(6px);
-}
+    }
     33.3% {
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px);
         -moz-transform: translateX(-5px);
         -ms-transform: translateX(-5px);
         -o-transform: translateX(-5px);
-}
+    }
     49.95% {
         -webkit-transform: translateX(4px);
         transform: translateX(4px);
         -moz-transform: translateX(4px);
         -ms-transform: translateX(4px);
         -o-transform: translateX(4px);
-}
+    }
     66.6% {
         -webkit-transform: translateX(-2px);
         transform: translateX(-2px);
         -moz-transform: translateX(-2px);
         -ms-transform: translateX(-2px);
         -o-transform: translateX(-2px);
-}
+    }
     83.25% {
         -webkit-transform: translateX(1px);
         transform: translateX(1px);
         -moz-transform: translateX(1px);
         -ms-transform: translateX(1px);
         -o-transform: translateX(1px);
-}
+    }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 }
 
 @keyframes hvr-icon-wobble-horizontal {
@@ -681,42 +701,42 @@
         -moz-transform: translateX(6px);
         -ms-transform: translateX(6px);
         -o-transform: translateX(6px);
-}
+    }
     33.3% {
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px);
         -moz-transform: translateX(-5px);
         -ms-transform: translateX(-5px);
         -o-transform: translateX(-5px);
-}
+    }
     49.95% {
         -webkit-transform: translateX(4px);
         transform: translateX(4px);
         -moz-transform: translateX(4px);
         -ms-transform: translateX(4px);
         -o-transform: translateX(4px);
-}
+    }
     66.6% {
         -webkit-transform: translateX(-2px);
         transform: translateX(-2px);
         -moz-transform: translateX(-2px);
         -ms-transform: translateX(-2px);
         -o-transform: translateX(-2px);
-}
+    }
     83.25% {
         -webkit-transform: translateX(1px);
         transform: translateX(1px);
         -moz-transform: translateX(1px);
         -ms-transform: translateX(1px);
         -o-transform: translateX(1px);
-}
+    }
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-}
+    }
 }
 
 .moreoffers:hover {
@@ -899,8 +919,8 @@
 
 .carousel-control-prev {
     -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -ms-flex-pack: left;
+    justify-content: left;
 }
 
 .text-muted {
@@ -909,8 +929,8 @@
 
 .carousel-control-next {
     -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
 }
 
 .card {
@@ -934,7 +954,7 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
-            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .carousel {
@@ -945,7 +965,7 @@
     background-color: transparent !important;
     z-index: 1 !important;
     -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .orangee i {
@@ -1032,6 +1052,14 @@
     margin: 0 auto;
 }
 
+.news-content .row {
+    padding-bottom: 1rem;
+}
+
+.newscard {
+    height: 450px;
+}
+
 .divbehind {
     background-color: transparent;
 }
@@ -1048,7 +1076,7 @@
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
-            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .newscard a {
@@ -1077,7 +1105,7 @@
 }
 
 .seemorenews {
-    padding-top: 20px;
+    padding-top: 1rem;
     text-align: right;
 }
 
@@ -1108,6 +1136,10 @@
     position: relative;
 }
 
+.cowork-info-title, .cowork-location, .cowork-contact {
+    padding-left: 1rem;
+}
+
 .cowork-info-title h4 {
     font-weight: 500;
     letter-spacing: 1px;
@@ -1121,16 +1153,12 @@
     width: 20%;
     height: 15px;
     top: 110%;
-    left: 0;
+    left: 1rem;
 }
 
 .cowork-location {
     color: #ffffff;
     padding-top: 50px;
-}
-
-.cowork-location span, .cowork-contact span {
-    font-size: 1.25rem;
 }
 
 .cowork-contact {
@@ -1140,8 +1168,11 @@
 
 .cowork-envelope {
     text-align: center;
-    font-size: 2.5rem;
     color: #F5A637;
+}
+
+.cowork-envelope i {
+    font-size: 2.5rem;
 }
 
 .signup-text h6 {
@@ -1153,8 +1184,8 @@
 
 .form-inline {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .cowork-regis {
@@ -1177,13 +1208,11 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     width: 35px;
-    font-size: 0.9375rem;
     padding: 10px;
     color: #ffffff;
 }
 
 .social-fb-label {
-    font-size: 0.9375rem;
     font-weight: 300;
     letter-spacing: 0.5px;
 }
@@ -1191,7 +1220,6 @@
 .copyright {
     border-top: 0.2px solid rgba(155, 155, 155, 0.616);
     color: #9B9B9B;
-    font-size: 0.9375rem;
 }
 
 .border-orangee:focus {

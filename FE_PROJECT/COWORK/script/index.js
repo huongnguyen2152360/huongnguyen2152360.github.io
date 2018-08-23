@@ -11,10 +11,10 @@ new WOW().init();
 
 //ON SCROLL
 $(document).scroll(function() {
-  // $(".fw").addClass("full-width-navbar");
-  // if ($(document).scrollTop() == 0) {
-  //   $(".fw").removeClass("full-width-navbar");
-  // }
+  $(".fw").addClass("full-width-navbar");
+  if ($(document).scrollTop() == 0) {
+    $(".fw").removeClass("full-width-navbar");
+  }
   if ($(document).scrollTop() >= 400) {
     $(".backtotop").css("visibility", "visible");
     $(".backtotop").css("opacity", "1");
@@ -25,7 +25,6 @@ $(document).scroll(function() {
 });
 
 // GALLERY
-
 
 // BACKTOTOPn
 function backToTop(params) {
@@ -51,13 +50,26 @@ function gallery(params) {
     }, 300);
   });
 }
+
 function overhidden(params) {
-  $($(".wow").parent()).addClass("overhidden--modify")
+  $($(".wow").parent()).addClass("overhidden--modify");
 }
+
+// TOPNAVBAR
+// function topNavBar(params) {
+//   if ($("#navbarNav").hasClass("show")) {
+//     console.log("hellooooo");
+//     $(".fw").css("background-color", "#000000cc");
+//   } else {
+//     $(".fw").css("background-color", "transparent");
+//   }
+// }
+
 $(function() {
-  overhidden()
-  gallery()
-  backToTop()
+  overhidden();
+  gallery();
+  backToTop();
+  // topNavBar();
 });
 
 // BOOKING SUBMIT

@@ -1,3 +1,14 @@
+/* BANNER */
+
+.news-bg {
+    background-color: #0000007e;
+}
+
+.news-banner {
+    background: url(../img/news_banner1.jpg) no-repeat;
+    height: 70vh;
+}
+
 /* CONTENT */
 
 .detail-title-text {
@@ -42,32 +53,39 @@
     font-style: italic;
     font-size: 14px;
 }
+
 .para2 a {
     color: #414040;
     font-size: 18px;
     font-weight: 400;
 }
+
 .para2 a:hover {
     color: #F5A637;
     font-style: italic;
 }
+
 .leave-reply {
     color: #414040;
     font-weight: bold;
     letter-spacing: 0.5px;
 }
+
 .notice {
     font-style: italic;
     font-size: 15px;
 }
+
 .comment-control, .email-input {
     font-weight: 400;
     color: #414040;
 }
+
 #exampleFormControlTextarea1, #exampleFormControlInput1 {
     width: 95%;
     margin: 0 auto;
 }
+
 .postcmt {
     border: 2px solid rgb(117, 117, 117) !important;
     background-color: transparent !important;
@@ -87,11 +105,13 @@
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(245, 166, 55, 0.637);
 }
+
 .latest-title {
     font-weight: 500;
     letter-spacing: 0.5px;
     border-bottom: 2px solid #9B9B9B;
 }
+
 .articles-content p {
     font-size: 14px;
     line-height: 20px;
@@ -101,6 +121,7 @@
 .articles-link {
     color: #414040;
 }
+
 .articles-link:hover {
     color: #F5A637;
 }
