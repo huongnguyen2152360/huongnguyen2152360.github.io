@@ -37,7 +37,8 @@
 }
 
 .no-boxshadow {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 .width-1 {
@@ -204,10 +205,6 @@
 }
 
 .peach-gradient {
-    background: -webkit-linear-gradient(50deg, #ffd86f, #fc6262) !important;
-    background: -moz-linear-gradient(50deg, #ffd86f, #fc6262) !important;
-    background: -ms-linear-gradient(50deg, #ffd86f, #fc6262) !important;
-    background: -o-linear-gradient(50deg, #ffd86f, #fc6262) !important;
     background: linear-gradient(40deg, #ffd86f, #fc6262) !important;
 }
 
@@ -497,7 +494,8 @@
 .co-visitor-card, .co-member-card, .co-office-card {
     border: 1px solid rgba(151, 151, 151, 0.19);
     padding: 0;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .co-visitor-header {
@@ -635,72 +633,90 @@
     16.65% {
         -webkit-transform: translateX(6px);
         transform: translateX(6px);
-    }
+        -moz-transform: translateX(6px);
+        -ms-transform: translateX(6px);
+        -o-transform: translateX(6px);
+}
     33.3% {
         -webkit-transform: translateX(-5px);
         transform: translateX(-5px);
-    }
+        -moz-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+        -o-transform: translateX(-5px);
+}
     49.95% {
         -webkit-transform: translateX(4px);
         transform: translateX(4px);
-    }
+        -moz-transform: translateX(4px);
+        -ms-transform: translateX(4px);
+        -o-transform: translateX(4px);
+}
     66.6% {
         -webkit-transform: translateX(-2px);
         transform: translateX(-2px);
-    }
+        -moz-transform: translateX(-2px);
+        -ms-transform: translateX(-2px);
+        -o-transform: translateX(-2px);
+}
     83.25% {
         -webkit-transform: translateX(1px);
         transform: translateX(1px);
-    }
+        -moz-transform: translateX(1px);
+        -ms-transform: translateX(1px);
+        -o-transform: translateX(1px);
+}
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-    }
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
 }
 
 @keyframes hvr-icon-wobble-horizontal {
     16.65% {
         -webkit-transform: translateX(6px);
+        transform: translateX(6px);
         -moz-transform: translateX(6px);
         -ms-transform: translateX(6px);
         -o-transform: translateX(6px);
-        transform: translateX(6px);
-    }
+}
     33.3% {
         -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
         -moz-transform: translateX(-5px);
         -ms-transform: translateX(-5px);
         -o-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
+}
     49.95% {
         -webkit-transform: translateX(4px);
+        transform: translateX(4px);
         -moz-transform: translateX(4px);
         -ms-transform: translateX(4px);
         -o-transform: translateX(4px);
-        transform: translateX(4px);
-    }
+}
     66.6% {
         -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
         -moz-transform: translateX(-2px);
         -ms-transform: translateX(-2px);
         -o-transform: translateX(-2px);
-        transform: translateX(-2px);
-    }
+}
     83.25% {
         -webkit-transform: translateX(1px);
+        transform: translateX(1px);
         -moz-transform: translateX(1px);
         -ms-transform: translateX(1px);
         -o-transform: translateX(1px);
-        transform: translateX(1px);
-    }
+}
     100% {
         -webkit-transform: translateX(0);
+        transform: translateX(0);
         -moz-transform: translateX(0);
         -ms-transform: translateX(0);
         -o-transform: translateX(0);
-        transform: translateX(0);
-    }
+}
 }
 
 .moreoffers:hover {
@@ -774,12 +790,10 @@
 
 .gallery {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
     -o-column-count: 3;
     -ms-column-count: 3;
     column-count: 3;
     -webkit-column-width: 33%;
-    -moz-column-width: 33%;
     -o-column-width: 33%;
     -ms-column-width: 33%;
     column-width: 33%;
@@ -787,15 +801,11 @@
 
 .gallery .pics {
     -webkit-transition: all 350ms ease;
-    -moz-transition: all 350ms ease;
-    -o-transition: all 350ms ease;
-    -ms-transition: all 350ms ease;
     transition: all 350ms ease;
 }
 
 .gallery .animation {
     -webkit-transform: scale(1);
-    -ms-transform: scale(1);
     transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
@@ -804,12 +814,10 @@
 @media (max-width: 450px) {
     .gallery {
         -webkit-column-count: 1;
-        -moz-column-count: 1;
         -ms-column-count: 1;
         -o-column-count: 1;
         column-count: 1;
         -webkit-column-width: 100%;
-        -moz-column-width: 100%;
         -ms-column-width: 100%;
         -o-column-width: 100%;
         column-width: 100%;
@@ -890,7 +898,9 @@
 }
 
 .carousel-control-prev {
-    justify-content: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
 }
 
 .text-muted {
@@ -898,7 +908,9 @@
 }
 
 .carousel-control-next {
-    justify-content: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
 }
 
 .card {
@@ -921,7 +933,8 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 }
 
 .carousel {
@@ -931,7 +944,8 @@
 .orangee {
     background-color: transparent !important;
     z-index: 1 !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
 .orangee i {
@@ -1033,7 +1047,8 @@
     -moz-transition: .2s ease-in-out;
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 }
 
 .newscard a {
@@ -1137,7 +1152,9 @@
 }
 
 .form-inline {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .cowork-regis {
