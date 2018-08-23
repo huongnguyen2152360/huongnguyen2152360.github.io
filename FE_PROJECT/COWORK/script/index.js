@@ -11,10 +11,10 @@ new WOW().init();
 
 //ON SCROLL
 $(document).scroll(function() {
-  $(".fw").addClass("full-width-navbar");
-  if ($(document).scrollTop() == 0) {
-    $(".fw").removeClass("full-width-navbar");
-  }
+  // $(".fw").addClass("full-width-navbar");
+  // if ($(document).scrollTop() == 0) {
+  //   $(".fw").removeClass("full-width-navbar");
+  // }
   if ($(document).scrollTop() >= 400) {
     $(".backtotop").css("visibility", "visible");
     $(".backtotop").css("opacity", "1");
