@@ -33,6 +33,9 @@
     .nav-link, .nav-item1 button {
         font-size: 1.1rem;
     }
+    .navbar-width {
+        width: 90%;
+    }
     /* HOME */
     .banner, .first__home {
         height: 70vh;
@@ -104,21 +107,652 @@
         line-height: 2rem;
     }
     /* CONTACT */
-    .ourlocations, .contact-info p {
+    .contact-info p {
+        font-size: 1.2rem;
+    }
+    .md-form .prefix~label {
+        font-size: 1.2rem;
+    }
+    .btn.btn-lg {
+        font-size: 1.2rem;
+    }
+    #label4checkbox1 {
+        font-size: 1.15rem;
+    }
+    .writetous, .ourlocations {
+        font-size: 1.8rem;
+    }
+    .contact-locations.pt-3 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    /* BOOKING */
+    .chooseyourplan {
         font-size: 1.2rem;
     }
 }
 
-@media only screen and (max-width: 968px) {}
+/* For Ipad Pro portrait */
 
-@media only screen and (max-width: 834px) {}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    html {
+        font-size: 18px;
+    }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
+    .nav-link, .nav-item1 button {
+        font-size: 1.1rem;
+    }
+    /* HOME */
+    .banner, .first__home {
+        height: 45vh;
+    }
+    .navbar-width {
+        width: 95%;
+    }
+    .card-body, .question-style h6 {
+        line-height: 2rem;
+    }
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+    .banner-h, .aboutus-firsthome {
+        height: 40vh !important;
+    }
+    .co-member-header h2 {
+        font-size: 1.94rem;
+    }
+    .co-member-info {
+        height: 415px;
+    }
+    .booknow-needspt {
+        padding-top: 2rem;
+    }
+    .cowork-map {
+        height: 440px !important;
+        width: 103%;
+    }
+    .newscard {
+        height: 570px;
+    }
+    .cowork-info {
+        height: 440px !important;
+    }
+    .cowork-location p {
+        padding-bottom: 0.7rem !important;
+    }
+    /* ABOUT US */
+    .aboutus-info h6 {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+    .vision-text, .hereincowork-content p {
+        font-size: 1.2rem;
+    }
+    .social-fb-label {
+        font-size: 1rem;
+    }
+    .card.m-auto {
+        width: 13rem !important;
+    }
+    .card-body h5 {
+        font-size: 1rem;
+    }
+    /* BENEFITS */
+    .modau h6 {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+    .benefits-content-text, .benefits-content-text-view a, .text-fill-blank {
+        font-size: 1.2rem;
+    }
+    /* PRICING */
+    .pricing-content {
+        padding: 4rem 0;
+    }
+    .price-title h2 {
+        width: 21%;
+    }
+    .co-visitor-price {
+        font-size: 1.5rem;
+    }
+    .co-office-header1 h2, .co-office-header2 h2 {
+        font-size: 1.3rem;
+    }
+    .co-visitor-info1 p, .co-member-info1 p, .co-office-info1 p {
+        padding: 10px 30px;
+        line-height: 1.5rem;
+    }
+    .co-member-header2 h2 {
+        padding: 3rem 0;
+    }
+    .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+        height: 490px;
+    }
+    .tobottom-padding2 {
+        padding-top: 1.2rem;
+    }
+    .co-office-info11 p {
+        line-height: 1.4rem;
+    }
+    .tobottom-padding3 {
+        padding-top: 1rem;
+    }
+    .pricing-callus {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+    }
+    /* NEWS & EVENTS */
+    #line1, #line2, .detail-title-text, .latest-title, .articles-content p, .img-title, .para2 a, .leave-reply, .notice, .comment-control, .fix-bot1 label, .fixleftright button {
+        font-size: 1.2rem;
+    }
+    .modaunews, .para1, .para2-title, .para2 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .news-columns {
+        height: 625px;
+    }
+    /* CONTACT */
+    .contact-info p, .md-form .prefix~label, .btn.btn-lg {
+        font-size: 1rem;
+    }
+    #label4checkbox1 {
+        font-size: 1.15rem;
+    }
+    .writetous, .ourlocations {
+        font-size: 1.5rem;
+    }
+    .contact-locations.pt-3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    /* BOOKING */
+    .chooseyourplan {
+        font-size: 1.2rem;
+    }
+}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 968px) {
+    /* HOME */
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
+    .active-item::before, .active-item::after {
+        display: none;
+    }
+    #accordion .card-body {
+        line-height: 1.5rem;
+    }
+    .youtubee {
+        height: 400px;
+    }
+    .co-visitor-card, .co-office-card {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .co-member-card {
+        width: 44%;
+        margin: 0 auto;
+    }
+    .newscard {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .meetourteam-cards .col-md-6 {
+        padding-bottom: 1.5rem;
+    }
+    .hidden-md-down {
+        display: none;
+    }
+    .benefits-title {
+        top: 65%;
+    }
+    .overhidden--modify .co-visitor-card, .overhidden--modify.co-office-card, .overhidden--modify.co-member-card {
+        width: 45%;
+        margin: 0 auto;
+    }
+    /* PRICING */
+    .pricing--cards .co-visitor-card, .pricing--cards .co-office-card, .pricing--cards .co-member-card {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .cooffice-fixwidth3 {
+        width: 45% !important;
+    }
+    .tobottom-padding, .tobottom-padding11 {
+        padding-top: 2rem;
+    }
+    .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+        height: 410px;
+    }
+    /* NEWS & EVENTS */
+    .news-columns {
+        height: 485px;
+    }
+    .form-group .col-md-12 {
+        padding-bottom: 2rem;
+    }
+    /* CONTACT */
+    .contact-locations p {
+        line-height: 1.5rem;
+    }
+}
 
-@media only screen and (max-width: 560px) {}
+@media only screen and (max-width: 834px) {
+    html {
+        font-size: 15px;
+    }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
+    .nav-link, .nav-item1 button {
+        font-size: 1.1rem;
+    }
+    /* HOME */
+    .banner, .first__home {
+        height: 70vh;
+    }
+    .navbar-width {
+        width: 95%;
+    }
+    .card-body, .question-style h6 {
+        line-height: 2rem;
+    }
+    .banner-text h1 {
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
+    .banner-h, .aboutus-firsthome {
+        height: 45vh !important;
+    }
+    .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card {
+        width: 45%;
+        margin: 0 auto;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 44%;
+        margin: 0 auto;
+    }
+    /* PRICING */
+    .co-visitor-card, .co-office-card, .co-member-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cooffice-fixwidth3 {
+        width: 45%;
+    }
+    .co-member-header2 h2 {
+        padding: 4rem 0;
+    }
+    .price-title h2 {
+        width: 22%;
+    }
+    /* NEWS&EVENTS */
+    .news-columns {
+        height: 560px;
+    }
+}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 768px) {
+    /* HOME */
+    .banner, .first__home {
+        height: 45vh;
+    }
+    .banner-h, .aboutus-firsthome {
+        height: 45vh !important;
+    }
+    .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card {
+        width: 55% !important;
+        margin: 0 auto;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 53% !important;
+        margin: 0 auto;
+    }
+    .newscard {
+        padding-top: 2rem;
+    }
+    .cowork-info {
+        height: 345px !important;
+    }
+    .youtubee {
+        height: 250px;
+    }
+    .newscard {
+        height: 490px;
+    }
+    /* ABOUT US */
+    .card.m-auto {
+        width: 18rem !important;
+    }
+    /* BENEFITS */
+    .benefits-content-title {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+    .benefits-content-text {
+        line-height: 2rem;
+    }
+    .need-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .benefits-viewmore {
+        padding-bottom: 3rem;
+    }
+    .benefits-img img {
+        height: 300px;
+        overflow: hidden;
+    }
+    /* PRICING */
+    .price-title h2 {
+        width: 31%;
+    }
+    .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+        height: 380px;
+    }
+    .pricing--cards .co-visitor-card, .pricing--cards .co-office-card, .pricing--cards .co-member-card {
+        width: 60% !important;
+        margin: 0 auto;
+    }
+    .co-visitor-header1 h2, .co-visitor-header2 h2 {
+        padding: 2rem;
+    }
+    .cooffice-fixwidth3 {
+        width: 45%;
+    }
+    .tobottom-padding11 {
+        padding-top: 0.8rem;
+    }
+    .tobottom-padding1 {
+        padding-top: 0.2rem;
+    }
+    /* NEWS & EVENTS */
+    .news-content.wrap-content {
+        padding-top: 4rem;
+    }
+    .benefits-title {
+        left: 30%;
+    }
+    .news-columns {
+        height: 515px;
+        width: 55%;
+        margin: 0 auto 2rem auto !important;
+    }
+    .row.pb-5.justify-content-center {
+        padding-bottom: 0 !important;
+    }
+    .pagination {
+        padding-top: 0 !important;
+    }
+    /* CONTACT */
+    .writetous-envelope {
+        padding-top: 3rem;
+    }
+    /* BOOKING */
+    .form-group.chooseyourplan.pt-4.pb-4.orcontactus {
+        line-height: 2rem;
+    }
+    .need-center {
+        left: 35%;
+    }
+}
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 560px) {
+    html {
+        font-size: 14px;
+    }
+    /* HOME */
+    .banner, .first__home {
+        height: 50vh;
+    }
+    .banner-h, .aboutus-firsthome {
+        height: 40vh !important;
+    }
+    .banner-text h5 {
+        font-size: 1rem;
+    }
+    .question-style h6 {
+        font-size: 1.2rem;
+    }
+    .col.card-body p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .benefits {
+        display: none;
+    }
+    .pricing {
+        padding-top: 5rem;
+    }
+    .pricing-content {
+        padding-top: 1rem;
+    }
+    /* .hidden-sm-down {
+        display: none;
+    }
+    .benefits-row2 {
+        padding: 0;
+    } */
+    .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card {
+        width: 65% !important;
+        margin: 0 auto;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 63% !important;
+        margin: 0 auto;
+    }
+    .newscard {
+        padding-top: 2rem;
+        width: 75%;
+    }
+    .cowork-info {
+        height: 345px !important;
+    }
+    .youtubee {
+        height: 250px;
+    }
+    .newscard {
+        height: 490px;
+    }
+    /* BENEFITS */
+    .price-title h2 {
+        width: 33%;
+    }
+    /* PRICING */
+    .pricing-callus {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+    }
+}
 
-@media only screen and (max-width: 330px) {}
+@media only screen and (max-width: 480px) {
+    /* HOME */
+    .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 67% !important;
+        margin: 0 auto;
+    }
+    /* BENEFITS */
+    .modau h6 {
+        font-size: 1.2rem;
+    }
+    .benefits-content-text {
+        font-size: 1.2rem;
+    }
+    .price-title h2 {
+        width: 38%;
+    }
+    /* PRICING */
+    .pricing--cards .co-visitor-card, .pricing--cards .co-office-card, .pricing--cards .co-member-card {
+        width: 70% !important;
+        margin: 0 auto;
+    }
+    /* NEWS & EVENTS */
+    .news-columns {
+        height: 500px;
+        width: 70%;
+    }
+    .lui-left {
+        left: 25%;
+    }
+    #line1, #line2 {
+        padding-right: 15px;
+    }
+    .notice {
+        line-height: 2rem;
+    }
+    .form-group.pl-4.pr-4.pb-4.row.fixleftright.wow.fadeIn {
+        margin-bottom: 0;
+    }
+    .latest-articles {
+        padding-top: 2rem;
+    }
+    /* CONTACT */
+    .need-center {
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    html {
+        font-size: 12px;
+    }
+    /* HOME */
+    .need-vanish {
+        display: none;
+    }
+    .welcome-texture::before, .welcome-texture::after {
+        width: 35%;
+    }
+    .welcome-text h5 {
+        display: none;
+    }
+    .pricing-texture::before, .pricing-texture::after {
+        width: 15%;
+    }
+    .overhidden--modify .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card, .overhidden--modify.co-member-card {
+        width: 83% !important;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 78% !important;
+    }
+    .card-bg2.pr-3.wow.fadeInLeftBig .co-visitor-price, .card-bg2.pl-3.wow.fadeInRightBig .co-office-price, .card-bg.p-0.wow.fadeInUpBig .co-member-price {
+        padding: 0.5rem 0;
+    }
+    .galleryy {
+        display: none;
+    }
+    .card.mb-2 .card-text, .newscard .card-title, .newscard .card-text, .seemorenewsbtn p, .cowork-regis, #inlineFormInputName2, .aboutus-info h6, .vision-text, .text-fill-blank, .page-item, .nav-item button, .contact-info p, .contact-locations p {
+        font-size: 1.2rem;
+    }
+    .customers-texture::before, .customers-texture::after, .news-texture::before, .news-texture::after, .aboutus-content-texture::before, .aboutus-content-texture::after {
+        width: 25%;
+    }
+    .newscard {
+        width: 80%;
+    }
+    .cowork-location p, .cowork-contact p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    .cowork-info {
+        height: 465px !important;
+    }
+    .nav-link {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .banner-text h1 {
+        line-height: 2rem;
+    }
+    /* PRICING */
+    .price-title h2 {
+        width: 39%;
+    }
+    .co-visitor-info1 p, .co-member-info1 p, .co-office-info1 p, .co-office-info11 p, .booknow, .card-body .card-text, #readmore span, .modaunews, .chooseyourplan-btn {
+        font-size: 1.1rem;
+    }
+    .news-columns {
+        height: 435px;
+    }
+    /* CONTACT */
+    .md-form .prefix~label, .btn.btn-lg, #label4checkbox1, .chooseyourplan, #validationServerUsername, #validationServerEmail {
+        font-size: 1.2rem !important;
+    }
+    /* BOOKING */
+    .custom-select {
+        padding: .375rem 3.75rem .375rem .75rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    html {
+        font-size: 12px;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    /* HOME */
+    .banner-text h1 {
+        line-height: 2.5rem;
+    }
+    .youtubee {
+        height: 200px;
+    }
+    .card-bg2.pr-3.wow.fadeInLeftBig .co-visitor-info, .card-bg2.pl-3.wow.fadeInRightBig .co-office-info, .card-bg.p-0.wow.fadeInUpBig .co-member-info {
+        padding: 0.5rem 0;
+    }
+    .card-bg2.pr-3.wow.fadeInLeftBig .co-visitor-header h2, .card-bg2.pl-3.wow.fadeInRightBig .co-office-header h2, .card-bg.p-0.wow.fadeInUpBig .co-member-header h2 {
+        padding: 2rem 0;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-info {
+        height: 300px;
+    }
+    .cowork-info {
+        height: 525px !important;
+    }
+    .signup-text h6 {
+        padding: 0 15px;
+        line-height: 1.5rem;
+    }
+    /* PRICING */
+    .co-member-info1 {
+        padding-top: 0.5rem;
+        height: 400px !important;
+    }
+    .co-office-header1 h2, .co-office-header2 h2, .co-office-header3 h2 {
+        font-size: 1.2rem;
+        padding: 3rem 0;
+    }
+    .co-office-price h3 {
+        padding: 0;
+    }
+    .co-member-card.comember-fixwidth, .co-office-card.cooffice-fixwidth, .co-office-card.cooffice-fixwidth3 {
+        width: 85% !important;
+    }
+    .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+        height: 400px;
+    }
+    .pricing-callus {
+        padding-top: 2rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    /* NEWS & EVENTS */
+    .news-columns, .text-img {
+        width: 80%;
+    }
+    /* CONTACT */
+    .contact-info p, .contact-locations p {
+        line-height: 2rem;
+    }
+}

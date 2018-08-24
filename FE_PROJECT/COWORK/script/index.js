@@ -12,6 +12,7 @@ new WOW().init();
 //ON SCROLL
 $(document).scroll(function() {
   $(".fw").addClass("full-width-navbar");
+  $('#navbarNav').removeClass('show');
   if ($(document).scrollTop() == 0) {
     $(".fw").removeClass("full-width-navbar");
   }
@@ -55,21 +56,10 @@ function overhidden(params) {
   $($(".wow").parent()).addClass("overhidden--modify");
 }
 
-// TOPNAVBAR
-// function topNavBar(params) {
-//   if ($("#navbarNav").hasClass("show")) {
-//     console.log("hellooooo");
-//     $(".fw").css("background-color", "#000000cc");
-//   } else {
-//     $(".fw").css("background-color", "transparent");
-//   }
-// }
-
 $(function() {
   overhidden();
   gallery();
   backToTop();
-  // topNavBar();
 });
 
 // BOOKING SUBMIT
