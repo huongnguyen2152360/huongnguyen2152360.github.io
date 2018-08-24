@@ -636,6 +636,9 @@
     .welcome-text h5 {
         display: none;
     }
+    .banner-text h1 {
+        padding: 0 15px;
+    }
     .pricing-texture::before, .pricing-texture::after {
         width: 15%;
     }
@@ -704,6 +707,7 @@
     /* HOME */
     .banner-text h1 {
         line-height: 2.5rem;
+        padding: 0 15px;
     }
     .youtubee {
         height: 200px;
