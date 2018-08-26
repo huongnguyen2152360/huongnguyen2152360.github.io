@@ -715,9 +715,15 @@
         width: 38%;
     }
     /* PRICING */
-    .pricing--cards .co-visitor-card, .pricing--cards .co-office-card, .pricing--cards .co-member-card {
+    .pricing--cards .co-visitor-card {
         width: 70% !important;
         margin: 0 auto;
+    }
+    .co-member-card.comember-fixwidth {
+        width: 74% !important;
+    }
+    .co-office-card.cooffice-fixwidth, .co-office-card.cooffice-fixwidth3 {
+        width: 84% !important;
     }
     /* NEWS & EVENTS */
     .news-columns {
