@@ -50,6 +50,12 @@
     padding-top: 20px;
     text-align: right;
 }
+.readmore1 a span {
+    padding-top: 1rem;
+}
+.readmore2 {
+    padding-top: 0 !important;
+}
 
 #readmore span {
     color: #414040;

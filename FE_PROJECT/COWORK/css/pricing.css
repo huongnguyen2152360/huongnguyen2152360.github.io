@@ -102,6 +102,9 @@
     font-weight: 500;
     letter-spacing: 1.5px;
 }
+.co-office-header1 h2, .co-office-header2 h2 {
+    font-size: 1.6rem;
+}
 
 .co-office-header3 h2 {
     font-size: 1.5rem;

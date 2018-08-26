@@ -316,8 +316,8 @@ html {
     color: #414040;
 }
 
-.card-body {
-    line-height: 1.25rem;
+.col.card-body p {
+    line-height: 2rem;
 }
 
 .card-body span, .card-body span a {
@@ -330,6 +330,11 @@ html {
 
 .news-content .card-body .card-text {
     color: #414040;
+    line-height: 1.5rem;
+}
+.card .card-text {
+    line-height: 1.5rem;
+    font-size: unset;
 }
 
 /* BENEFITS */

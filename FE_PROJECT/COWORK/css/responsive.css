@@ -18,8 +18,17 @@
     .co-office-info1, .co-office-info11 {
         height: 420px;
     }
+    .booknow-btn.tobottom-padding {
+        padding-top: 2rem;
+    }
     .tobottom-padding1 {
-        padding-top: 1rem;
+        padding-top: 2rem;
+    }
+    .booknow-btn.tobottom-padding2 {
+        padding-top: 3rem;
+    }
+    .booknow-btn.tobottom-padding3 {
+        padding-top: 2.3rem;
     }
 }
 
@@ -275,6 +284,86 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    /* HOME */
+    .booknow-btn.booknow-needspt {
+        padding-top: 2rem;
+    }
+    /* PRICING */
+    .booknow-btn.tobottom-padding {
+        padding-top: 1rem;
+    }
+    .booknow-btn.tobottom-padding12 {
+        padding-top: 2.3rem;
+    }
+    .co-office-header2 h2 {
+        font-size: 1.4rem;
+    }
+    .booknow-btn.tobottom-padding2 {
+        padding-top: 2rem;
+    }
+    .tobottom-padding1 {
+        padding-top: 1rem;
+    }
+    /* NEWS & EVENTS */
+    .readmore1, .readmore2, .readmore3, .readmore4 {
+        padding-top: 2.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* HOME */
+    .active-item::after, .active-item::before {
+        display: none;
+    }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
+    .youtubee {
+        height: 400px;
+    }
+    .card-bg2.pr-3.wow.fadeInLeftBig .co-visitor-card, .card-bg2.pl-3.wow.fadeInRightBig .co-office-card {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .card-bg.p-0.wow.fadeInUpBig .co-member-card {
+        width: 48%;
+        margin: 0 auto;
+    }
+    .newscard {
+        height: 480px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    /* ABOUT US */
+    .card.m-auto {
+        margin-bottom: 2rem !important;
+    }
+    .hidden-md-down {
+        display: none;
+    }
+    /* PRICING */
+    .co-visitor-card.covisitor-fixwidth, .co-member-card.comember-fixwidth {
+        width: 85% !important;
+    }
+    .co-office-card.cooffice-fixwidth {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .co-office-card.cooffice-fixwidth3 {
+        width: 45%;
+        margin: 0 auto;
+    }
+    /* NEWS & EVENTS */
+    .readmore2, .readmore4 {
+        padding-top: 1rem !important;
+    }
+    .fix-bot1 {
+        padding-bottom: 2rem;
+    }
+}
+
 @media only screen and (max-width: 968px) {
     /* HOME */
     .fw {
@@ -339,6 +428,40 @@
     /* CONTACT */
     .contact-locations p {
         line-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    /* PRICING */
+    .price-title h2 {
+        width: 22%;
+    }
+    .booknow-btn.tobottom-padding {
+        padding: 2rem;
+    }
+    .booknow-btn.tobottom-padding12 {
+        padding-top: 1rem;
+    }
+    .tobottom-padding1 {
+        padding-top: 2.2rem;
+    }
+    .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
+        height: 380px;
+    }
+    /* NEWS & EVENTS */
+    .news-columns {
+        height: 500px;
+        width: 95%;
+    }
+    .readmore1 {
+        padding-top: 1.5rem !important;
+    }
+    .readmore3, .readmore4 {
+        padding-top: 0 !important;
+    }
+    /* CONTACT */
+    .row.pt-5.pb-5.rowlocations.overhidden--modify {
+        padding: 0 15px;
     }
 }
 
@@ -705,12 +828,18 @@
         font-size: 1.5rem;
     }
     /* HOME */
+    .banner-h, .aboutus-firsthome {
+        height: 45vh !important;
+    }
     .banner-text h1 {
         line-height: 2.5rem;
         padding: 0 15px;
     }
     .youtubee {
         height: 200px;
+    }
+    .booknow-btn.booknow-needspt {
+        padding-top: 1rem;
     }
     .card-bg2.pr-3.wow.fadeInLeftBig .co-visitor-info, .card-bg2.pl-3.wow.fadeInRightBig .co-office-info, .card-bg.p-0.wow.fadeInUpBig .co-member-info {
         padding: 0.5rem 0;
@@ -720,6 +849,9 @@
     }
     .card-bg.p-0.wow.fadeInUpBig .co-member-info {
         height: 300px;
+    }
+    .newscard {
+        height: 375px;
     }
     .cowork-info {
         height: 525px !important;
@@ -754,6 +886,13 @@
     /* NEWS & EVENTS */
     .news-columns, .text-img {
         width: 80%;
+    }
+    .news-columns {
+        width: 90%;
+        height: 400px;
+    }
+    .text-img.text-right.pt-5.pb-5 {
+        height: 220px;
     }
     /* CONTACT */
     .contact-info p, .contact-locations p {
