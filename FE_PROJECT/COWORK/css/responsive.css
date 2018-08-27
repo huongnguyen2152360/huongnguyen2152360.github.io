@@ -855,6 +855,10 @@
     .news-columns {
         height: 435px;
     }
+    .co-office-card.cooffice-fixwidth3 {
+        width: 91% !important;
+        margin: 0 auto;
+    }
     /* CONTACT */
     .md-form .prefix~label, .btn.btn-lg, #label4checkbox1, .chooseyourplan, #validationServerUsername, #validationServerEmail {
         font-size: 1.2rem !important;
