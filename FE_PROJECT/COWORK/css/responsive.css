@@ -3,6 +3,7 @@
     .navbar-width {
         width: 100%;
     }
+    
     /* PRICING */
     .co-member-header2 h2 {
         font-size: 1.6rem;
@@ -448,6 +449,10 @@
     .co-visitor-info1, .co-member-info1, .co-office-info1, .co-office-info11 {
         height: 380px;
     }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
     /* NEWS & EVENTS */
     .news-columns {
         height: 500px;
@@ -549,6 +554,10 @@
     .newscard {
         height: 490px;
     }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
     /* ABOUT US */
     .card.m-auto {
         width: 18rem !important;
@@ -630,6 +639,10 @@
     html {
         font-size: 14px;
     }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
     /* HOME */
     .banner, .first__home {
         height: 50vh;
@@ -704,6 +717,10 @@
         width: 67% !important;
         margin: 0 auto;
     }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
+    }
     /* BENEFITS */
     .modau h6 {
         font-size: 1.2rem;
@@ -754,6 +771,10 @@
 @media only screen and (max-width: 414px) {
     html {
         font-size: 12px;
+    }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
     }
     /* HOME */
     .need-vanish {
@@ -832,6 +853,10 @@
     }
     h1, h2 {
         font-size: 1.5rem;
+    }
+    .fw {
+        z-index: 10;
+        background-color: #000000cc;
     }
     /* HOME */
     .banner-h, .aboutus-firsthome {
