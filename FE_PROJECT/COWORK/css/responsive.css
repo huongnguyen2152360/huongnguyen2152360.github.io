@@ -854,6 +854,8 @@
     }
     .news-columns {
         height: 435px;
+        width: 90%;
+        margin: 0 auto;
     }
     .co-office-card.cooffice-fixwidth3 {
         width: 91% !important;
