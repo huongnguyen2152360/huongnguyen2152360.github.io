@@ -737,10 +737,13 @@
         margin: 0 auto;
     }
     .co-member-card.comember-fixwidth {
-        width: 74% !important;
+        width: 83% !important;
     }
-    .co-office-card.cooffice-fixwidth, .co-office-card.cooffice-fixwidth3 {
+    .co-office-card.cooffice-fixwidth {
         width: 84% !important;
+    }
+    .co-office-card.cooffice-fixwidth {
+        width: 91% !important;
     }
     /* NEWS & EVENTS */
     .news-columns {
@@ -829,7 +832,7 @@
     }
     /* PRICING */
     .price-title h2 {
-        width: 39%;
+        width: 40%;
     }
     .co-visitor-info1 p, .co-member-info1 p, .co-office-info1 p, .co-office-info11 p, .booknow, .card-body .card-text, #readmore span, .modaunews, .chooseyourplan-btn {
         font-size: 1.1rem;
