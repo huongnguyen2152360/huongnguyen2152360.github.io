@@ -15,6 +15,7 @@ const User = sequelize.define("user", {
   image: {
     type: Sequelize.STRING
   }
-});
+},
+{timestamps: false});
 
 export default User;

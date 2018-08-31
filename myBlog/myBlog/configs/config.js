@@ -8,3 +8,4 @@ export const SERVER_PORT = 3000;
 export const HOST = 'ec2-54-235-242-63.compute-1.amazonaws.com';
 export const saltRounds = 10;
 export const keySecret = 'hiehie';
+export const LOGINFAILED = 'Username or Password is incorrect!'

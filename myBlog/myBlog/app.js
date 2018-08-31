@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -12,13 +13,13 @@ const adminRouter = require('./routes/admin');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 const forgotpassRouter = require('./routes/forgotpass');
-
+const {sequelize} = require('./databases/database');
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
+app.set('trust proxy', 1) 
 // app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -33,6 +34,19 @@ app.use('/admin',adminRouter);
 app.use('/login',loginRouter);
 app.use('/register',registerRouter);
 app.use('/forgotpassword',forgotpassRouter);
+
+app.use(
+	session({
+		secret: "keyboard cat",
+		store: new (require("connect-session-sequelize")(session.Store))({
+			db: sequelize
+		}),
+		resave: false,
+		saveUninitialized: true,
+		cookie: { secure: false },
+		proxy: true
+	})
+);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
