@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" type="text/css" media="screen" href="font/fontawesomeProByNam.css">
+   <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href=".css">
+    <link rel="stylesheet" type="text/css" href="js-enabled.css">
+    <link rel="stylesheet" type="text/css" href="railscasts.css">
+    
+    <title>My Blog</title>
+</head>
+
+<body>
+
+    <body class="page-home">
+        <nav id="menu" class=" slideout-menu">
+            <section class="menu-profile">
+                <div class="user-icon" style="background-color: #e65100;" data-original-title="" title="">H</div>
+                <i component="user/status" class="fas fa-fw fa-circle status online"></i>
+            </section>
+
+            <section class="menu-section" data-section="navigation">
+                <h3 class="menu-section-title">Navigation</h3>
+                <ul class="menu-section-list">
+                    <li class="">
+                        <a href="/categories" title="" data-original-title="Categories">
+                            <i class="fas fa-fw fa-list"></i>
+
+                            <span class="visible-xs-inline">Categories</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/recent" title="" data-original-title="Recent">
+                            <i class="fas fa-fw fa-clock-o"></i>
+
+                            <span class="visible-xs-inline">Recent</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/unread" title="" id="unread-count" data-original-title="Unread">
+                            <i class="fas fa-fw fa-inbox unread-count" data-content="5"></i>
+
+                            <span class="visible-xs-inline">Unread</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/tags" title="" data-original-title="Tags">
+                            <i class="fas fa-fw fa-tags"></i>
+
+                            <span class="visible-xs-inline">Tags</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/popular" title="" data-original-title="Popular">
+                            <i class="fas fa-fw fa-fire"></i>
+
+                            <span class="visible-xs-inline">Popular</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/users" title="" data-original-title="Users">
+                            <i class="fas fa-fw fa-user"></i>
+
+                            <span class="visible-xs-inline">Users</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="/groups" title="" data-original-title="Groups">
+                            <i class="fas fa-fw fa-group"></i>
+
+                            <span class="visible-xs-inline">Groups</span>
+                        </a>
+                    </li>
+
+                    <li class="">
+                        <a href="/search" title="" data-original-title="Search">
+                            <i class="fas fa-fw fa-search"></i>
+
+                            <span class="visible-xs-inline">Search</span>
+                        </a>
+                    </li>
+
+                    <a href="/search">
+                        <i class="fas fa-search fa-fw"></i> Search
+                    </a>
+                </ul>
+            </section>
+
+            <section class="menu-section" data-section="profile">
+                <h3 class="menu-section-title">Profile</h3>
+                <ul class="menu-section-list" component="header/usercontrol">
+                    <li>
+                        <a component="header/profilelink" href="/user/hương-nguyễn">
+                            <span component="header/username">Hương Nguyễn</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li>
+                        <a href="#" class="user-status" data-status="online">
+                            <i class="fas fa-fw fa-circle status online"></i><span> Online</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="user-status" data-status="away">
+                            <i class="fas fa-fw fa-circle status away"></i><span> Away</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="user-status" data-status="dnd">
+                            <i class="fas fa-fw fa-circle status dnd"></i><span> Do not disturb</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="user-status" data-status="offline">
+                            <i class="fas fa-fw fa-circle status offline"></i><span> Invisible</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li>
+                        <a href="/user/hương-nguyễn/edit">
+                            <i class="fas fa-fw fa-edit"></i> <span>Edit Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/user/hương-nguyễn/settings">
+                            <i class="fas fa-fw fa-gear"></i> <span>Settings</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="divider"></li>
+                    <li component="user/logout">
+                        <a href="#"><i class="fas fa-fw fa-sign-out"></i><span> Logout</span></a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="menu-section" data-section="notifications">
+                <h3 class="menu-section-title">
+                    Notifications
+                    <span class="counter fa-bell-o" component="notifications/icon" data-content="0"></span>
+                </h3>
+                <ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
+                <p class="menu-section-list"><a href="/notifications">See all notifications</a></p>
+            </section>
+
+            <section class="menu-section" data-section="chats">
+                <h3 class="menu-section-title">
+                    Chats
+                    <i class="counter" component="chat/icon" data-content="0"></i>
+                </h3>
+                <ul class="menu-section-list chat-list"></ul>
+            </section>
+        </nav>
+
+        <main id="panel" class=" slideout-panel">
+            <nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" id="mobile-menu">
+                            <span component="notifications/icon" class="notification-icon fas fa-fw fa-bell" data-content="0"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                        <a href="https://nodejs.vn">
+                            <img alt="Vietnam" class=" forum-logo" src="https://nodejs.vn/uploads/system/site-logo.png">
+                        </a>
+                        <a href="/">
+                            <h1 class="navbar-brand forum-title">Nodejs.vn</h1>
+                        </a>
+
+                        <div component="navbar/title" class="visible-xs hidden">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div id="nav-dropdown" class="hidden-xs">
+                        <ul id="logged-in-menu" class="nav navbar-nav navbar-right">
+                            <li id="user_label" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="" data-original-title="Profile" aria-expanded="false">
+                                    <img component="header/userpicture" src="" alt="Hương Nguyễn" style="display: none;">
+                                    <div component="header/usericon" class="user-icon" style="background-color: #e65100;" data-original-title="" title="">H</div>
+                                    <span id="user-header-name" class="visible-xs-inline">Hương Nguyễn</span>
+                                </a>
+                                <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
+                                    <li>
+                                        <a component="header/profilelink" href="/user/hương-nguyễn">
+                                            <i component="user/status" class="fas fa-fw fa-circle status online"></i> <span
+                                                component="header/username">Hương Nguyễn</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li>
+                                        <a href="#" class="user-status" data-status="online">
+                                            <i class="fas fa-fw fa-circle status online"></i><span> Online</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-status" data-status="away">
+                                            <i class="fas fa-fw fa-circle status away"></i><span> Away</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-status" data-status="dnd">
+                                            <i class="fas fa-fw fa-circle status dnd"></i><span> Do not disturb</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="user-status" data-status="offline">
+                                            <i class="fas fa-fw fa-circle status offline"></i><span> Invisible</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li>
+                                        <a href="/user/hương-nguyễn/edit">
+                                            <i class="fas fa-fw fa-edit"></i> <span>Edit Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/user/hương-nguyễn/settings">
+                                            <i class="fas fa-fw fa-gear"></i> <span>Settings</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li component="user/logout">
+                                        <a href="#"><i class="fas fa-fw fa-sign-out"></i><span> Logout</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul id="logged-in-menu" class="nav navbar-nav navbar-right">
+                            <li class="notifications dropdown text-center hidden-xs" component="notifications">
+                                <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown" data-original-title="Notifications">
+                                    <i component="notifications/icon" class="fas fa-fw fa-bell" data-content="0"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="notif_dropdown">
+                                    <li>
+                                        <ul component="notifications/list" class="notification-list">
+                                            <li>
+                                                <a href="#"><i class="fas fa-refresh fa-spin"></i> Loading Notifications</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="notif-dropdown-link"><a href="#" class="mark-all-read">Mark all notifications
+                                            read</a></li>
+                                    <li class="notif-dropdown-link"><a href="/notifications">See all notifications</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="chats dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="" id="chat_dropdown" component="chat/dropdown" data-original-title="Chats">
+                                    <i component="chat/icon" class="fal fa-comment fa-fw" data-content="0"></i> <span class="visible-xs-inline">Chats</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="chat_dropdown">
+                                    <li>
+                                        <ul component="chat/list" class="chat-list">
+                                            <li>
+                                                <a href="#"><i class="fas fa-refresh fa-spin"></i> Loading Chats</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">Mark
+                                            all chats read</a></li>
+                                    <li class="notif-dropdown-link"><a href="/chats">See all chats</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li data-original-title="" title="">
+                                <form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
+                                    <button id="search-button" type="button" class="btn btn-link"><i class="fas fa-search fa-fw"
+                                            title="Search"></i></button>
+                                    <div class="hidden" id="search-fields">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Search" name="query" value="" type="text">
+                                            <a href="#"><i class="fas fa-gears fa-fw advanced-search-link"></i></a>
+                                        </div>
+                                        <button type="submit" class="btn btn-default hide">Search</button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="visible-xs" id="search-menu">
+                                <a href="/search">
+                                    <i class="fas fa-search fa-fw"></i> Search
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li>
+                                <a href="#" id="reconnect" class="hide" title="" data-original-title="Connection to Nodejs.vn has been lost, attempting to reconnect...">
+                                    <i class="fas fa-check"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+                            <li class="dropdown">
+                                <i class="fas fa-angle-double-up pointer fa-fw pagetop"></i>
+                                <i class="fas fa-angle-up pointer fa-fw pageup"></i>
+
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="pagination-text"></span>
+                                </a>
+
+                                <i class="fas fa-angle-down pointer fa-fw pagedown"></i>
+                                <i class="fas fa-angle-double-down pointer fa-fw pagebottom"></i>
+
+                                <div class="progress-container">
+                                    <div class="progress-bar"></div>
+                                </div>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <input class="form-control" id="indexInput" placeholder="Enter index" type="text">
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul id="main-nav" class="nav navbar-nav">
+                            <li class="">
+                                <a href="/categories" title="" data-original-title="Categories">
+                                    <i class="fas fa-fw fa-list"></i>
+
+                                    <span class="visible-xs-inline">Categories</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/recent" title="" data-original-title="Recent">
+                                    <i class="far fa-fw fa-clock-o"></i>
+
+                                    <span class="visible-xs-inline">Recent</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/unread" title="" id="unread-count" data-original-title="Unread">
+                                    <i class="fas fa-fw fa-inbox unread-count" data-content="5"></i>
+
+                                    <span class="visible-xs-inline">Unread</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/tags" title="" data-original-title="Tags">
+                                    <i class="fas fa-fw fa-tags"></i>
+
+                                    <span class="visible-xs-inline">Tags</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/popular" title="" data-original-title="Popular">
+                                    <i class="fas fa-fw fa-fire"></i>
+
+                                    <span class="visible-xs-inline">Popular</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/users" title="" data-original-title="Users">
+                                    <i class="fas fa-fw fa-user"></i>
+
+                                    <span class="visible-xs-inline">Users</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="/groups" title="" data-original-title="Groups">
+                                    <i class="fas fa-fw fa-group"></i>
+
+                                    <span class="visible-xs-inline">Groups</span>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="/search" title="" data-original-title="Search">
+                                    <i class="fas fa-fw fa-search"></i>
+
+                                    <span class="visible-xs-inline">Search</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="container" id="content">
+                <div class="recent">
+
+                    <div class="clearfix">
+                        <div class="pull-left">
+
+                        </div>
+                        <div class="pull-right">
+                            <button id="new_topic" class="btn btn-primary">New Topic</button>
+                        </div>
+                    </div>
+
+                    <hr class="hidden-xs">
+
+                    <div class="category">
+
+
+                        <a href="/recent">
+                            <div class="alert alert-warning hide" id="new-topics-alert"></div>
+                        </a>
+
+                        <ul component="category" class="topic-list" itemscope="" itemtype="http://www.schema.org/ItemList" data-nextstart="20">
+                            <meta itemprop="itemListOrder" content="descending">
+                            <li component="category/topic" class="row clearfix unread" data-tid="1853" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="install ethereumjs-wallet">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/hiền-vũ" class="pull-left">
+                                            <img component="user/picture" data-uid="4789" src="https://graph.facebook.com/2151132321836249/picture?type=large" class="user-img"
+                                                title="" data-original-title="Hiền Vũ">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1853/install-ethereumjs-wallet" itemprop="url">install ethereumjs-wallet</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+                                            <a href="/tags/ethereumjs-wall"><span class="tag" style="">ethereumjs-wall</span></a>
+                                            <a href="/tags/helpme"><span class="tag" style="">helpme</span></a>
+                                            <a href="/tags/npminstall"><span class="tag" style="">npminstall</span></a>
+                                            <small>•</small>
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Tue Aug 21 2018 09:59:44 GMT+0700 (+07)">10
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 30 2018 15:04:32 GMT+0700 (+07)">about 18
+                                                hours ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">2</span> <a href="/topic/1853/install-ethereumjs-wallet/2"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="2">2</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="68">68</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/bao-mai">
+                                                <img title="" class="user-img" src="https://graph.facebook.com/111125343173124/picture?type=large" data-original-title="Bao Mai">
+                                            </a>
+                                            <a class="permalink" href="/topic/1853/install-ethereumjs-wallet/2">
+                                                <span class="timeago" title="Thu Aug 30 2018 15:04:32 GMT+0700 (+07)">about
+                                                    18 hours ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p>mình hay dùng modul ethers</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix unread" data-tid="1871" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Update $in">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/minh-sang" class="pull-left">
+                                            <div class="user-icon" style="background-color: #827717;" title="" data-original-title="Minh Sang">M</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1871/update-in" itemprop="url">Update $in</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Thu Aug 30 2018 11:09:36 GMT+0700 (+07)">about
+                                                22 hours ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 30 2018 11:09:36 GMT+0700 (+07)">about 22
+                                                hours ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1871/update-in"><i class="fas fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="19">19</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix unread" data-tid="1814" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Mọi người xem thử web nodejs+vuejs của mình xem thế nào nghe">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/skipper-hoa" class="pull-left">
+                                            <img component="user/picture" data-uid="4526" src="https://graph.facebook.com/1327597414051458/picture?type=large" class="user-img"
+                                                title="" data-original-title="Skipper Hoa">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1814/mọi-người-xem-thử-web-nodejs-vuejs-của-mình-xem-thế-nào-nghe" itemprop="url">Mọi
+                                            người xem thử web nodejs+vuejs của mình xem thế nào nghe</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Fri Aug 03 2018 10:20:26 GMT+0700 (+07)">28
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Wed Aug 29 2018 22:30:58 GMT+0700 (+07)">a day ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">4</span> <a href="/topic/1814/mọi-người-xem-thử-web-nodejs-vuejs-của-mình-xem-thế-nào-nghe/4"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="4">4</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="298">298</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/tuan-nguyen112">
+                                                <img title="" class="user-img" src="https://graph.facebook.com/1556979877764238/picture?type=large" data-original-title="Tuan Nguyen112">
+                                            </a>
+                                            <a class="permalink" href="/topic/1814/mọi-người-xem-thử-web-nodejs-vuejs-của-mình-xem-thế-nào-nghe/4">
+                                                <span class="timeago" title="Wed Aug 29 2018 22:30:58 GMT+0700 (+07)">a day
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/skipper-hoa">@Skipper-Hoa</a>
+                                                ko vào đc</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix unread" data-tid="1869" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="lổi nodejs heroku">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/channel-oz-music" class="pull-left">
+                                            <div class="user-icon" style="background-color: #827717;" title="" data-original-title="Channel oz Music">C</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1869/lổi-nodejs-heroku" itemprop="url">lổi nodejs heroku</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Wed Aug 29 2018 08:58:52 GMT+0700 (+07)">2
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Wed Aug 29 2018 12:53:08 GMT+0700 (+07)">2 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">3</span> <a href="/topic/1869/lổi-nodejs-heroku/3"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="3">3</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="54">54</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/channel-oz-music">
+                                                <span title="" class="user-icon user-img" style="background-color: #827717;" data-original-title="Channel oz Music">C</span>
+                                            </a>
+                                            <a class="permalink" href="/topic/1869/lổi-nodejs-heroku/3">
+                                                <span class="timeago" title="Wed Aug 29 2018 12:53:08 GMT+0700 (+07)">2 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p>em fix nhiu lan roi van k dc</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix unread" data-tid="1865" data-index="" data-cid="15" itemprop="itemListElement">
+                                <meta itemprop="name" content="Cần tìm bạn code chung project học hỏi kinh nghiệm (MEVN: Mongo, express, vuejs, nodejs)">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/thành187" class="pull-left">
+                                            <img component="user/picture" data-uid="4668" src="https://graph.facebook.com/1008023066045459/picture?type=large" class="user-img"
+                                                title="" data-original-title="Thành187">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1865/cần-tìm-bạn-code-chung-project-học-hỏi-kinh-nghiệm-mevn-mongo-express-vuejs-nodejs" itemprop="url">Cần
+                                            tìm bạn code chung project học hỏi kinh nghiệm (MEVN: Mongo, express, vuejs,
+                                            nodejs)</a><br>
+
+                                        <small>
+                                            <a href="/category/15/expressjs-conect-io"><span class="fa-stack fa-lg"><i style="color:#878787;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#ffffff;" class="fal fa-bolt fa-stack-1x"></i></span>
+                                                ExpressJS/Conect.IO</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Mon Aug 27 2018 03:50:00 GMT+0700 (+07)">4
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Wed Aug 29 2018 10:14:32 GMT+0700 (+07)">2 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">7</span> <a href="/topic/1865/cần-tìm-bạn-code-chung-project-học-hỏi-kinh-nghiệm-mevn-mongo-express-vuejs-nodejs/7"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="7">7</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="117">117</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #878787">
+                                        <p>
+                                            <a href="/user/duy-tùng-phạm">
+                                                <span title="" class="user-icon user-img" style="background-color: #009688;" data-original-title="Duy Tùng Phạm">D</span>
+                                            </a>
+                                            <a class="permalink" href="/topic/1865/cần-tìm-bạn-code-chung-project-học-hỏi-kinh-nghiệm-mevn-mongo-express-vuejs-nodejs/7">
+                                                <span class="timeago" title="Wed Aug 29 2018 10:14:32 GMT+0700 (+07)">2 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/thành187">@Thành187</a>
+                                                okie bạn , mình cũng đang học , cũng định làm project gì đó cho vững chứ
+                                                học chay lý thuyết mau quên : <a href="mailto:pdtung9661591@gmail.com" target="_blank"
+                                                    rel="nofollow">pdtung9661591@gmail.com</a> - mail của mình .</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1868" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="[HỎI] select row trong mongoose">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/bùi-văn-lực" class="pull-left">
+                                            <img component="user/picture" data-uid="4831" src="https://graph.facebook.com/1053013028192694/picture?type=large" class="user-img"
+                                                title="" data-original-title="Bùi Văn Lực">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1868/hỏi-select-row-trong-mongoose" itemprop="url">[HỎI] select row
+                                            trong mongoose</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Wed Aug 29 2018 08:28:33 GMT+0700 (+07)">2
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Wed Aug 29 2018 08:49:21 GMT+0700 (+07)">2 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">4</span> <a href="/topic/1868/hỏi-select-row-trong-mongoose/4"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="4">4</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="57">57</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/bùi-văn-lực">
+                                                <img title="" class="user-img" src="https://graph.facebook.com/1053013028192694/picture?type=large" data-original-title="Bùi Văn Lực">
+                                            </a>
+                                            <a class="permalink" href="/topic/1868/hỏi-select-row-trong-mongoose/4">
+                                                <span class="timeago" title="Wed Aug 29 2018 08:49:21 GMT+0700 (+07)">2 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/kevin3489">@kevin3489</a>
+                                                said in <a href="/topic/1868/h%E1%BB%8Fi-select-row-trong-mongoose/2">[HỎI]
+                                                    select row trong mongoose</a>:</p>
+                                            <blockquote>
+                                                <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/bùi-văn-lực">@Bùi-Văn-Lực</a>
+                                                    sử dụng transaction cho DB thử đi bạn, hoặc lấy value +1</p>
+                                            </blockquote>
+                                            <p><br>
+                                            </p>
+                                            <p>code e biết đây ạ. em có update nó lên + 1 rồi. mà nhiều cái nó bị lặp tầm
+                                                5 lần nó mới đổi cái khác. a xem giúp em với ạ</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1867" data-index="" data-cid="6" itemprop="itemListElement">
+                                <meta itemprop="name" content="[Hà Nội] - NodeJS Developers - Offer up to $1,000">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/trung-phan-hiếu" class="pull-left">
+                                            <img component="user/picture" data-uid="4006" src="https://graph.facebook.com/174135279886658/picture?type=large" class="user-img"
+                                                title="" data-original-title="Trung Phan Hiếu">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1867/hà-nội-nodejs-developers-offer-up-to-1-000" itemprop="url">[Hà
+                                            Nội] - NodeJS Developers - Offer up to $1,000</a><br>
+
+                                        <small>
+                                            <a href="/category/6/recruitment-tuyển-dụng"><span class="fa-stack fa-lg"><i
+                                                        style="color:#DC9656;" class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;"
+                                                        class="fal fa-users fa-stack-1x"></i></span> Recruitment/Tuyển Dụng</a>
+                                            •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Tue Aug 28 2018 16:04:42 GMT+0700 (+07)">3
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Tue Aug 28 2018 16:04:42 GMT+0700 (+07)">3 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1867/hà-nội-nodejs-developers-offer-up-to-1-000"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="16">16</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #DC9656">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1866" data-index="" data-cid="6" itemprop="itemListElement">
+                                <meta itemprop="name" content="NITECO VIETNAM - HN - NODEJS DEVELOPER">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/hai-anh-bui" class="pull-left">
+                                            <img component="user/picture" data-uid="4829" src="https://graph.facebook.com/1769762426473525/picture?type=large" class="user-img"
+                                                title="" data-original-title="Hai Anh Bui">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1866/niteco-vietnam-hn-nodejs-developer" itemprop="url">NITECO VIETNAM
+                                            - HN - NODEJS DEVELOPER</a><br>
+
+                                        <small>
+                                            <a href="/category/6/recruitment-tuyển-dụng"><span class="fa-stack fa-lg"><i
+                                                        style="color:#DC9656;" class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;"
+                                                        class="fal fa-users fa-stack-1x"></i></span> Recruitment/Tuyển Dụng</a>
+                                            •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Tue Aug 28 2018 11:55:21 GMT+0700 (+07)">3
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Tue Aug 28 2018 11:55:21 GMT+0700 (+07)">3 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1866/niteco-vietnam-hn-nodejs-developer"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="11">11</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #DC9656">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1678" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Không tồn tại /socket.io/socket.io.js">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/vinsmoke-sanji" class="pull-left">
+                                            <img component="user/picture" data-uid="4324" src="https://graph.facebook.com/173597533473243/picture?type=large" class="user-img"
+                                                title="" data-original-title="Vinsmoke Sanji">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1678/không-tồn-tại-socket-io-socket-io-js" itemprop="url">Không tồn
+                                            tại /socket.io/socket.io.js</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Sat May 19 2018 08:05:51 GMT+0700 (+07)">3
+                                                months ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Mon Aug 27 2018 19:19:15 GMT+0700 (+07)">4 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">22</span> <a href="/topic/1678/không-tồn-tại-socket-io-socket-io-js/22"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="22">22</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1086">1.1k</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/nguyen-hien">
+                                                <img title="" class="user-img" src="/uploads/profile/1355-profileimg.png" data-original-title="Nguyen Hien">
+                                            </a>
+                                            <a class="permalink" href="/topic/1678/không-tồn-tại-socket-io-socket-io-js/22">
+                                                <span class="timeago" title="Mon Aug 27 2018 19:19:15 GMT+0700 (+07)">4 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/vinsmoke-sanji">@Vinsmoke-Sanji</a>
+                                                Hi. Mình nghĩ mình hiểu vấn đề của bạn rồi. Không biết hiện tại bạn còn xử
+                                                lí nó không. Nếu bạn trỏ endpoint /socket.io/ qua bên Nginx thì bạn cần thêm
+                                                resolver vào đầu file config.</p>
+                                            resolver 127.0.0.11 ipv6=off;
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1864" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Hỏi về socket.io">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/ngô-phú-thịnh" class="pull-left">
+                                            <img component="user/picture" data-uid="4788" src="https://graph.facebook.com/2281066875243816/picture?type=large" class="user-img"
+                                                title="" data-original-title="Ngô Phú Thịnh">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1864/hỏi-về-socket-io" itemprop="url">Hỏi về socket.io</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Sun Aug 26 2018 13:36:20 GMT+0700 (+07)">5
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Mon Aug 27 2018 19:17:03 GMT+0700 (+07)">4 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">4</span> <a href="/topic/1864/hỏi-về-socket-io/4"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="4">4</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="91">91</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/nguyen-hien">
+                                                <img title="" class="user-img" src="/uploads/profile/1355-profileimg.png" data-original-title="Nguyen Hien">
+                                            </a>
+                                            <a class="permalink" href="/topic/1864/hỏi-về-socket-io/4">
+                                                <span class="timeago" title="Mon Aug 27 2018 19:17:03 GMT+0700 (+07)">4 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/ngô-phú-thịnh">@Ngô-Phú-Thịnh</a>
+                                                said in <a href="/topic/1864/h%E1%BB%8Fi-v%E1%BB%81-socket-io/3">Hỏi về socket.io</a>:</p>
+                                            <blockquote>
+                                                <p>à mình làm được rồi, cám ơn bạn. Mà bây giờ mình muốn user join vào namespace
+                                                    nhất định thì phải làm sao ạ.</p>
+                                            </blockquote>
+                                            <p>join room: socket.join('name-room')<br> Join namespace:<br> Client: socket
+                                                = io('/namespace-name')</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1859" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Node js BackEnd error Error: read ECONNRESET">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/johnny-tran" class="pull-left">
+                                            <div class="user-icon" style="background-color: #673ab7;" title="" data-original-title="Johnny Tran">J</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1859/node-js-backend-error-error-read-econnreset" itemprop="url">Node
+                                            js BackEnd error Error: read ECONNRESET</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Thu Aug 23 2018 16:17:23 GMT+0700 (+07)">8
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Mon Aug 27 2018 19:12:15 GMT+0700 (+07)">4 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">4</span> <a href="/topic/1859/node-js-backend-error-error-read-econnreset/4"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="4">4</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="127">127</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/nguyen-hien">
+                                                <img title="" class="user-img" src="/uploads/profile/1355-profileimg.png" data-original-title="Nguyen Hien">
+                                            </a>
+                                            <a class="permalink" href="/topic/1859/node-js-backend-error-error-read-econnreset/4">
+                                                <span class="timeago" title="Mon Aug 27 2018 19:12:15 GMT+0700 (+07)">4 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/johnny-tran">@Johnny-Tran</a>
+                                                <a href="https://www.postgresql.org/docs/9.1/static/runtime-config-logging.html"
+                                                    target="_blank" rel="nofollow">https://www.postgresql.org/docs/9.1/static/runtime-config-logging.html</a><br>                                                /var/log/postgresql
+                                                <br> Bạn làm với services nào cũng nên quan tâm access_log với error_log.
+                                                Hai cái này giúp debug tốt.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1816" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Có bác nào đã làm việc với google api về upload file lên google drive.cho em xin code hoặc hướng dẫn với ạ.thanks">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/hieu-le-manh" class="pull-left">
+                                            <div class="user-icon" style="background-color: #9c27b0;" title="" data-original-title="Hieu Le Manh">H</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1816/có-bác-nào-đã-làm-việc-với-google-api-về-upload-file-lên-google-drive-cho-em-xin-code-hoặc-hướng-dẫn-với-ạ-thanks"
+                                            itemprop="url">Có bác nào đã làm việc với
+                                            google api về upload file lên google drive.cho em xin code hoặc hướng dẫn với
+                                            ạ.thanks</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Fri Aug 03 2018 10:38:13 GMT+0700 (+07)">28
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Mon Aug 27 2018 15:07:06 GMT+0700 (+07)">4 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">5</span> <a href="/topic/1816/có-bác-nào-đã-làm-việc-với-google-api-về-upload-file-lên-google-drive-cho-em-xin-code-hoặc-hướng-dẫn-với-ạ-thanks/5"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="5">5</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="243">243</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/hieu-le-manh">
+                                                <span title="" class="user-icon user-img" style="background-color: #9c27b0;" data-original-title="Hieu Le Manh">H</span>
+                                            </a>
+                                            <a class="permalink" href="/topic/1816/có-bác-nào-đã-làm-việc-với-google-api-về-upload-file-lên-google-drive-cho-em-xin-code-hoặc-hướng-dẫn-với-ạ-thanks/5">
+                                                <span class="timeago" title="Mon Aug 27 2018 15:07:06 GMT+0700 (+07)">4 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p>thanks you.<br> mình cũng đã em link đó để làm.cũng vọc vạch thêm được chút
+                                                từ đó.<br> thanks :))</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1863" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Dành cho mấy bạn mới học nodejs và thao tác với csdl postgresql - postgresql maestro crack - no keygen - no virut">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/lực" class="pull-left">
+                                            <div class="user-icon" style="background-color: #3f51b5;" title="" data-original-title="Lực">L</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1863/dành-cho-mấy-bạn-mới-học-nodejs-và-thao-tác-với-csdl-postgresql-postgresql-maestro-crack-no-keygen-no-virut"
+                                            itemprop="url">Dành cho mấy bạn mới học nodejs
+                                            và thao tác với csdl postgresql - postgresql maestro crack - no keygen - no virut</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Sat Aug 25 2018 11:15:29 GMT+0700 (+07)">6
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Sat Aug 25 2018 11:15:29 GMT+0700 (+07)">6 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1863/dành-cho-mấy-bạn-mới-học-nodejs-và-thao-tác-với-csdl-postgresql-postgresql-maestro-crack-no-keygen-no-virut"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="65">65</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1862" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="có cách nào disable csrfToken trên một router không?">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/minh-sang" class="pull-left">
+                                            <div class="user-icon" style="background-color: #827717;" title="" data-original-title="Minh Sang">M</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1862/có-cách-nào-disable-csrftoken-trên-một-router-không" itemprop="url">có
+                                            cách nào disable csrfToken trên một router không?</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Fri Aug 24 2018 10:54:18 GMT+0700 (+07)">7
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Fri Aug 24 2018 10:54:18 GMT+0700 (+07)">7 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1862/có-cách-nào-disable-csrftoken-trên-một-router-không"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="51">51</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1861" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="invalid csrf token">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/minh-sang" class="pull-left">
+                                            <div class="user-icon" style="background-color: #827717;" title="" data-original-title="Minh Sang">M</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1861/invalid-csrf-token" itemprop="url">invalid csrf token</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Fri Aug 24 2018 10:35:40 GMT+0700 (+07)">7
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Fri Aug 24 2018 10:35:40 GMT+0700 (+07)">7 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1861/invalid-csrf-token"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="35">35</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1852" data-index="" data-cid="15" itemprop="itemListElement">
+                                <meta itemprop="name" content="Hỏi về request data sau đó insert mongodb dính bug async">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/thành187" class="pull-left">
+                                            <img component="user/picture" data-uid="4668" src="https://graph.facebook.com/1008023066045459/picture?type=large" class="user-img"
+                                                title="" data-original-title="Thành187">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1852/hỏi-về-request-data-sau-đó-insert-mongodb-dính-bug-async" itemprop="url">Hỏi
+                                            về request data sau đó insert mongodb dính bug async</a><br>
+
+                                        <small>
+                                            <a href="/category/15/expressjs-conect-io"><span class="fa-stack fa-lg"><i style="color:#878787;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#ffffff;" class="fal fa-bolt fa-stack-1x"></i></span>
+                                                ExpressJS/Conect.IO</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Tue Aug 21 2018 01:21:02 GMT+0700 (+07)">10
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 23 2018 23:16:51 GMT+0700 (+07)">7 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">10</span> <a href="/topic/1852/hỏi-về-request-data-sau-đó-insert-mongodb-dính-bug-async/10"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="10">10</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="201">201</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #878787">
+                                        <p>
+                                            <a href="/user/kha-pham">
+                                                <img title="" class="user-img" src="https://graph.facebook.com/1625731260859480/picture?type=large" data-original-title="Kha Pham">
+                                            </a>
+                                            <a class="permalink" href="/topic/1852/hỏi-về-request-data-sau-đó-insert-mongodb-dính-bug-async/10">
+                                                <span class="timeago" title="Thu Aug 23 2018 23:16:51 GMT+0700 (+07)">7 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p>Đúng rồi. Request chỉ đc gửi 1 lần.<br> Bác thử xhr request xem mình chưa
+                                                thử bên nodejs nhưng nghĩ nó vẫn hoạt động.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1860" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Thiết bị vệ sinh cao cấp Toto - Thiên Lộc">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/thiết-bị-vệ-sinh-thiên-lộc" class="pull-left">
+                                            <img component="user/picture" data-uid="4810" src="/uploads/profile/4810-profileimg.png" class="user-img" title="" data-original-title="Thiết bị vệ sinh Thiên Lộc">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1860/thiết-bị-vệ-sinh-cao-cấp-toto-thiên-lộc" itemprop="url">Thiết
+                                            bị vệ sinh cao cấp Toto - Thiên Lộc</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Thu Aug 23 2018 22:24:13 GMT+0700 (+07)">7
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 23 2018 22:24:13 GMT+0700 (+07)">7 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1860/thiết-bị-vệ-sinh-cao-cấp-toto-thiên-lộc"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="44">44</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1856" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Newbie tìm dự án nodejs để học hỏi kinh nghiệm !">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/duy-tùng-phạm" class="pull-left">
+                                            <div class="user-icon" style="background-color: #009688;" title="" data-original-title="Duy Tùng Phạm">D</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1856/newbie-tìm-dự-án-nodejs-để-học-hỏi-kinh-nghiệm" itemprop="url">Newbie
+                                            tìm dự án nodejs để học hỏi kinh nghiệm !</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Wed Aug 22 2018 10:20:52 GMT+0700 (+07)">9
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 23 2018 20:35:34 GMT+0700 (+07)">8 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">5</span> <a href="/topic/1856/newbie-tìm-dự-án-nodejs-để-học-hỏi-kinh-nghiệm/5"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="5">5</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="179">179</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/duy-tùng-phạm">
+                                                <span title="" class="user-icon user-img" style="background-color: #009688;" data-original-title="Duy Tùng Phạm">D</span>
+                                            </a>
+                                            <a class="permalink" href="/topic/1856/newbie-tìm-dự-án-nodejs-để-học-hỏi-kinh-nghiệm/5">
+                                                <span class="timeago" title="Thu Aug 23 2018 20:35:34 GMT+0700 (+07)">8 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p>anh có thể gửi source back-end và task em xem thử ạ , sorry a giờ e mới vào
+                                                check được , dc thì bạn <a class="plugin-mentions-a" href="https://nodejs.vn/user/hiền-lương-vĩ">@Hiền-Lương-Vĩ</a>
+                                                xem qua luôn .</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1858" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="[SETA] - Duy Tân, Cầu Giấy tuyển gấp 10 NodeJS">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/minh-hieu-hieu" class="pull-left">
+                                            <img component="user/picture" data-uid="4805" src="https://graph.facebook.com/2361990953826185/picture?type=large" class="user-img"
+                                                title="" data-original-title="Minh Hieu Hieu">
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1858/seta-duy-tân-cầu-giấy-tuyển-gấp-10-nodejs" itemprop="url">[SETA]
+                                            - Duy Tân, Cầu Giấy tuyển gấp 10 NodeJS</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Thu Aug 23 2018 13:05:25 GMT+0700 (+07)">8
+                                                days ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 23 2018 13:05:25 GMT+0700 (+07)">8 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">1</span> <a href="/topic/1858/seta-duy-tân-cầu-giấy-tuyển-gấp-10-nodejs"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="1">1</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="70">70</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            No one has replied
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li component="category/topic" class="row clearfix " data-tid="1794" data-index="" data-cid="4" itemprop="itemListElement">
+                                <meta itemprop="name" content="Nhóm skype của những chú Gà mờ.">
+
+                                <div class="col-md-7 col-sm-9 col-xs-10 content">
+                                    <div class="avatar pull-left" data-original-title="" title="">
+
+
+                                        <a href="/user/hải-nguyễn215" class="pull-left">
+                                            <div class="user-icon" style="background-color: #009688;" title="" data-original-title="Hải Nguyễn215">H</div>
+                                        </a>
+
+                                    </div>
+
+                                    <h2 component="topic/header" class="title">
+                                        <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
+                                        <i component="topic/locked" class="fal fa-lock hide"></i>
+                                        <a href="/topic/1794/nhóm-skype-của-những-chú-gà-mờ" itemprop="url">Nhóm skype của
+                                            những chú Gà mờ.</a><br>
+
+                                        <small>
+                                            <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                                                        class="fal fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
+                                                General Discussion</a> •
+                                        </small>
+
+                                        <span class="tag-list hidden-xs">
+
+
+                                        </span>
+
+                                        <small class="hidden-xs"><span class="timeago" title="Mon Jul 23 2018 22:58:50 GMT+0700 (+07)">about
+                                                a month ago</span></small>
+                                        <small class="visible-xs-inline">
+                                            <span class="timeago" title="Thu Aug 23 2018 09:04:12 GMT+0700 (+07)">8 days
+                                                ago</span>
+                                        </small>
+                                    </h2>
+                                </div>
+
+                                <div class="mobile-stat col-xs-2 visible-xs text-right">
+                                    <span class="human-readable-number">56</span> <a href="/topic/1794/nhóm-skype-của-những-chú-gà-mờ/56"><i
+                                            class="fal fa-arrow-circle-right"></i></a>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="56">56</span><br>
+                                    <small>Posts</small>
+                                </div>
+
+                                <div class="col-md-1 hidden-sm hidden-xs stats">
+                                    <span class="human-readable-number" title="2699">2.7k</span><br>
+                                    <small>Views</small>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                                    <div class="card" style="border-color: #e95c5a">
+                                        <p>
+                                            <a href="/user/hải-nguyễn215">
+                                                <span title="" class="user-icon user-img" style="background-color: #009688;" data-original-title="Hải Nguyễn215">H</span>
+                                            </a>
+                                            <a class="permalink" href="/topic/1794/nhóm-skype-của-những-chú-gà-mờ/56">
+                                                <span class="timeago" title="Thu Aug 23 2018 09:04:12 GMT+0700 (+07)">8 days
+                                                    ago</span>
+                                            </a>
+                                        </p>
+                                        <div class="post-content">
+                                            <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/hùng-dương">@Hùng-Dương</a>
+                                                Bạn add skype mình nhé. mình tìm ko ra</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div><!-- END container -->
+        </main>
+
+        <div class="hide">
+            <script type="text/tpl" data-template="500">
+<div class="alert alert-danger">
+	<strong>Internal error.</strong>
+	<p>Oops! Looks like something went wrong!</p>
+	<p></p>
+	
+
+</div>
+</script>
+        </div>
+
+
+        <div class="topic-search hidden">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default count"></button>
+                <button type="button" class="btn btn-default prev"><i class="fas fa-fw fa-angle-up"></i></button>
+                <button type="button" class="btn btn-default next"><i class="fas fa-fw fa-angle-down"></i></button>
+            </div>
+        </div>
+        <div component="toaster/tray" class="alert-window"></div>
+
+        <script>
+            require(['forum/footer']);
+        </script>
+
+
+        <div id="taskbar" class="taskbar navbar-fixed-bottom">
+            <div class="navbar-inner">
+                <ul class="nav navbar-nav pull-right"></ul>
+            </div>
+        </div>
+        <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+    </body>
+</body>
+
+</html>
