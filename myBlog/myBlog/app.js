@@ -20,6 +20,18 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('trust proxy', 1) 
+app.use(
+	session({
+		secret: "keyboard cat",
+		// store: new (require("connect-session-sequelize")(session.Store))({
+		// 	db: sequelize
+		// }),
+		resave: false,
+		saveUninitialized: true,
+		cookie: { secure: false },
+		proxy: true
+	})
+);
 // app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -35,18 +47,7 @@ app.use('/login',loginRouter);
 app.use('/register',registerRouter);
 app.use('/forgotpassword',forgotpassRouter);
 
-app.use(
-	session({
-		secret: "keyboard cat",
-		store: new (require("connect-session-sequelize")(session.Store))({
-			db: sequelize
-		}),
-		resave: false,
-		saveUninitialized: true,
-		cookie: { secure: false },
-		proxy: true
-	})
-);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

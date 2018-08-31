@@ -1,0 +1,12 @@
+.user-avatar {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 30px;
+    overflow: hidden;
+}
+.user-avatar img {
+    width: 100%;
+}

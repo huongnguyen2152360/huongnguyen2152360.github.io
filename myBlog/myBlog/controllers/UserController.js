@@ -36,9 +36,10 @@ export const newUser = async params => {
 export const userLogin = async params => {
     const {username,password} = params;
     try {
+        // Tim username trong database trung voi username vua nhap (params)
         const findUsername = await User.findOne({
             where: {
-                username
+                username 
             }
         });
         if (!findUsername) {
@@ -55,4 +56,6 @@ export const userLogin = async params => {
     } catch (error) {
         throw error;
     }
+    
 }
+
