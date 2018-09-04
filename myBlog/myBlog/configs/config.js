@@ -9,3 +9,6 @@ export const HOST = 'ec2-54-235-242-63.compute-1.amazonaws.com';
 export const saltRounds = 10;
 export const keySecret = 'hiehie';
 export const LOGINFAILED = 'Username or Password is incorrect!'
+export const REGISFAILED = 'Username already existed.'
+export const REGISNOTMATCH = 'Password unmatched.'
+export const UPDATESUCCESS = 'Update successfully!'

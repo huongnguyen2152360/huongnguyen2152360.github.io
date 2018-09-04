@@ -20,18 +20,26 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('trust proxy', 1) 
+
+var SequelizeStore = require("connect-session-sequelize")(session.Store);
+
+var myStore = new SequelizeStore({
+  db: sequelize
+})
+
+app.set("trust proxy", 1);
 app.use(
 	session({
 		secret: "keyboard cat",
-		// store: new (require("connect-session-sequelize")(session.Store))({
-		// 	db: sequelize
-		// }),
+		store: myStore,
 		resave: false,
 		saveUninitialized: true,
 		cookie: { secure: false },
 		proxy: true
 	})
 );
+// myStore.sync();
+
 // app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

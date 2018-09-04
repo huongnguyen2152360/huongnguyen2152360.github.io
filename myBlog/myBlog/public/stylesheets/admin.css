@@ -7,6 +7,6 @@
     width: 30px;
     overflow: hidden;
 }
-.user-avatar img {
+.user-avatar img, .user-avatar1 img {
     width: 100%;
 }

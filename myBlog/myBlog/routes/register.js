@@ -1,26 +1,27 @@
 var express = require('express');
 var router = express.Router();
 import {newUser} from '../controllers/UserController';
-import {SUCCESS, FAILED} from '../configs/config';
+// import {SUCCESS, FAILED, REGISFAILED} from '../configs/config';
+import * as Message from '../configs/config';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('register', { title: 'Express' });
+  res.render('register', { Error2: "" });
 });
 
 router.post('/', async(req,res) => {
   const {username,password,image,repassword} = req.body;
   try {
-    if (username && password === repassword) {
-      const newbie = await newUser(req.body); // Validate xong, tao user
-     res.redirect('login')
-    } else {
-      res.json({
-        result: FAILED,
-        data: {},
-        message: `Register failed!`
-      });
-    }
+    const newbie = await newUser(req.body);
+   console.log(newbie)
+   if (!newbie) { // if newbie tra ve null ---> truong hop da co username
+      res.render("register", {Error2: Message.REGISFAILED})
+   } else if(password === repassword) {
+     res.redirect("login")
+   }
+   else if(password != repassword) {
+     res.render("register", {Error2: Message.REGISNOTMATCH})
+   }
   } catch (error) {
     res.json({
       result: FAILED,
