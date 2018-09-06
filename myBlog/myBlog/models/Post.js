@@ -21,6 +21,9 @@ const Post = sequelize.define("post", {
   tags: {
     type: Sequelize.STRING
   },
+  author: {
+    type: Sequelize.STRING
+  },
   createdAt: {
       field: 'createdat',
       type: Sequelize.DATE

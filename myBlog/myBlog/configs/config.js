@@ -10,5 +10,11 @@ export const saltRounds = 10;
 export const keySecret = 'hiehie';
 export const LOGINFAILED = 'Username or Password is incorrect!'
 export const REGISFAILED = 'Username already existed.'
-export const REGISNOTMATCH = 'Password unmatched.'
+export const REGISNOTMATCH = 'Password unmatched or Image URL is empty.'
 export const UPDATESUCCESS = 'Update successfully!'
+export const UPDATEFAILED = 'Update failed!'
+export const LOGOUTSUCCESS = 'Logout successfully!'
+export const POSTCREATEFAILED = 'Missing some information to create new post!'
+export const POSTCREATESUCCESS = 'Created post successfully'
+
+

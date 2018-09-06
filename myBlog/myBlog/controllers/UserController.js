@@ -78,7 +78,7 @@ export const userEdit = async params => {
       }
     });
     //   console.log(`Old Pass: ${findOldPass.password}`);
-    if (password != findOldPass.password) {
+    if (password != findOldPass.password && password) {
       const updateProfile = await User.update(
         {
           image,
@@ -93,10 +93,21 @@ export const userEdit = async params => {
       );
       // console.log(`updateProfile: ${updateProfile}`);
       return updateProfile;
-    } else {
-        return;
+    } else if(password == "") {
+        const updateProfile = await User.update(
+            {
+              image
+            },
+            {
+              where: {
+                username
+              }
+            }
+          );
+          return updateProfile
     }
   } catch (error) {
     throw error;
   }
 };
+

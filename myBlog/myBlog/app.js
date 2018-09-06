@@ -12,7 +12,6 @@ const detailsRouter = require('./routes/details');
 const adminRouter = require('./routes/admin');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
-const forgotpassRouter = require('./routes/forgotpass');
 const {sequelize} = require('./databases/database');
 var app = express();
 
@@ -53,7 +52,6 @@ app.use('/details', detailsRouter);
 app.use('/admin',adminRouter);
 app.use('/login',loginRouter);
 app.use('/register',registerRouter);
-app.use('/forgotpassword',forgotpassRouter);
 
 
 
