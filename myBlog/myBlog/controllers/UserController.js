@@ -13,6 +13,21 @@ export const listAllUsers = async params => {
   }
 };
 
+// GET INFO BY USERNAME
+export const getInfoByUsername = async params => {
+  const { username } = params;
+  try {
+    const findUsername = await User.findOne({
+      where: {
+        username
+      }
+    });
+    return findUsername;
+  } catch (error) {
+    throw error;
+  }
+};
+
 //REGISTER
 export const newUser = async params => {
   const { username, password, image } = params;
@@ -71,6 +86,7 @@ export const userLogin = async params => {
 // EDIT
 export const userEdit = async params => {
   const { image, password, username } = params;
+
   try {
     const findOldPass = await User.findOne({
       where: {
@@ -78,6 +94,7 @@ export const userEdit = async params => {
       }
     });
     //   console.log(`Old Pass: ${findOldPass.password}`);
+
     if (password != findOldPass.password && password) {
       const updateProfile = await User.update(
         {
@@ -93,21 +110,20 @@ export const userEdit = async params => {
       );
       // console.log(`updateProfile: ${updateProfile}`);
       return updateProfile;
-    } else if(password == "") {
-        const updateProfile = await User.update(
-            {
-              image
-            },
-            {
-              where: {
-                username
-              }
-            }
-          );
-          return updateProfile
+    } else if (!password) {
+      const updateProfile = await User.update(
+        {
+          image
+        },
+        {
+          where: {
+            username
+          }
+        }
+      );
+      return updateProfile;
     }
   } catch (error) {
     throw error;
   }
 };
-

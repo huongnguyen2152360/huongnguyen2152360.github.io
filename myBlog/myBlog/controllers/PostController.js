@@ -2,10 +2,10 @@ import Post from "../models/Post";
 
 // GET POST
 export const listAllPosts = async params => {
-  const { limit, offset } = params;
+  const { offset } = params;
   const allPosts = await Post.findAll({
-    limit,
-    offset:offset*limit,
+    limit:20,
+    offset:offset ? offset*20: 0,
     order: [["id", "DESC"]]
   });
   try {
@@ -16,15 +16,15 @@ export const listAllPosts = async params => {
 };
 
 // GET POST THEO USERNAME
-export const listAllPostsUsername = async params => {
-    const {limit,offset} = params;
+export const listAllPostsUsername = async (params,username) => {
+    const {offset} = params;
     const allPostsUsername = await Post.findAll({
-        limit,
-        offset: offset*limit,
+        limit:100,
+        offset: offset ? offset*100: 0, //if (offset) => offset*limit, else: 0
         where: {
-            username
+            author: username
         },
-        order: ["id","DESC"]
+        order: [["id","DESC"]]
     });
     try {
         return allPostsUsername;

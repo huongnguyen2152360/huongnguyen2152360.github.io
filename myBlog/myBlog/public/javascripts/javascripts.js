@@ -42,7 +42,7 @@ $("#save-form").submit(function saveBtn(e) {
   const updatedImage = $("#exampleInputEmail1").val();
   const updatedPass = $("#exampleInputPassword1").val();
   const updatedRepass = $("#exampleInputPassword2").val();
-  const usernameFrForm = $("#usernameNeeded").text();
+  const usernameFrForm = $("#usernameNeeded").text().trim(); // loai bo khoang trang
   $.ajax({
     url: url,
     xhrFields: {

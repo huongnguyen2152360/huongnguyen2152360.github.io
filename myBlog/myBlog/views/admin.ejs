@@ -24,7 +24,7 @@
   <!-- Page level plugin CSS-->
   <link href="/stylesheets/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-  <script>tinymce.init({ selector:'textarea' });</script>
+  <script>tinymce.init({ forced_root_block: "", selector:'textarea', keep_styles: true });</script>
 
   <!-- Custom styles for this template-->
   <link href="/stylesheets/css/sb-admin.css" rel="stylesheet">
@@ -50,14 +50,14 @@
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Post</span>
+            <span>Posts</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <h6 class="dropdown-header">
               <%= user.username %>
             </h6>
-            <a class="dropdown-item" href="#">Create new post</a>
-            <a class="dropdown-item" href="#">Your posts</a>
+            <a class="dropdown-item" href="#form-edit-text">Create new post</a>
+            <a class="dropdown-item" href="#dataTable">Your posts</a>
             <div class="dropdown-divider"></div>
             <h6 class="dropdown-header">Other Pages:</h6>
             <a class="dropdown-item" href="index">Home</a>
@@ -194,7 +194,7 @@
             </div>
           </div>
 
-          <!-- DataTables Example -->
+          <!--  Your Posts -->
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
@@ -206,9 +206,9 @@
                     <tr>
                       <th>Title</th>
                       <th>Description</th>
-                      <th>Image</th>
-                      <th>Tags</th>
                       <th>Content</th>
+                      <th>Tags</th>
+                      <th>Author</th>
                       <th>Date</th>
                     </tr>
                   </thead>
@@ -216,21 +216,24 @@
                     <tr>
                       <th>Title</th>
                       <th>Description</th>
-                      <th>Image</th>
-                      <th>Tags</th>
                       <th>Content</th>
+                      <th>Tags</th>
+                      <th>Author</th>
                       <th>Date</th>
                     </tr>
                   </tfoot>
                   <tbody>
-                    <tr>
-                        <td><%= post.title %></td>
-                        <td><%= post.description %></td>
-                        <td><%= post.image %></td>
-                        <td><%= post.tags %></td>
-                        <td><%- post.content %></td>
-                        <td><%= post.updatedAt %></td>
-                    </tr>
+                      <% posts.forEach(function(post){ %>
+                        <tr>
+                            <td><%= post.title %></td>
+                            <td><%= post.description %></td>
+                            <td><%- post.content %></td>
+                            <td><%= post.tags %></td>
+                            <td><%=post.author %></td>
+                            <td><%= post.updatedAt %></td>
+                        </tr>
+                      <% }); %>
+                 
                    
                   </tbody>
                 </table>

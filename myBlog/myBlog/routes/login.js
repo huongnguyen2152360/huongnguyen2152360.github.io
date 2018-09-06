@@ -11,15 +11,11 @@ router.get("/", function(req, res, next) {
 
 router.post("/", async (req, res) => {
   const { username, password } = req.body;
-  const {limit, offset} = req.query;
   // Lay list bai viet theo username do trong PostController
-  const allPostsUsername = await PostController.listAllPostsUsername(req.query);
   try {
-    const loginbody = await userLogin(req.body);
-    if (loginbody) {
-      req.session.user = loginbody;
-      req.session.post = allPostsUsername;
-      console.log('posttttt :', req.session.post);
+    const loginbody = await userLogin(req.body); // Lay info dang nhap (username,password)
+    if (loginbody) { //  Neu da co info dang nhap roi
+      req.session.user = loginbody; // thi luu info vao session, session luu vao db - session ghi nho dang nhap
       // console.log(`loginbody: ${JSON.stringify(loginbody)}`);
       req.session.save();
       res.redirect("admin");

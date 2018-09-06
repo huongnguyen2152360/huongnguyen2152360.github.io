@@ -1,7 +1,9 @@
 <nav id="menu" class=" slideout-menu">
     <section class="menu-profile">
-      <div class="user-icon" style="background-color: #e65100;" data-original-title="" title="">H</div>
-      <i component="user/status" class="fas fa-fw fa-circle status online"></i>
+      <div class="user-icon">
+        <img src="<% user.image %>" alt="<% user.username %>">
+      </div>
+      <!-- <i component="user/status" class="fas fa-fw fa-circle status online"></i> -->
     </section>
 
     <section class="menu-section" data-section="navigation">
@@ -161,15 +163,14 @@
         <ul id="logged-in-menu" class="nav navbar-nav navbar-right">
           <li id="user_label" class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="" data-original-title="Profile" aria-expanded="false">
-              <img component="header/userpicture" src="" alt="Hương Nguyễn" style="display: none;">
-              <div component="header/usericon" class="user-icon" style="background-color: #e65100;" data-original-title="" title="">H</div>
-              <span id="user-header-name" class="visible-xs-inline">Hương Nguyễn</span>
+              <img component="header/userpicture" src="<%= user.image %>" alt="<%= user.username %>">
+              <!-- <div component="header/usericon" class="user-icon" style="background-color: #e65100;" data-original-title="" title="">H</div> -->
+              <span id="user-header-name" class="visible-xs-inline"><%= user.username %></span>
             </a>
             <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu" aria-labelledby="user_dropdown">
               <li>
                 <a component="header/profilelink" href="/user/hương-nguyễn">
-                  <i component="user/status" class="fas fa-fw fa-circle status online"></i> <span component="header/username">Hương
-                    Nguyễn
+                  <i component="user/status" class="fas fa-fw fa-circle status online"></i> <span component="header/username"><%= user.username %>
                   </span>
                 </a>
               </li>

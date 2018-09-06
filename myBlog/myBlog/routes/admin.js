@@ -4,9 +4,12 @@ import * as Message from "../configs/config";
 import * as UserController from "../controllers/UserController";
 import * as PostController from "../controllers/PostController";
 /* GET home page. */
-router.get("/", function(req, res, next) {
+// Luc vao trang admin, neu co req.session.user =>>> Lay user va post ve
+router.get("/", async function(req, res, next) {
+  const {offset} = req.query; // thi kp viet router.post("/:offset") => ?offset=x
   if (req.session.user) {
-    res.render("admin", { user: req.session.user, Mess1: "", post: req.session.post });
+    const allPostsUsername = await PostController.listAllPostsUsername(req.query,req.session.user.username); // Lay list cac post cua username
+    res.render("admin", { user: req.session.user, Mess1: "", posts: allPostsUsername });
   } else res.redirect("login");
 });
 
@@ -20,7 +23,7 @@ router.get("/logout", async (req, res) => {
   });
 });
 
-// EDIT
+// EDIT- UPDATE PROFILE
 router.put("/editprofile", async (req, res) => {
   const { image, password, repassword, username } = req.body;
   try {
@@ -90,7 +93,6 @@ router.post("/newpost", async (req, res) => {
     const postbody = await PostController.createPost(req.body);
     
     if (postbody) {
-      // console.log("success hello");
       // res.render("index")
       res.json({
         result:Message.SUCCESS,
