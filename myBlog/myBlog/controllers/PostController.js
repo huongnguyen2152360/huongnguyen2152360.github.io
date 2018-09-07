@@ -1,18 +1,28 @@
 import Post from "../models/Post";
-
+import User from '../models/User';
 // GET POST
 export const listAllPosts = async params => {
-  const { offset } = params;
-  const allPosts = await Post.findAll({
-    limit:20,
-    offset:offset ? offset*20: 0,
-    order: [["id", "DESC"]]
-  });
-  try {
-    return allPosts;
-  } catch (error) {
-    throw error;
-  }
+	const { offset } = params;
+
+	try {
+        const allPosts = await Post.findAll({
+            limit: 20,
+            offset: offset ? offset * 20 : 0,
+            order: [["id", "DESC"]],
+            attributes: ["id","title", "content","tags","description","createdAt","updatedAt"],
+            required: true,
+            include:[
+                {
+                    model:User,
+                    attributes: ["username", "image"], //Lay username va avatar cua user tu model User
+                    required:true,
+                }
+            ]
+        });
+		return allPosts;
+	} catch (error) {
+		throw error;
+	}
 };
 
 // GET POST THEO USERNAME
@@ -28,6 +38,29 @@ export const listAllPostsUsername = async (params,username) => {
     });
     try {
         return allPostsUsername;
+    } catch (error) {
+        throw error;
+    }
+}
+
+// GET POST THEO ID
+export const getPostById = async params => {
+    const {id} = params;
+    const postById = await Post.findOne({
+        where: {
+            id
+        },
+        required: true,
+        include:[
+            {
+                model:User,
+                attributes: ["username", "image"], //Lay username va avatar cua user tu model User
+                required:true,
+            }
+        ]
+    });
+    try {
+        return postById;
     } catch (error) {
         throw error;
     }

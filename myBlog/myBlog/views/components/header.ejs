@@ -1,164 +1,120 @@
 <nav id="menu" class=" slideout-menu">
-    <section class="menu-profile">
-      <div class="user-icon">
-        <img src="<% user.image %>" alt="<% user.username %>">
+  <section class="menu-profile">
+    <div class="user-icon">
+      <img src="<% user.image %>" alt="<% user.username %>">
+    </div>
+  </section>
+
+  <section class="menu-section" data-section="navigation">
+    <h3 class="menu-section-title">Navigation</h3>
+    <ul class="menu-section-list">
+      <li class="">
+        <a href="/categories" title="" data-original-title="Categories">
+          <i class="fas fa-fw fa-list"></i>
+
+          <span class="visible-xs-inline">Categories</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/recent" title="" data-original-title="Recent">
+          <i class="fas fa-fw fa-clock-o"></i>
+
+          <span class="visible-xs-inline">Recent</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/unread" title="" id="unread-count" data-original-title="Unread">
+          <i class="fas fa-fw fa-inbox unread-count" data-content="5"></i>
+
+          <span class="visible-xs-inline">Unread</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/tags" title="" data-original-title="Tags">
+          <i class="fas fa-fw fa-tags"></i>
+
+          <span class="visible-xs-inline">Tags</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/popular" title="" data-original-title="Popular">
+          <i class="fas fa-fw fa-fire"></i>
+
+          <span class="visible-xs-inline">Popular</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/users" title="" data-original-title="Users">
+          <i class="fas fa-fw fa-user"></i>
+
+          <span class="visible-xs-inline">Users</span>
+        </a>
+      </li>
+      <li class="">
+        <a href="/groups" title="" data-original-title="Groups">
+          <i class="fas fa-fw fa-group"></i>
+
+          <span class="visible-xs-inline">Groups</span>
+        </a>
+      </li>
+
+      <li class="">
+        <a href="/search" title="" data-original-title="Search">
+          <i class="fas fa-fw fa-search"></i>
+
+          <span class="visible-xs-inline">Search</span>
+        </a>
+      </li>
+
+      <a href="/search">
+        <i class="fas fa-search fa-fw"></i> Search
+      </a>
+    </ul>
+  </section>
+
+   
+
+  <section class="menu-section" data-section="notifications">
+    <h3 class="menu-section-title">
+      Notifications
+      <span class="counter fa-bell-o" component="notifications/icon" data-content="0"></span>
+    </h3>
+    <ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
+    <p class="menu-section-list"><a href="/notifications">See all notifications</a></p>
+  </section>
+
+  <section class="menu-section" data-section="chats">
+    <h3 class="menu-section-title">
+      Chats
+      <i class="counter" component="chat/icon" data-content="0"></i>
+    </h3>
+    <ul class="menu-section-list chat-list"></ul>
+  </section>
+</nav>
+<nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" id="mobile-menu">
+        <span component="notifications/icon" class="notification-icon fas fa-fw fa-bell" data-content="0"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="https://nodejs.vn">
+        <img alt="Vietnam" class=" forum-logo" src="https://nodejs.vn/uploads/system/site-logo.png">
+      </a>
+      <a href="/">
+        <h1 class="navbar-brand forum-title">myBlog</h1>
+      </a>
+
+      <div component="navbar/title" class="visible-xs hidden">
+        <span></span>
       </div>
-      <!-- <i component="user/status" class="fas fa-fw fa-circle status online"></i> -->
-    </section>
+    </div>
 
-    <section class="menu-section" data-section="navigation">
-      <h3 class="menu-section-title">Navigation</h3>
-      <ul class="menu-section-list">
-        <li class="">
-          <a href="/categories" title="" data-original-title="Categories">
-            <i class="fas fa-fw fa-list"></i>
-
-            <span class="visible-xs-inline">Categories</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/recent" title="" data-original-title="Recent">
-            <i class="fas fa-fw fa-clock-o"></i>
-
-            <span class="visible-xs-inline">Recent</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/unread" title="" id="unread-count" data-original-title="Unread">
-            <i class="fas fa-fw fa-inbox unread-count" data-content="5"></i>
-
-            <span class="visible-xs-inline">Unread</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/tags" title="" data-original-title="Tags">
-            <i class="fas fa-fw fa-tags"></i>
-
-            <span class="visible-xs-inline">Tags</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/popular" title="" data-original-title="Popular">
-            <i class="fas fa-fw fa-fire"></i>
-
-            <span class="visible-xs-inline">Popular</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/users" title="" data-original-title="Users">
-            <i class="fas fa-fw fa-user"></i>
-
-            <span class="visible-xs-inline">Users</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="/groups" title="" data-original-title="Groups">
-            <i class="fas fa-fw fa-group"></i>
-
-            <span class="visible-xs-inline">Groups</span>
-          </a>
-        </li>
-
-        <li class="">
-          <a href="/search" title="" data-original-title="Search">
-            <i class="fas fa-fw fa-search"></i>
-
-            <span class="visible-xs-inline">Search</span>
-          </a>
-        </li>
-
-        <a href="/search">
-          <i class="fas fa-search fa-fw"></i> Search
-        </a>
-      </ul>
-    </section>
-
-    <section class="menu-section" data-section="profile">
-      <h3 class="menu-section-title">Profile</h3>
-      <ul class="menu-section-list" component="header/usercontrol">
-        <li>
-          <a component="header/profilelink" href="/user/hương-nguyễn">
-            <span component="header/username">Hương Nguyễn</span>
-          </a>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li>
-          <a href="#" class="user-status" data-status="online">
-            <i class="fas fa-fw fa-circle status online"></i><span> Online</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="user-status" data-status="away">
-            <i class="fas fa-fw fa-circle status away"></i><span> Away</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="user-status" data-status="dnd">
-            <i class="fas fa-fw fa-circle status dnd"></i><span> Do not disturb</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="user-status" data-status="offline">
-            <i class="fas fa-fw fa-circle status offline"></i><span> Invisible</span>
-          </a>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li>
-          <a href="/user/hương-nguyễn/edit">
-            <i class="fas fa-fw fa-edit"></i> <span>Edit Profile</span>
-          </a>
-        </li>
-        <li>
-          <a href="/user/hương-nguyễn/settings">
-            <i class="fas fa-fw fa-gear"></i> <span>Settings</span>
-          </a>
-        </li>
-        <li role="presentation" class="divider"></li>
-        <li component="user/logout">
-          <a href="#"><i class="fas fa-fw fa-sign-out"></i><span> Logout</span></a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="menu-section" data-section="notifications">
-      <h3 class="menu-section-title">
-        Notifications
-        <span class="counter fa-bell-o" component="notifications/icon" data-content="0"></span>
-      </h3>
-      <ul class="menu-section-list notification-list-mobile" component="notifications/list"></ul>
-      <p class="menu-section-list"><a href="/notifications">See all notifications</a></p>
-    </section>
-
-    <section class="menu-section" data-section="chats">
-      <h3 class="menu-section-title">
-        Chats
-        <i class="counter" component="chat/icon" data-content="0"></i>
-      </h3>
-      <ul class="menu-section-list chat-list"></ul>
-    </section>
-  </nav>
-  <nav class="navbar navbar-default navbar-fixed-top header" id="header-menu" component="navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" id="mobile-menu">
-          <span component="notifications/icon" class="notification-icon fas fa-fw fa-bell" data-content="0"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <a href="https://nodejs.vn">
-          <img alt="Vietnam" class=" forum-logo" src="https://nodejs.vn/uploads/system/site-logo.png">
-        </a>
-        <a href="/">
-          <h1 class="navbar-brand forum-title">Nodejs.vn</h1>
-        </a>
-
-        <div component="navbar/title" class="visible-xs hidden">
-          <span></span>
-        </div>
-      </div>
-
+    <% if(user) { %>
+      <!-- LOGGED IN -->
       <div id="nav-dropdown" class="hidden-xs">
         <ul id="logged-in-menu" class="nav navbar-nav navbar-right">
           <li id="user_label" class="dropdown">
@@ -197,18 +153,18 @@
               </li>
               <li role="presentation" class="divider"></li>
               <li>
-                <a href="/user/hương-nguyễn/edit">
+                <a href="admin">
                   <i class="fas fa-fw fa-edit"></i> <span>Edit Profile</span>
                 </a>
               </li>
               <li>
-                <a href="/user/hương-nguyễn/settings">
+                <a href="admin">
                   <i class="fas fa-fw fa-gear"></i> <span>Settings</span>
                 </a>
               </li>
               <li role="presentation" class="divider"></li>
-              <li component="user/logout">
-                <a href="#"><i class="fas fa-fw fa-sign-out"></i><span> Logout</span></a>
+              <li component="user/logout" class="userLogout">
+                <a onclick="logOutIndex()"><i class="fal fa-fw fa-sign-out"></i><span> Logout</span></a>
               </li>
             </ul>
           </li>
@@ -245,10 +201,12 @@
                 </ul>
               </li>
               <li class="notif-dropdown-link"><a href="#" class="mark-all-read" component="chats/mark-all-read">Mark all
-                  chats read</a></li>
+                  chats read
+                </a></li>
               <li class="notif-dropdown-link"><a href="/chats">See all chats</a></li>
             </ul>
           </li>
+
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li data-original-title="" title="">
@@ -302,49 +260,49 @@
 
         <ul id="main-nav" class="nav navbar-nav">
           <li class="">
-            <a href="/categories" title="" data-original-title="Categories">
+            <a href="#" title="" data-original-title="Categories">
               <i class="fas fa-fw fa-list"></i>
 
               <span class="visible-xs-inline">Categories</span>
             </a>
           </li>
           <li class="">
-            <a href="/recent" title="" data-original-title="Recent">
+            <a href="#" title="" data-original-title="Recent">
               <i class="far fa-fw fa-clock-o"></i>
 
               <span class="visible-xs-inline">Recent</span>
             </a>
           </li>
           <li class="">
-            <a href="/unread" title="" id="unread-count" data-original-title="Unread">
+            <a href="#" title="" id="unread-count" data-original-title="Unread">
               <i class="fas fa-fw fa-inbox unread-count" data-content="5"></i>
 
               <span class="visible-xs-inline">Unread</span>
             </a>
           </li>
           <li class="">
-            <a href="/tags" title="" data-original-title="Tags">
+            <a href="#" title="" data-original-title="Tags">
               <i class="fas fa-fw fa-tags"></i>
 
               <span class="visible-xs-inline">Tags</span>
             </a>
           </li>
           <li class="">
-            <a href="/popular" title="" data-original-title="Popular">
+            <a href="#" title="" data-original-title="Popular">
               <i class="fas fa-fw fa-fire"></i>
 
               <span class="visible-xs-inline">Popular</span>
             </a>
           </li>
           <li class="">
-            <a href="/users" title="" data-original-title="Users">
+            <a href="#" title="" data-original-title="Users">
               <i class="fas fa-fw fa-user"></i>
 
               <span class="visible-xs-inline">Users</span>
             </a>
           </li>
           <li class="">
-            <a href="/groups" title="" data-original-title="Groups">
+            <a href="#" title="" data-original-title="Groups">
               <i class="fas fa-fw fa-group"></i>
 
               <span class="visible-xs-inline">Groups</span>
@@ -352,7 +310,7 @@
           </li>
 
           <li class="">
-            <a href="/search" title="" data-original-title="Search">
+            <a href="#" title="" data-original-title="Search">
               <i class="fas fa-fw fa-search"></i>
 
               <span class="visible-xs-inline">Search</span>
@@ -360,6 +318,121 @@
           </li>
         </ul>
       </div>
+      <% } else {%>
+        <!-- NOT logged in -->
+        <div id="nav-dropdown" class="hidden-xs">
+          <ul id="logged-out-menu" class="nav navbar-nav navbar-right">
 
-    </div>
-  </nav>
+            <li>
+              <a href="/login">
+                <i class="fas fa-sign-in visible-xs-inline"></i>
+                <span>Login</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li data-original-title="" title="">
+              <form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
+                <button id="search-button" type="button" class="btn btn-link"><i class="fas fa-search fa-fw" title="Search"></i></button>
+                <div class="hidden" id="search-fields">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" name="query" value="">
+                    <a href="#"><i class="fas fa-gears fa-fw advanced-search-link"></i></a>
+                  </div>
+                  <button type="submit" class="btn btn-default hide">Search</button>
+                </div>
+              </form>
+            </li>
+            <li class="visible-xs" id="search-menu">
+              <a href="/search">
+                <i class="fas fa-search fa-fw"></i> Search
+              </a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li>
+              <a href="#" id="reconnect" class="hide" title="" data-original-title="Connection to Blog has been lost, attempting to reconnect..."><i
+                  class="fas fa-check"></i></a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right pagination-block visible-lg visible-md">
+            <li class="dropdown">
+              <i class="fas fa-angle-double-up pointer fa-fw pagetop"></i>
+              <i class="fas fa-angle-up pointer fa-fw pageup"></i>
+
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <span class="pagination-text"></span>
+              </a>
+
+              <i class="fas fa-angle-down pointer fa-fw pagedown"></i>
+              <i class="fas fa-angle-double-down pointer fa-fw pagebottom"></i>
+
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+
+              <ul class="dropdown-menu" role="menu">
+                <input type="text" class="form-control" id="indexInput" placeholder="Enter index">
+              </ul>
+            </li>
+          </ul>
+
+          <ul id="main-nav" class="nav navbar-nav">
+            <li class="">
+              <a href="/categories" title="" data-original-title="Categories">
+                <i class="fas fa-fw fa-list"></i>
+
+                <span class="visible-xs-inline">Categories</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="/recent" title="" data-original-title="Recent">
+                <i class="fas fa-fw fa-clock-o"></i>
+
+                <span class="visible-xs-inline">Recent</span>
+              </a>
+            </li>
+
+            <li class="">
+              <a href="/tags" title="" data-original-title="Tags">
+                <i class="fas fa-fw fa-tags"></i>
+
+                <span class="visible-xs-inline">Tags</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="/popular" title="" data-original-title="Popular">
+                <i class="fas fa-fw fa-fire"></i>
+
+                <span class="visible-xs-inline">Popular</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="/users" title="" data-original-title="Users">
+                <i class="fas fa-fw fa-user"></i>
+
+                <span class="visible-xs-inline">Users</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="/groups" title="" data-original-title="Groups">
+                <i class="fas fa-fw fa-group"></i>
+
+                <span class="visible-xs-inline">Groups</span>
+              </a>
+            </li>
+
+            <li class="">
+              <a href="/search" title="" data-original-title="Search">
+                <i class="fas fa-fw fa-search"></i>
+
+                <span class="visible-xs-inline">Search</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <% }%>
+  </div>
+</nav>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
   <!-- FONT AWESOME -->
-  <link rel="stylesheet" type="text/css" media="screen" href="font/fontawesomeProByNam.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/font/fontawesomeProByNam.css">
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="/stylesheets/font.css">
@@ -27,9 +27,15 @@
           <div class="pull-left">
 
           </div>
+          <% if(user) { %>
           <div class="pull-right">
             <a href="admin"><button id="new_topic" class="btn btn-primary">New Topic</button></a>
           </div>
+          <% } else { %>
+            <div class="pull-right">
+              <a href="/login"><button class="btn btn-primary">Login to post</button></a>
+            </div>
+            <% } %>
         </div>
 
         <hr class="hidden-xs">
@@ -43,81 +49,70 @@
 
           <ul component="category" class="topic-list" itemscope="" itemtype="http://www.schema.org/ItemList" data-nextstart="20">
             <meta itemprop="itemListOrder" content="descending">
-            <li component="category/topic" class="row clearfix unread" data-tid="1853" data-index="" data-cid="4" itemprop="itemListElement">
-              <meta itemprop="name" content="install ethereumjs-wallet">
+            <% postss.forEach(function(post){ %>
+              
+                <li component="category/topic" class="row clearfix unread" data-tid="1878" data-index="" data-cid="4" itemprop="itemListElement">
+                  <meta itemprop="name" content="Làm Sản Phẩm Thất Bại và Những Bài Học Xương Máu">
 
-              <div class="col-md-7 col-sm-9 col-xs-10 content">
-                  <% posts.forEach(function(post){ %>
-                <div class="avatar pull-left" data-original-title="" title="">
+                  <div class="col-md-7 col-sm-9 col-xs-10 content">
+                    <div class="avatar pull-left" data-original-title="" title="">
 
 
-                  <a href="#" class="pull-left">
-                    <!-- <img component="user/picture" data-uid="4789" src="<%= user.image %>" class="user-img"
-                      title="<% user.username %>"> -->
-                      <p><%= post.author %></p>
-                  </a>
+                      <a href="#" class="pull-left">
+                        <img component="user/picture" data-uid="4866" src="<%= post.user.image%>" class="user-img" title="" data-original-title="<%= post.user.username%>">
+                      </a>
 
-                </div>
+                    </div>
 
-                <h2 component="topic/header" class="title">
-                  <i component="topic/pinned" class="fal fa-thumb-tack hide"></i>
-                  <i component="topic/locked" class="fal fa-lock hide"></i>
-                  <a href="#" itemprop="url"><%= post.title %></a><br>
+                    <h2 component="topic/header" class="title">
+                      <i component="topic/pinned" class="fa fa-thumb-tack hide"></i>
+                      <i component="topic/locked" class="fa fa-lock hide"></i>
+                      <a href="/details/topic/<%= post.id %>" itemprop="url"><%= post.title%></a><br>
 
-                  <small>
-                    <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;" class="fal fa-circle fa-stack-2x"></i><i
-                          style="color:#fff;" class="fal fa-question fa-stack-1x"></i></span>
-                      General Discussion</a> •
-                  </small>
+                      <small>
+                        <a href="/category/4/general-discussion"><span class="fa-stack fa-lg"><i style="color:#e95c5a;"
+                              class="fas fa-circle fa-stack-2x"></i><i style="color:#fff;" class="fas fa-question fa-stack-1x"></i></span>
+                          <%= post.tags%></a> •
+                      </small>
 
-                  <span class="tag-list hidden-xs">
-                    <a href="/tags/ethereumjs-wall"><span class="tag" style="">ethereumjs-wall</span></a>
-                    <a href="/tags/helpme"><span class="tag" style="">helpme</span></a>
-                    <a href="/tags/npminstall"><span class="tag" style="">npminstall</span></a>
-                    <small>•</small>
-                  </span>
+                      <span class="tag-list hidden-xs">
 
-                  <small class="hidden-xs"><span class="timeago" title="Tue Aug 21 2018 09:59:44 GMT+0700 (+07)">10 days
-                      ago
-                    </span></small>
-                  <small class="visible-xs-inline">
-                    <span class="timeago" title="Thu Aug 30 2018 15:04:32 GMT+0700 (+07)">about 18 hours ago</span>
-                  </small>
-                </h2>
-                <% }); %>
-              </div>
 
-              <div class="mobile-stat col-xs-2 visible-xs text-right">
-                <span class="human-readable-number">2</span> <a href="/topic/1853/install-ethereumjs-wallet/2"><i class="fal fa-arrow-circle-right"></i></a>
-              </div>
+                      </span>
 
-              <div class="col-md-1 hidden-sm hidden-xs stats">
-                <span class="human-readable-number" title="2">2</span><br>
-                <small>Posts</small>
-              </div>
-
-              <div class="col-md-1 hidden-sm hidden-xs stats">
-                <span class="human-readable-number" title="68">68</span><br>
-                <small>Views</small>
-              </div>
-
-              <div class="col-md-3 col-sm-3 teaser hidden-xs">
-                <div class="card" style="border-color: #e95c5a">
-                  <p>
-                    <a href="/user/bao-mai">
-                      <img title="" class="user-img" src="https://graph.facebook.com/111125343173124/picture?type=large" data-original-title="Bao Mai">
-                    </a>
-                    <a class="permalink" href="/topic/1853/install-ethereumjs-wallet/2">
-                      <span class="timeago" title="Thu Aug 30 2018 15:04:32 GMT+0700 (+07)">about 18 hours ago</span>
-                    </a>
-                  </p>
-                  <div class="post-content">
-                    <p>mình hay dùng modul ethers</p>
-
+                      <small class="hidden-xs"><span class="timeago" title="Wed Sep 05 2018 17:25:18 GMT+0700 (Indochina Time)">a
+                          day ago</span></small>
+                      <small class="visible-xs-inline">
+                        <span class="timeago" title="Wed Sep 05 2018 17:25:18 GMT+0700 (Indochina Time)">a day ago</span>
+                      </small>
+                    </h2>
                   </div>
-                </div>
-              </div>
-            </li>
+
+                  <div class="mobile-stat col-xs-2 visible-xs text-right">
+                    <span class="human-readable-number">1</span> <a href="#"><i
+                        class="fa fa-arrow-circle-right"></i></a>
+                  </div>
+
+                  <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number" title="1">1</span><br>
+                    <small>Posts</small>
+                  </div>
+
+                  <div class="col-md-1 hidden-sm hidden-xs stats">
+                    <span class="human-readable-number" title="47">47</span><br>
+                    <small>Views</small>
+                  </div>
+
+                  <div class="col-md-3 col-sm-3 teaser hidden-xs">
+                    <div class="card" style="border-color: #e95c5a">
+                      <p>
+                        No one has replied
+                      </p>
+                    </div>
+                  </div>
+                </li>
+            
+              <% }); %>
           </ul>
 
         </div>
@@ -147,9 +142,7 @@
   </div>
   <div component="toaster/tray" class="alert-window"></div>
 
-  <script>
-    require(['forum/footer']);
-  </script>
+
 
 
   <div id="taskbar" class="taskbar navbar-fixed-bottom">
@@ -158,6 +151,10 @@
     </div>
   </div>
   <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+
+  <script src="/stylesheets/vendor/jquery/jquery.min.js"></script>
+  <script src="/javascripts/javascripts.js"></script>
 </body>
 
 </html>

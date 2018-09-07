@@ -6,7 +6,11 @@ import * as PostController from "../controllers/PostController";
 import * as Message from "../configs/config";
 /* GET home page. */
 router.get("/", function(req, res, next) {
-  res.render("login", { Error1:"" });
+  if (req.session.user) {
+    res.redirect("admin");
+  } else {
+    res.render("login", { Error1: "" });
+  }
 });
 
 router.post("/", async (req, res) => {
@@ -14,7 +18,8 @@ router.post("/", async (req, res) => {
   // Lay list bai viet theo username do trong PostController
   try {
     const loginbody = await userLogin(req.body); // Lay info dang nhap (username,password)
-    if (loginbody) { //  Neu da co info dang nhap roi
+    if (loginbody) {
+      //  Neu da co info dang nhap roi
       req.session.user = loginbody; // thi luu info vao session, session luu vao db - session ghi nho dang nhap
       // console.log(`loginbody: ${JSON.stringify(loginbody)}`);
       req.session.save();

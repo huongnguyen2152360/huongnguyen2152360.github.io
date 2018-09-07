@@ -16292,3 +16292,6 @@ html.composing .col-xs-1, html.composing .col-sm-1, html.composing .col-md-1, ht
     height: auto;
     opacity: 1
 }
+.userLogout {
+    cursor: pointer;
+}

@@ -127,3 +127,23 @@ export const userEdit = async params => {
     throw error;
   }
 };
+
+//UPDATE STATUS
+export const updateStatus = async params => {
+  const { username, status } = params;
+  try {
+    const statusUpdate = await User.update(
+      {
+        status
+      },
+      {
+        where: {
+          username
+        }
+      }
+    );
+    return statusUpdate;
+  } catch (error) {
+    throw error;
+  }
+};

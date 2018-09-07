@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" media="screen" href="font/fontawesomeProByNam.css">
+     <!-- FONT AWESOME -->
+  <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/font/fontawesomeProByNam.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/font.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/js-enabled.css">
@@ -14,10 +15,11 @@
     <title>My Blog - Details</title>
 </head>
 
-<body class="page-topic page-topic-1853 page-topic-install-ethereumjs-wallet">
-    <%- include components/header%>
+<body class="page-topic page-topic-1881 page-topic-pm2-event-catch">
 
+    <%- include components/header%>
         <main id="panel" class=" slideout-panel">
+           
 
             <div class="container" id="content">
                 <div class="row">
@@ -32,9 +34,9 @@
                                 </a>
                             </li>
                             <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-                                <a href="/category/4/general-discussion" itemprop="url">
+                                <a href="/category/3/discuss-node-js" itemprop="url">
                                     <span itemprop="title">
-                                        General Discussion
+                                        Discuss myBlog
 
                                     </span>
                                 </a>
@@ -42,8 +44,8 @@
                             <li component="breadcrumb/current" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb" class="active">
 
                                 <span itemprop="title">
-                                    install ethereumjs-wallet
-                                    <a target="_blank" href="/topic/1853.rss"><i class="fal fa-rss-square"></i></a>
+                                    <%= postsid.title %>
+                                    <a target="_blank" href="/topic/1881.rss"><i class="fas fa-rss-square"></i></a>
                                 </span>
 
                             </li>
@@ -51,14 +53,14 @@
 
                         <h1 component="post/header" class="hidden-xs" itemprop="name">
 
-                            <i class="pull-left fal fa-thumb-tack hidden"></i> <i class="pull-left fal fa-lock hidden"></i>
-                            <span class="topic-title" component="topic/title">install ethereumjs-wallet</span>
+                            <i class="pull-left fas fa-thumb-tack hidden"></i> <i class="pull-left fas fa-lock hidden"></i>
+                            <span class="topic-title" component="topic/title"></span>
 
                             <span class="browsing-users hidden hidden-xs hidden-sm pull-right">
                                 <span>browsing</span>
                                 <div component="topic/browsing/list" class="thread_active_users active-users inline-block"></div>
                                 <small class="hidden">
-                                    <i class="fal fa-users"></i> <span component="topic/browsing/count" class="user-count"></span>
+                                    <i class="fas fa-users"></i> <span component="topic/browsing/count" class="user-count"></span>
                                 </small>
                             </span>
                         </h1>
@@ -68,29 +70,26 @@
 
                         <hr class="visible-xs">
 
-                        <ul component="topic" class="posts" data-tid="1853">
-                            <li component="post" class="" data-index="0" data-pid="6708" data-uid="4789" data-username="Hiền Vũ" data-userslug="hiền-vũ"
+                        <ul component="topic" class="posts" data-tid="1881">
+                            <li component="post" class="" data-index="0" data-pid="6799" data-uid="4879" data-username="Thái Bình La" data-userslug="thái-bình-la"
                                 itemscope="" itemtype="http://schema.org/Comment">
                                 <a component="post/anchor" data-index="0" name="0"></a>
 
-                                <meta itemprop="datePublished" content="2018-08-21T02:59:44.621Z">
+                                <meta itemprop="datePublished" content="2018-09-07T02:45:28.169Z">
                                 <meta itemprop="dateModified" content="">
 
                                 <div class="clearfix">
                                     <div class="icon pull-left">
-                                        <a href="/user/hiền-vũ">
-                                            <img component="user/picture" data-uid="4789" src="https://graph.facebook.com/2151132321836249/picture?type=large" itemprop="image"
-                                                align="left">
-                                            <i component="user/status" class="fal fa-circle status offline" title="Offline"></i>
+                                        <a href="/user/thái-bình-la">
+                                            <img component="user/picture" data-uid="3545" src="<%= postsid.user.image %>" itemprop="image" align="left">
+                                            <i component="user/status" class="fas fa-circle status offline" title="Offline"></i>
 
                                         </a>
                                     </div>
 
                                     <small class="pull-left">
                                         <strong>
-                                            <a href="/user/hiền-vũ" itemprop="author" data-username="Hiền Vũ" data-uid="4789">Hiền
-                                                Vũ
-                                            </a>
+                                            <a href="#" itemprop="author" data-username="<%= postsid.author %>>" data-uid="4879"><%= postsid.author %>></a>
                                         </strong>
 
 
@@ -98,10 +97,12 @@
 
 
                                         <div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
-                                            <a class="permalink" href="/topic/1853/install-ethereumjs-wallet/1"><span class="timeago"
-                                                    title="Tue Aug 21 2018 09:59:44 GMT+0700 (+07)">10 days ago</span></a>
+                                            <a class="permalink" href="/topic/1881/pm2-event-catch/1"><span class="timeago"
+                                                    title="Fri Sep 07 2018 09:45:28 GMT+0700 (Indochina Time)">about 5 hours
+                                                    ago
+                                                </span></a>
 
-                                            <i class="fal fa-pencil-square pointer edit-icon hidden"></i>
+                                            <i class="fas fa-pencil-square pointer edit-icon hidden"></i>
 
                                             <small data-editor="" component="post/editor" class="hidden">last edited by <span
                                                     class="timeago" title="Invalid Date"></span></small>
@@ -112,7 +113,7 @@
 
                                             </span>
                                         </div>
-                                        <span class="bookmarked"><i class="fal fa-bookmark-o"></i></span>
+                                        <span class="bookmarked"><i class="fas fa-bookmark-o"></i></span>
 
                                     </small>
                                 </div>
@@ -120,7 +121,7 @@
                                 <br>
 
                                 <div class="content" component="post/content" itemprop="text">
-                                    <p>How to npm install ethereumjs-wallet ! A/c nào giúp em install với ạ !</p>
+                                    <p><%- postsid.content %></p>
 
                                 </div>
 
@@ -135,51 +136,72 @@
 
                                         <span class="votes">
                                             <a component="post/upvote" href="#" class="">
-                                                <i class="fal fa-chevron-up"></i>
+                                                <i class="fas fa-chevron-up"></i>
                                             </a>
 
                                             <span component="post/vote-count" data-votes="0">0</span>
 
                                             <a component="post/downvote" href="#" class="">
-                                                <i class="fal fa-chevron-down"></i>
+                                                <i class="fas fa-chevron-down"></i>
                                             </a>
                                         </span>
 
                                         <span component="post/tools" class="dropdown moderator-tools ">
-                                            <a href="#" data-toggle="dropdown"><i class="fal fa-fw fa-ellipsis-v"></i></a>
-                                            <ul class="dropdown-menu dropdown-menu-right" role="menu"></ul>
+                                            <a href="#" data-toggle="dropdown"><i class="fas fa-fw fa-ellipsis-v"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+
+                                                    <li role="presentation">
+                                                        <a component="post/favourite" role="menuitem" tabindex="-1" href="#" data-favourited="false">
+                                                    
+                                                            <span class="favourite-text">Bookmark</span>
+                                                            <span component="post/favourite-count" class="favouriteCount" data-favourites="0">0</span>&nbsp;
+                                                    
+                                                            <i component="post/favourite/on" class="fas fa-heart hidden"></i>
+                                                            <i component="post/favourite/off" class="fas fa-heart-o "></i>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation" class="dropdown-header">Share this Post</li>
+                                                        <li role="presentation">
+                                                            <a role="menuitem" component="share/facebook" tabindex="-1" href="#"><span class="menu-icon"><i class="fas fa-facebook"></i></span> Facebook</a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a role="menuitem" component="share/twitter" tabindex="-1" href="#"><span class="menu-icon"><i class="fas fa-twitter"></i></span> Twitter</a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a role="menuitem" component="share/google" tabindex="-1" href="#"><span class="menu-icon"><i class="fas fa-google-plus"></i></span> Google+</a>
+                                                        </li>
+                                                    
+                                                    <li role="presentation" class="divider"></li>
+                                                    <li role="presentation">
+                                                        <a component="post/flag" role="menuitem" tabindex="-1" href="#">
+                                                            Flag this post for moderation
+                                                        </a>
+                                                    </li></ul>
                                         </span>
 
                                     </small>
                                 </div>
 
                                 <hr>
-
                                 <div class="post-bar">
                                     <div class="clearfix">
                                         <div class="tags pull-left">
-                                            <a href="/tags/ethereumjs-wall">
-                                                <span class="tag-item" data-tag="ethereumjs-wall" style="">ethereumjs-wall</span>
-                                                <span class="tag-topic-count human-readable-number" title="1">1</span></a>
-                                            <a href="/tags/helpme">
-                                                <span class="tag-item" data-tag="helpme" style="">helpme</span>
-                                                <span class="tag-topic-count human-readable-number" title="1">1</span></a>
-                                            <a href="/tags/npminstall">
-                                                <span class="tag-item" data-tag="npminstall" style="">npminstall</span>
-                                                <span class="tag-topic-count human-readable-number" title="1">1</span></a>
+
                                         </div>
 
                                         <div class="topic-main-buttons pull-right">
                                             <span class="loading-indicator btn pull-left hidden" done="0">
-                                                <span class="hidden-xs">Loading More Posts</span> <i class="fal fa-refresh fa-spin"></i>
+                                                <span class="hidden-xs">Loading More Posts</span> <i class="fas fa-refresh fa-spin"></i>
                                             </span>
 
                                             <div class="stats hidden-xs">
-                                                <span component="topic/post-count" class="human-readable-number" title="2">2</span><br>
+                                                <span component="topic/post-count" class="human-readable-number" title="4">4</span><br>
                                                 <small>Posts</small>
                                             </div>
                                             <div class="stats hidden-xs">
-                                                <span class="human-readable-number" title="68">68</span><br>
+                                                <span class="human-readable-number" title="22">22</span><br>
                                                 <small>Views</small>
                                             </div>
 
@@ -194,36 +216,34 @@
                                             </div>
 
                                             <a component="topic/reply/locked" class="btn btn-primary hidden" disabled=""><i
-                                                    class="fal fa-lock"></i>
-                                                Locked</a>
+                                                    class="fas fa-lock"></i> Locked</a>
 
                                             <button component="topic/follow" class="btn btn-info ">
                                                 <span class="visible-sm-inline visible-md-inline visible-lg-inline">Watch</span>
-                                                <i class="fal fa-eye"></i>
+                                                <i class="fas fa-eye"></i>
                                             </button>
 
                                             <button component="topic/unfollow" class="btn btn-warning hidden">
                                                 <span class="visible-sm-inline visible-md-inline visible-lg-inline">Unwatch</span>
-                                                <i class="fal fa-eye-slash"></i>
+                                                <i class="fas fa-eye-slash"></i>
                                             </button>
 
                                             <button component="topic/mark-unread" class="btn btn-default">
                                                 <span class="visible-sm-inline visible-md-inline visible-lg-inline">Mark
-                                                    unread</span>
-                                                <i class="fal fa-inbox"></i>
+                                                    unread</span> <i class="fas fa-inbox"></i>
                                             </button>
 
                                             <div class="btn-group" component="thread/sort">
                                                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span
                                                         class="visible-sm-inline visible-md-inline visible-lg-inline">Sort by</span>
-                                                    <span class="visible-xs-inline"><i class="fal fa-fw fa-sort"></i></span>
+                                                    <span class="visible-xs-inline"><i class="fas fa-fw fa-sort"></i></span>
                                                     <span class="caret"></span></button>
                                                 <ul class="dropdown-menu dropdown-menu-right">
                                                     <li><a href="#" class="oldest_to_newest" data-sort="oldest_to_newest"><i
-                                                                class="fal fa-fw fa-check"></i> Oldest to Newest</a></li>
+                                                                class="fas fa-fw fa-check"></i> Oldest to Newest</a></li>
                                                     <li><a href="#" class="newest_to_oldest" data-sort="newest_to_oldest"><i
-                                                                class="fal fa-fw"></i> Newest to Oldest</a></li>
-                                                    <li><a href="#" class="most_votes" data-sort="most_votes"><i class="fal fa-fw"></i>
+                                                                class="fas fa-fw"></i> Newest to Oldest</a></li>
+                                                    <li><a href="#" class="most_votes" data-sort="most_votes"><i class="fas fa-fw"></i>
                                                             Most votes</a></li>
                                                 </ul>
                                             </div>
@@ -234,27 +254,27 @@
                                     <hr>
                                 </div>
                             </li>
-                            <li component="post" class="" data-index="1" data-pid="6770" data-uid="4841" data-username="Bao Mai" data-userslug="bao-mai"
+                            <li component="post" class="" data-index="1" data-pid="6800" data-uid="3926" data-username="Quy Tran" data-userslug="quy-tran"
                                 itemscope="" itemtype="http://schema.org/Comment">
                                 <a component="post/anchor" data-index="1" name="1"></a>
 
-                                <meta itemprop="datePublished" content="2018-08-30T08:04:32.865Z">
-                                <meta itemprop="dateModified" content="2018-08-30T08:04:47.820Z">
+                                <meta itemprop="datePublished" content="2018-09-07T05:31:04.838Z">
+                                <meta itemprop="dateModified" content="">
 
                                 <div class="clearfix">
                                     <div class="icon pull-left">
-                                        <a href="/user/bao-mai">
-                                            <img component="user/picture" data-uid="4841" src="https://graph.facebook.com/111125343173124/picture?type=large" itemprop="image"
-                                                align="left">
-                                            <i component="user/status" class="fal fa-circle status online" title="Online"></i>
+                                        <a href="/user/quy-tran">
+                                            <div component="user/picture" data-uid="3926" class="user-icon" style="background-color: #f44336;" data-original-title=""
+                                                title="">Q</div>
+                                            <i component="user/status" class="fas fa-circle status offline" title="Offline"></i>
 
                                         </a>
                                     </div>
 
                                     <small class="pull-left">
                                         <strong>
-                                            <a href="/user/bao-mai" itemprop="author" data-username="Bao Mai" data-uid="4841">Bao
-                                                Mai
+                                            <a href="/user/quy-tran" itemprop="author" data-username="Quy Tran" data-uid="3926">Quy
+                                                Tran
                                             </a>
                                         </strong>
 
@@ -263,22 +283,24 @@
 
 
                                         <div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
-                                            <a class="permalink" href="/topic/1853/install-ethereumjs-wallet/2"><span class="timeago"
-                                                    title="Thu Aug 30 2018 15:04:32 GMT+0700 (+07)">about 19 hours ago</span></a>
+                                            <a class="permalink" href="/topic/1881/pm2-event-catch/2"><span class="timeago"
+                                                    title="Fri Sep 07 2018 12:31:04 GMT+0700 (Indochina Time)">about 2 hours
+                                                    ago
+                                                </span></a>
 
-                                            <i class="fal fa-pencil-square pointer edit-icon" title="" data-original-title="last edited by Bao Mai about 19 hours ago"></i>
+                                            <i class="fas fa-pencil-square pointer edit-icon hidden"></i>
 
-                                            <small data-editor="bao-mai" component="post/editor" class="hidden">last edited
-                                                by Bao Mai <span class="timeago" title="Thu Aug 30 2018 15:04:47 GMT+0700 (+07)">about
-                                                    19 hours ago</span></small>
+                                            <small data-editor="" component="post/editor" class="hidden">last edited by <span
+                                                    class="timeago" title="Invalid Date"></span></small>
 
-
+                                            <button component="post/parent" class="btn btn-xs btn-default hidden-xs" data-topid="6799"><i
+                                                    class="fas fa-reply"></i> @Thái Bình La</button>
 
                                             <span>
 
                                             </span>
                                         </div>
-                                        <span class="bookmarked"><i class="fal fa-bookmark-o"></i></span>
+                                        <span class="bookmarked"><i class="fas fa-bookmark-o"></i></span>
 
                                     </small>
                                 </div>
@@ -286,7 +308,16 @@
                                 <br>
 
                                 <div class="content" component="post/content" itemprop="text">
-                                    <p>mình hay dùng modul ethers</p>
+                                    <p><a class="plugin-mentions-a" href="https://nodejs.vn/user/thái-bình-la">@Thái-Bình-La</a>
+                                        : "mỗi lần server autorestart sẽ gửi mail", yêu cầu này thì khó.<br> Nhưng để log
+                                        ra thì dễ, bạn có thể xem error log của pm2. Thông thường nó nằm trong thư mục ~/.pm2.<br>                                        Có
+                                        1 vài cách để monitor server:</p>
+                                    <ol>
+                                        <li>Dùng monitoring tool, đơn giản thì có <a href="https://mmonit.com/monit/" target="_blank"
+                                                rel="nofollow">monit</a>, phức tạp dùng <a href="https://github.com/prometheus/prometheus"
+                                                target="_blank" rel="nofollow">Prometheus</a></li>
+                                        <li>Tự viết logic để send email mỗi lần app start lại</li>
+                                    </ol>
 
                                 </div>
 
@@ -295,24 +326,117 @@
 
                                     <small class="pull-right">
                                         <span class="post-tools">
-                                            <a component="post/reply" href="#" class="no-select ">Reply</a>
-                                            <a component="post/quote" href="#" class="no-select ">Quote</a>
+                                            <a component="post/reply" href="#" class="no-select hidden">Reply</a>
+                                            <a component="post/quote" href="#" class="no-select hidden">Quote</a>
                                         </span>
 
                                         <span class="votes">
                                             <a component="post/upvote" href="#" class="">
-                                                <i class="fal fa-chevron-up"></i>
+                                                <i class="fas fa-chevron-up"></i>
                                             </a>
 
                                             <span component="post/vote-count" data-votes="0">0</span>
 
                                             <a component="post/downvote" href="#" class="">
-                                                <i class="fal fa-chevron-down"></i>
+                                                <i class="fas fa-chevron-down"></i>
                                             </a>
                                         </span>
 
                                         <span component="post/tools" class="dropdown moderator-tools ">
-                                            <a href="#" data-toggle="dropdown"><i class="fal fa-fw fa-ellipsis-v"></i></a>
+                                            <a href="#" data-toggle="dropdown"><i class="fas fa-fw fa-ellipsis-v"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-right" role="menu"></ul>
+                                        </span>
+
+                                    </small>
+                                </div>
+
+                                <hr>
+
+                            </li>
+                            <li component="post" class="" data-index="2" data-pid="6801" data-uid="3545" data-username="Quang Vu Quang" data-userslug="quang-vu-quang"
+                                itemscope="" itemtype="http://schema.org/Comment">
+                                <a component="post/anchor" data-index="2" name="2"></a>
+
+                                <meta itemprop="datePublished" content="2018-09-07T06:24:16.474Z">
+                                <meta itemprop="dateModified" content="">
+
+                                <div class="clearfix">
+                                    <div class="icon pull-left">
+                                        <a href="/user/quang-vu-quang">
+                                            <img component="user/picture" data-uid="3545" src="https://graph.facebook.com/10214351495122465/picture?type=large" itemprop="image"
+                                                align="left">
+                                            <i component="user/status" class="fas fa-circle status offline" title="Offline"></i>
+
+                                        </a>
+                                    </div>
+
+                                    <small class="pull-left">
+                                        <strong>
+                                            <a href="/user/quang-vu-quang" itemprop="author" data-username="Quang Vu Quang" data-uid="3545">Quang
+                                                Vu Quang</a>
+                                        </strong>
+
+
+
+
+
+                                        <div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
+                                            <a class="permalink" href="/topic/1881/pm2-event-catch/3"><span class="timeago"
+                                                    title="Fri Sep 07 2018 13:24:16 GMT+0700 (Indochina Time)">about an hour
+                                                    ago
+                                                </span></a>
+
+                                            <i class="fas fa-pencil-square pointer edit-icon hidden"></i>
+
+                                            <small data-editor="" component="post/editor" class="hidden">last edited by <span
+                                                    class="timeago" title="Invalid Date"></span></small>
+
+
+
+                                            <span>
+
+                                            </span>
+                                        </div>
+                                        <span class="bookmarked"><i class="fas fa-bookmark-o"></i></span>
+
+                                    </small>
+                                </div>
+
+                                <br>
+
+                                <div class="content" component="post/content" itemprop="text">
+                                    <ol>
+                                        <li>Gởi email khi restart: bạn nhét function gởi mail vào app của bạn, và cứ mỗi
+                                            lần start thì gởi email là được</li>
+                                        <li>hoặc log ra : log ra mà bạn không ngồi trực máy thì cũng như không, sau khi nhận
+                                            được email thông báo server đã restart bạn có thể vào log pm2 xem thử</li>
+                                    </ol>
+
+                                </div>
+
+                                <div class="clearfix">
+
+
+                                    <small class="pull-right">
+                                        <span class="post-tools">
+                                            <a component="post/reply" href="#" class="no-select hidden">Reply</a>
+                                            <a component="post/quote" href="#" class="no-select hidden">Quote</a>
+                                        </span>
+
+                                        <span class="votes">
+                                            <a component="post/upvote" href="#" class="">
+                                                <i class="fas fa-chevron-up"></i>
+                                            </a>
+
+                                            <span component="post/vote-count" data-votes="0">0</span>
+
+                                            <a component="post/downvote" href="#" class="">
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                        </span>
+
+                                        <span component="post/tools" class="dropdown moderator-tools ">
+                                            <a href="#" data-toggle="dropdown"><i class="fas fa-fw fa-ellipsis-v"></i></a>
                                             <ul class="dropdown-menu dropdown-menu-right" role="menu"></ul>
                                         </span>
 
@@ -327,32 +451,24 @@
                         <div class="post-bar">
                             <div class="clearfix">
                                 <div class="tags pull-left">
-                                    <a href="/tags/ethereumjs-wall">
-                                        <span class="tag-item" data-tag="ethereumjs-wall" style="">ethereumjs-wall</span>
-                                        <span class="tag-topic-count human-readable-number" title="1">1</span></a>
-                                    <a href="/tags/helpme">
-                                        <span class="tag-item" data-tag="helpme" style="">helpme</span>
-                                        <span class="tag-topic-count human-readable-number" title="1">1</span></a>
-                                    <a href="/tags/npminstall">
-                                        <span class="tag-item" data-tag="npminstall" style="">npminstall</span>
-                                        <span class="tag-topic-count human-readable-number" title="1">1</span></a>
+
                                 </div>
 
                                 <div class="topic-main-buttons pull-right">
                                     <span class="loading-indicator btn pull-left hidden" done="0">
-                                        <span class="hidden-xs">Loading More Posts</span> <i class="fal fa-refresh fa-spin"></i>
+                                        <span class="hidden-xs">Loading More Posts</span> <i class="fas fa-refresh fa-spin"></i>
                                     </span>
 
                                     <div class="stats hidden-xs">
-                                        <span component="topic/post-count" class="human-readable-number" title="2">2</span><br>
+                                        <span component="topic/post-count" class="human-readable-number" title="3">3</span><br>
                                         <small>Posts</small>
                                     </div>
                                     <div class="stats hidden-xs">
-                                        <span class="human-readable-number" title="68">68</span><br>
+                                        <span class="human-readable-number" title="19">19</span><br>
                                         <small>Views</small>
                                     </div>
 
-                                    <div class="btn-group action-bar ">
+                                    <div class="btn-group action-bar hidden">
                                         <button class="btn btn-primary" component="topic/reply">Reply</button>
                                         <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
                                             <span class="caret"></span>
@@ -362,38 +478,13 @@
                                         </ul>
                                     </div>
 
-                                    <a component="topic/reply/locked" class="btn btn-primary hidden" disabled=""><i class="fal fa-lock"></i>
-                                        Locked</a>
+                                    <a href="/login" class="btn btn-primary">Log in to reply</a>
 
-                                    <button component="topic/follow" class="btn btn-info ">
-                                        <span class="visible-sm-inline visible-md-inline visible-lg-inline">Watch</span>
-                                        <i class="fal fa-eye"></i>
-                                    </button>
 
-                                    <button component="topic/unfollow" class="btn btn-warning hidden">
-                                        <span class="visible-sm-inline visible-md-inline visible-lg-inline">Unwatch</span>
-                                        <i class="fal fa-eye-slash"></i>
-                                    </button>
 
-                                    <button component="topic/mark-unread" class="btn btn-default">
-                                        <span class="visible-sm-inline visible-md-inline visible-lg-inline">Mark unread</span>
-                                        <i class="fal fa-inbox"></i>
-                                    </button>
 
-                                    <div class="btn-group" component="thread/sort">
-                                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button"><span
-                                                class="visible-sm-inline visible-md-inline visible-lg-inline">Sort by</span>
-                                            <span class="visible-xs-inline"><i class="fal fa-fw fa-sort"></i></span> <span
-                                                class="caret"></span></button>
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li><a href="#" class="oldest_to_newest" data-sort="oldest_to_newest"><i class="fal fa-fw fa-check"></i>
-                                                    Oldest to Newest</a></li>
-                                            <li><a href="#" class="newest_to_oldest" data-sort="newest_to_oldest"><i class="fal fa-fw"></i>
-                                                    Newest to Oldest</a></li>
-                                            <li><a href="#" class="most_votes" data-sort="most_votes"><i class="fal fa-fw"></i>
-                                                    Most votes</a></li>
-                                        </ul>
-                                    </div>
+
+
 
 
                                 </div>
@@ -404,13 +495,13 @@
 
 
                         <div class="visible-xs visible-sm pagination-block text-center ready">
-                            <div class="progress-bar" style="width: 50%;"></div>
+                            <div class="progress-bar" style="width: 33.3333%;"></div>
                             <div class="wrapper">
-                                <i class="fal fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>
-                                <i class="fal fa-2x fa-angle-up pointer fa-fw pageup"></i>
-                                <span class="pagination-text">1 out of 2</span>
-                                <i class="fal fa-2x fa-angle-down pointer fa-fw pagedown"></i>
-                                <i class="fal fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>
+                                <i class="fas fa-2x fa-angle-double-up pointer fa-fw pagetop"></i>
+                                <i class="fas fa-2x fa-angle-up pointer fa-fw pageup"></i>
+                                <span class="pagination-text">1 out of 3</span>
+                                <i class="fas fa-2x fa-angle-down pointer fa-fw pagedown"></i>
+                                <i class="fas fa-2x fa-angle-double-down pointer fa-fw pagebottom"></i>
                             </div>
                         </div>
                     </div>
@@ -419,11 +510,11 @@
                     <div component="pagination" class="text-center pagination-container hidden">
                         <ul class="pagination">
                             <li class="previous pull-left disabled">
-                                <a href="?" data-page="1"><i class="fal fa-chevron-left"></i> </a>
+                                <a href="?" data-page="1"><i class="fas fa-chevron-left"></i> </a>
                             </li>
 
                             <li class="next pull-right disabled">
-                                <a href="?" data-page="1"> <i class="fal fa-chevron-right"></i></a>
+                                <a href="?" data-page="1"> <i class="fas fa-chevron-right"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -446,15 +537,12 @@
         <div class="topic-search hidden">
             <div class="btn-group">
                 <button type="button" class="btn btn-default count"></button>
-                <button type="button" class="btn btn-default prev"><i class="fal fa-fw fa-angle-up"></i></button>
-                <button type="button" class="btn btn-default next"><i class="fal fa-fw fa-angle-down"></i></button>
+                <button type="button" class="btn btn-default prev"><i class="fas fa-fw fa-angle-up"></i></button>
+                <button type="button" class="btn btn-default next"><i class="fas fa-fw fa-angle-down"></i></button>
             </div>
         </div>
         <div component="toaster/tray" class="alert-window"></div>
 
-        <script>
-            require(['forum/footer']);
-        </script>
 
 
         <div id="taskbar" class="taskbar navbar-fixed-bottom">
@@ -462,7 +550,10 @@
                 <ul class="nav navbar-nav pull-right"></ul>
             </div>
         </div>
-        <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+
+        <script src="/stylesheets/vendor/jquery/jquery.min.js"></script>
+        <script src="/javascripts/javascripts.js"></script>
 </body>
 
 </html>
