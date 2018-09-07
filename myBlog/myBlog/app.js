@@ -30,7 +30,7 @@ app.set("trust proxy", 1);
 app.use(
 	session({
 		secret: "keyboard cat",
-		store: myStore,
+		// store: myStore,
 		resave: false,
 		saveUninitialized: true,
 		cookie: { secure: false },

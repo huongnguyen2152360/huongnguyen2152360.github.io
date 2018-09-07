@@ -83,7 +83,7 @@ export const userLogin = async params => {
   }
 };
 
-// EDIT
+// UPDATE PROFILE
 export const userEdit = async params => {
   const { image, password, username } = params;
 
@@ -129,8 +129,11 @@ export const userEdit = async params => {
 };
 
 //UPDATE STATUS
-export const updateStatus = async params => {
-  const { username, status } = params;
+// params, status vi ben login.js truyen vao 2 tham so
+export const updateStatus = async (params,status) => {
+  console.log("da vao update")
+  console.log('params :', params);
+  const { username } = params;
   try {
     const statusUpdate = await User.update(
       {

@@ -5,6 +5,7 @@ function logOut(e) {
   const url = `${location.protocol}//${document.domain}:${
     location.port
   }/admin/logout`;
+  const usernameaa = $('#usernameNeeded').text().trim()
 
   //   $(".btn-logoutjs").submit(function(event) {
   // Stop the browser from submitting the form.
@@ -21,7 +22,7 @@ function logOut(e) {
     //     "Access-Control-Allow-Origin": "*"
     //   },
     async: true,
-    // data: { username: username, password: password },
+    data: { username:usernameaa },
     //   data: $("form").serialize(),
     dataType: "json",
     success: function(result) {

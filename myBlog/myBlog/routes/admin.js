@@ -16,6 +16,8 @@ router.get("/", async function(req, res, next) {
 // LOGOUT
 router.get("/logout", async (req, res) => {
   await req.session.destroy();
+  const {username} = req.body;
+  const updateSt = await UserController.updateStatus(req.body,"offline");
   res.json({
     result: Message.SUCCESS,
     data: null,

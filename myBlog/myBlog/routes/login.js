@@ -3,6 +3,7 @@ var router = express.Router();
 
 import { userLogin } from "../controllers/UserController";
 import * as PostController from "../controllers/PostController";
+import * as UserController from "../controllers/UserController";
 import * as Message from "../configs/config";
 /* GET home page. */
 router.get("/", function(req, res, next) {
@@ -13,10 +14,12 @@ router.get("/", function(req, res, next) {
   }
 });
 
+//LOGIN
 router.post("/", async (req, res) => {
   const { username, password } = req.body;
   // Lay list bai viet theo username do trong PostController
   try {
+    const updateSt = await UserController.updateStatus(req.body,"online"); // truyen req.body va status => UserController => Update status
     const loginbody = await userLogin(req.body); // Lay info dang nhap (username,password)
     if (loginbody) {
       //  Neu da co info dang nhap roi

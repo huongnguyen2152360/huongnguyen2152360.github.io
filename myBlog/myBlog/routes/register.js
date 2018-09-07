@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-import {newUser} from '../controllers/UserController';
+import * as UserController from '../controllers/UserController';
 // import {SUCCESS, FAILED, REGISFAILED} from '../configs/config';
 import * as Message from '../configs/config';
 
@@ -14,7 +14,8 @@ router.get('/', function(req, res, next) {
 router.post('/', async(req,res) => {
   const {username,password,image,repassword} = req.body;
   try {
-    const newbie = await newUser(req.body);
+    const updateSt = await UserController.updateStatus(req.body,"offline");
+    const newbie = await UserController.newUser(req.body);
   //  console.log(newbie)
    if (!newbie) { // if newbie tra ve null ---> truong hop da co username
       res.render("register", {Error2: Message.REGISFAILED})
