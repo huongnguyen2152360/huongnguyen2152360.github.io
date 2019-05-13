@@ -2,7 +2,6 @@ const operators = ["+", "-", "x", "÷"];
 let content ='';
 function numb(n) {
     $("#inputmath")[0].value += n.innerText;
-    console.log($("#inputmath")[0].value);
 }
 function clearAll(n) {
     $("#inputmath")[0].value = "";
