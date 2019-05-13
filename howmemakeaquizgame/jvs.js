@@ -71,7 +71,6 @@ var numberAnswer = 0;
 var results = 0;
 function ansBtn(n) {
         allAnswers.push(n.innerText);
-        console.log(allAnswers);
         numberQuestion+=1;
         if (numberQuestion > 4) {
             for (var numberAnswer = 0; numberAnswer < allAnswers.length; numberAnswer++) {
